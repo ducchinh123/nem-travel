@@ -612,7 +612,6 @@ include 'inc/header.php';
 
                                 while ($query->have_posts()):
                                     $query->the_post();
-                                    echo the_post_thumbnail_url()."/têttteetetetee";
                                     // Lấy ngày tạo bài viết
                                     $post_date = get_the_date('Y-m-d H:i:s', get_the_ID());
                                     $post_timestamp = strtotime($post_date);
@@ -632,7 +631,7 @@ include 'inc/header.php';
 
                                                     <?php if (has_post_thumbnail()): ?>
                                                         <div class="overlay-post"></div>
-                                                        <img layout="fill" src="<?php the_post_thumbnail_url(); ?>"
+                                                        <img layout="fill" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>"
                                                             alt="<?php the_title(); ?>" class="lazy-wave">
 
                                                     <?php else: ?>
