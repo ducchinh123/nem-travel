@@ -612,8 +612,7 @@ include 'inc/header.php';
 
                                 while ($query->have_posts()):
                                     $query->the_post();
-
-                                    my_print($query->the_post());
+                                    echo the_post_thumbnail_url()."/têttteetetetee";
                                     // Lấy ngày tạo bài viết
                                     $post_date = get_the_date('Y-m-d H:i:s', get_the_ID());
                                     $post_timestamp = strtotime($post_date);
