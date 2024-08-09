@@ -631,7 +631,7 @@ include 'inc/header.php';
 
                                                     <?php if (has_post_thumbnail()): ?>
                                                         <div class="overlay-post"></div>
-                                                        <img layout="fill" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>"
+                                                        <img layout="fill" src="<?php echo get_the_post_thumbnail_url(get_the_ID()); ?>"
                                                             alt="<?php the_title(); ?>" class="lazy-wave">
 
                                                     <?php else: ?>
