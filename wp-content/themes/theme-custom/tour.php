@@ -4100,8 +4100,8 @@
         right: 0;
         bottom: 0;
         left: 0;
-        z-index: 1040;
-        background-color: #000
+        /* z-index: 1040; */
+        /* background-color: #000 */
     }
 
     .modal-backdrop.fade {
@@ -8354,11 +8354,11 @@
         background: transparent
     }
 
-    .skin-blue .wrapper,
+    /* .skin-blue .wrapper,
     .skin-blue .main-sidebar,
     .skin-blue .left-side {
         background-color: #222d32
-    }
+    } */
 
     .skin-blue .user-panel>.info,
     .skin-blue .user-panel>.info>a {
@@ -12170,7 +12170,7 @@
 
     @media screen and (min-width:500px) {
 
-        #LoginModal .modal-dialog,
+        .modal-dialog,
         #RegisterModal .modal-dialog,
         #GetUserModal .modal-dialog,
         #UserSuccessModal .modal-dialog,
@@ -12179,7 +12179,7 @@
         }
     }
 
-    #LoginModal .input-lg,
+    .input-lg,
     #RegisterModal .input-lg,
     #GetUserModal .input-lg,
     #UserSuccessModal .input-lg,
@@ -12187,7 +12187,7 @@
         border-radius: 4px
     }
 
-    #LoginModal .btn-login,
+    .btn-login,
     #RegisterModal .btn-login,
     #GetUserModal .btn-login,
     #UserSuccessModal .btn-login,
@@ -12201,8 +12201,8 @@
         font-size: 14px !important
     }
 
-    #LoginModal .btn-login:hover,
-    #LoginModal .btn-login.active,
+    .btn-login:hover,
+    .btn-login.active,
     #RegisterModal .btn-login:hover,
     #RegisterModal .btn-login.active,
     #GetUserModal .btn-login:hover,
@@ -12215,7 +12215,7 @@
         color: #26bed6 !important
     }
 
-    #LoginModal .btn-solid,
+    .btn-solid,
     #RegisterModal .btn-solid,
     #GetUserModal .btn-solid,
     #UserSuccessModal .btn-solid,
@@ -12225,8 +12225,8 @@
         border: unset
     }
 
-    #LoginModal .btn-solid:hover,
-    #LoginModal .btn-solid.active,
+    .btn-solid:hover,
+    .btn-solid.active,
     #RegisterModal .btn-solid:hover,
     #RegisterModal .btn-solid.active,
     #GetUserModal .btn-solid:hover,
@@ -12240,7 +12240,7 @@
         color: #fff !important
     }
 
-    #LoginModal .btn-login,
+    .btn-login,
     #RegisterModal .btn-login,
     #GetUserModal .btn-login,
     #UserSuccessModal .btn-login,
@@ -12252,7 +12252,7 @@
         margin-bottom: 15px
     }
 
-    #LoginModal .login-form .form-group .control-label,
+    .login-form .form-group .control-label,
     #RegisterModal .login-form .form-group .control-label,
     #GetUserModal .login-form .form-group .control-label,
     #UserSuccessModal .login-form .form-group .control-label,
@@ -12261,7 +12261,7 @@
         color: #818180
     }
 
-    #LoginModal .login-form .form-group .form-control,
+    .login-form .form-group .form-control,
     #RegisterModal .login-form .form-group .form-control,
     #GetUserModal .login-form .form-group .form-control,
     #UserSuccessModal .login-form .form-group .form-control,
@@ -12277,18 +12277,18 @@
         padding-bottom: 12px
     }
 
-    #LoginModal .md-checkbox label,
+    .md-checkbox label,
     #RegisterModal .md-checkbox label {
         cursor: unset;
         white-space: unset
     }
 
-    #LoginModal .md-checkbox:hover label,
+    .md-checkbox:hover label,
     #RegisterModal .md-checkbox:hover label {
         color: unset
     }
 
-    #LoginModal .first-text,
+    .first-text,
     #RegisterModal .first-text {
         color: #003c71;
         text-align: center;
@@ -12297,7 +12297,7 @@
         font-weight: bold
     }
 
-    #LoginModal .login-social .btn-social,
+    .login-social .btn-social,
     #RegisterModal .login-social .btn-social {
         color: #818180;
         font-weight: 500;
@@ -12309,7 +12309,7 @@
         color: #fff
     }
 
-    #LoginModal .login-social .btn-social i,
+    .login-social .btn-social i,
     #RegisterModal .login-social .btn-social i {
         margin-right: 5px;
         font-size: 25px;
@@ -12317,7 +12317,7 @@
         padding-right: 20px
     }
 
-    #LoginModal .login-social .btn-social i:after,
+    .login-social .btn-social i:after,
     #RegisterModal .login-social .btn-social i:after {
         content: "";
         position: absolute;
@@ -12328,37 +12328,37 @@
         background: rgba(255, 255, 255, .3)
     }
 
-    #LoginModal .login-social .btn-social.btn-facebook,
+    .login-social .btn-social.btn-facebook,
     #RegisterModal .login-social .btn-social.btn-facebook {
         border: 1px solid rgba(71, 89, 147, .5);
         background-color: #475993
     }
 
-    #LoginModal .login-social .btn-social.btn-facebook:hover,
+    .login-social .btn-social.btn-facebook:hover,
     #RegisterModal .login-social .btn-social.btn-facebook:hover {
         background-color: #3a4877
     }
 
-    #LoginModal .login-social .btn-social.btn-facebook i,
+    .login-social .btn-social.btn-facebook i,
     #RegisterModal .login-social .btn-social.btn-facebook i {
         padding-left: 4px;
         padding-right: 16px
     }
 
-    #LoginModal .login-social .btn-social.btn-google,
+    .login-social .btn-social.btn-google,
     #RegisterModal .login-social .btn-social.btn-google {
         border: 1px solid rgba(243, 74, 56, .5);
         background-color: #f34a38
     }
 
-    #LoginModal .login-social .btn-social.btn-google:hover,
+    .login-social .btn-social.btn-google:hover,
     #RegisterModal .login-social .btn-social.btn-google:hover {
         background-color: #f12712
     }
 
     @media only screen and (min-width:320px) {
 
-        #LoginModal .separate,
+        .separate,
         #RegisterModal .separate {
             margin: 10px 0 25px 0
         }
@@ -12366,13 +12366,13 @@
 
     @media only screen and (min-width:480px) {
 
-        #LoginModal .separate,
+        .separate,
         #RegisterModal .separate {
             margin: 10px 0 20px 0
         }
     }
 
-    #LoginModal .separate__inner,
+    .separate__inner,
     #RegisterModal .separate__inner {
         width: 100%;
         height: 20px;
@@ -12380,7 +12380,7 @@
         text-align: center
     }
 
-    #LoginModal .separate__text,
+    .separate__text,
     #RegisterModal .separate__text {
         color: #818180;
         background-color: #fff;
@@ -18223,56 +18223,71 @@
 
     <div class="wrapper">
 
-        <input type="hidden" id="hdhdhdhhdhdhdhdhdhd" value="">
-        <input type="hidden" id="token_change" value="72b95bca-b32b-4869-ab9c-4dae5ccdbf16">
-
-        <ul id="UserNotLogged" style="visibility: hidden; position: absolute;">
-
-            <li class="btn-login-wrap">
-                <btn type="button" class="btn btn-action btn-login-header" onclick="showLoginDialog()">Đăng nhập</btn>
-            </li>
-            <li class="register-text">Chưa có tài khoản? <span class="register-link" onclick="showRegisterDialog()">Đăng
-                    ký</span> ngay</li>
-        </ul>
-
-
-        <ul id="UserLogged" style="visibility: hidden; position: absolute;">
-            <li class="visible-xs">
-                <div class="member-header">
-                    <div class="member-header__avatar img-wrapper-mobile">
-                        <img class="img-circle" src="">
-                    </div>
-                    <div class="member-header__info">
-                        <p class="no-margin name max username-header"></p>
-                        <p class="no-margin description max userMail-header"></p>
-                    </div>
-                </div>
-            </li>
-            <li class="divider visible-xs" style="margin-top:0px;"></li>
-            <li><a href="https://member.ivivu.com/dashboard/trips">Kỳ nghỉ của tôi</a></li>
-            <li><a href="https://member.ivivu.com/dashboard/rewards">Ưu đãi của tôi</a></li>
-
-            <li>
-                <a class="col-xs-12 point-menu-padding equal-row" href="https://member.ivivu.com/dashboard/points">
-                    <span class="col-xs-6">iVIVUPoint</span>
-                    <span class="col-xs-6 point-text">
-                        <span class="userPoint-header"></span> điểm
-                    </span>
-                </a>
-            </li>
-            <li><a href="https://member.ivivu.com/dashboard/profile">Hồ sơ của tôi</a></li>
-            <li><a href="https://member.ivivu.com/dashboard/my-review">Nhận xét của tôi</a></li>
-            <div class="col-xs-12 logout-btn-wrap">
-                <button class="col-xs-12 logout-btn" type="button" onclick="logoutUser();">Đăng xuất</button>
-            </div>
-        </ul>
 
 
         <!-- Full Width Column -->
         <div class="content-wrapper" style="min-height: 267px;">
 
             <!-- form search -->
+            <?php include 'inc/form_tour.php' ?>
             <!-- end form search -->
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 whyIvivu no-padding hidden-xs">
+                <div class="container">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding whyIvivuContainer v-margin-top-15">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-4">
+                                <div class="media">
+                                    <div class="media-left media-middle">
+                                        <img class=""
+                                            data-src="<?= site_url() ?>/public/images/icon-location.svg?v=<?= time() ?>"
+                                            alt="Lựa Chọn Không Giới Hạn"
+                                            src="<?= site_url() ?>/public/images/icon-location.svg?v=<?= time() ?>">
+                                    </div>
+                                    <div class="media-body media-middle">
+                                        <p class="media-heading">
+                                            <b>Lựa Chọn Không Giới Hạn</b><br>
+                                            Vô vàn hành trình, triệu cảm hứng
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <div class="media">
+                                    <div class="media-left media-middle">
+                                        <img class=""
+                                            data-src="<?= site_url() ?>/public/images/icon-support.svg?v=<?= time() ?>"
+                                            alt="Dịch Vụ Cá Nhân Hóa"
+                                            src="<?= site_url() ?>/public/images/icon-support.svg?v=<?= time() ?>">
+                                    </div>
+                                    <div class="media-body media-middle">
+                                        <p class="media-heading">
+                                            <b>Dịch Vụ Cá Nhân Hóa</b><br>
+                                            Chăm sóc đặc biệt, trải nghiệm độc đáo
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4">
+                                <div class="media">
+                                    <div class="media-left media-middle">
+                                        <img class=""
+                                            data-src="<?= site_url() ?>/public/images/icon-payment.svg?v=<?= time() ?>"
+                                            alt="Giá Trị Vượt Trội"
+                                            src="<?= site_url() ?>/public/images/icon-payment.svg?v=<?= time() ?>">
+                                    </div>
+                                    <div class="media-body media-middle">
+                                        <p class="media-heading">
+                                            <b>Giá Trị Vượt Trội</b><br>
+                                            Chất lượng đỉnh, đảm bảo giá tốt nhất
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <div class="clearfix"></div>
 

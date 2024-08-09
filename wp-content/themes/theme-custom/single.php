@@ -2,43 +2,6 @@
 
 global $post;
 
-global $jumpLink_check;
-
-
-function hashFromDate($date)
-{
-
-    return crc32($date); // Sử dụng CRC32 hoặc một hàm hash khác
-
-}
-
-function randomFromDateTime($dateTime)
-{
-
-    $hash = hashFromDate($dateTime);
-
-    mt_srand($hash); // Đặt hạt giống cho số ngẫu nhiên
-
-
-
-    // Số ngẫu nhiên từ 4.0 đến 5.0
-
-    $min = 400; // 4.0 * 100
-
-    $max = 500; // 5.0 * 100
-
-    $randomNum = mt_rand($min, $max) / 100;
-
-
-
-    mt_srand(); // Reset hạt giống để không ảnh hưởng các hàm mt_rand() khác
-
-
-
-    return round($randomNum, 1);
-
-}
-
 if ($post) {
 
     $post_title = get_the_title();
@@ -235,738 +198,702 @@ function custom_breadcrumb()
     }
 
 }
-$logo_name = get_option('blogname');
-$meta_keywords = get_option('meta_keywords');
-$posts_relation = get_all_posts_relation();
+
 
 ?>
-<!DOCTYPE html>
-<html lang="en-US">
 
-<head>
-    <title><?= ucfirst($title); ?></title>
-    <meta name="description" content="<?= $description; ?>">
-    <meta name="keywords" content="<?php get_meta_kws($meta_keywords); ?>">
-    <?php include 'inc/head.php'; ?>
-    <script type="application/ld+json">
+<?php include 'inc/head.php'; ?>
+<?php include 'inc/header.php'; ?>
+<style type="text/css">
+    #the-blog {
+        font-weight: normal;
 
-{
+        line-height: 1.5;
 
-"@context": "http://schema.org",
+        color: #3d3d3d;
 
-"@type": "CreativeWorkSeason",
+        text-align: left;
 
-"aggregateRating": {
+    }
 
-"@type": "AggregateRating",
 
-"bestRating": "5",
 
-"ratingCount": "<?= $number_rating ?>",
+    #the-blog ul {
 
-"ratingValue": "<?= $rating ?>"
+        display: block;
 
-},
+        list-style-type: disc;
 
-"image": "<?= $image_share_social ?>",
+        margin-block-start: 1em;
 
-"name": "<?php echo $title; ?>",
+        margin-block-end: 1em;
 
-"description": "<?php echo $description; ?>"
+        margin-inline-start: 0px;
 
-}
+        margin-inline-end: 0px;
 
-</script>
-    <style type="text/css">
-        #the-blog {
-            font-weight: normal;
+        padding-inline-start: 40px;
 
-            line-height: 1.5;
+    }
 
-            color: #3d3d3d;
 
-            text-align: left;
 
-        }
+    .jump-link-div ul {
 
+        list-style-type: none !important;
 
+        padding-inline-start: 0 !important;
 
-        #the-blog ul {
+        margin-block-start: 0 !important;
 
-            display: block;
+    }
 
-            list-style-type: disc;
 
-            margin-block-start: 1em;
 
-            margin-block-end: 1em;
+    .jump-link-div {
 
-            margin-inline-start: 0px;
+        padding-left: 0;
 
-            margin-inline-end: 0px;
+    }
 
-            padding-inline-start: 40px;
 
-        }
 
+    .col-lg-9 {
 
+        padding: 0;
 
-        .jump-link-div ul {
+    }
 
-            list-style-type: none !important;
 
-            padding-inline-start: 0 !important;
 
-            margin-block-start: 0 !important;
+    #the-blog .guide-nav {
 
-        }
+        position: -webkit-sticky;
 
+        position: sticky;
 
+        top: 80px;
 
-        .jump-link-div {
+        min-width: 300px;
 
-            padding-left: 0;
+        margin-right: 16PX;
 
-        }
+    }
 
 
 
-        .col-lg-9 {
+    #the-blog ol li,
 
-            padding: 0;
+    #the-blog ul li {
 
-        }
+        margin-top: 0.25rem;
 
+    }
 
 
-        #the-blog .guide-nav {
 
-            position: -webkit-sticky;
+    #the-blog .guide-nav .nav-item .nav-link {
 
-            position: sticky;
+        font-size: 14px;
 
-            top: 80px;
+        color: #8F9396;
 
-            min-width: 300px;
+        padding: 0.25rem 0 0 0.5rem;
 
-            margin-right: 16PX;
+    }
 
-        }
 
 
+    #the-blog .guide-nav .nav-item-heading .nav-link {
 
-        #the-blog ol li,
+        color: #000000;
 
-        #the-blog ul li {
+        font-weight: bold;
 
-            margin-top: 0.25rem;
+        padding: 0.4rem 0 0 0;
 
-        }
+    }
 
 
 
-        #the-blog .guide-nav .nav-item .nav-link {
+    .wp-block-image img {
 
-            font-size: 14px;
+        width: 100%;
 
-            color: #8F9396;
+    }
 
-            padding: 0.25rem 0 0 0.5rem;
 
-        }
 
+    .star {
 
+        cursor: pointer;
 
-        #the-blog .guide-nav .nav-item-heading .nav-link {
+    }
 
-            color: #000000;
 
-            font-weight: bold;
 
-            padding: 0.4rem 0 0 0;
+    .gfs-14 {
 
-        }
+        font-size: 14px;
 
+    }
 
 
-        .wp-block-image img {
 
-            width: 100%;
+    #number-star {
 
-        }
+        font-size: 18px;
 
+        color: #F2994A;
 
+        margin-right: .25rem;
 
-        .star {
+    }
 
-            cursor: pointer;
 
-        }
 
+    .gap-2 {
 
+        gap: 2px;
 
-        .gfs-14 {
+    }
 
-            font-size: 14px;
 
-        }
 
+    .text-yellow-800 {
 
+        color: #F2994A;
 
-        #number-star {
+    }
 
-            font-size: 18px;
 
-            color: #F2994A;
 
-            margin-right: .25rem;
+    .border-yellow-300 {
 
-        }
+        border-color: #F2994A;
 
+    }
 
 
-        .gap-2 {
 
-            gap: 2px;
+    .bg-yellow-50 {
 
-        }
+        background-color: #FFF8F2;
 
+    }
 
 
-        .text-yellow-800 {
 
-            color: #F2994A;
+    .has-text-align-center {
 
-        }
+        text-align: center;
 
+    }
 
 
-        .border-yellow-300 {
 
-            border-color: #F2994A;
 
-        }
 
+    .wp-block-table table {
 
+        border-collapse: collapse;
 
-        .bg-yellow-50 {
+        width: 100%;
 
-            background-color: #FFF8F2;
+    }
 
-        }
 
 
+    table {
 
-        .has-text-align-center {
+        width: 100%;
 
-            text-align: center;
+        margin-bottom: 1em;
 
-        }
+        border: 1px solid #dedede;
 
+        color: #333;
 
+    }
 
+    .wp-block-table {
 
+        margin: 0 0 1em;
 
-        .wp-block-table table {
+    }
 
-            border-collapse: collapse;
+    .wp-block-table {
 
-            width: 100%;
+        overflow-x: auto;
 
-        }
+        display: block;
 
+    }
 
+    table tbody tr:nth-child(odd) {
 
-        table {
+        background-color: #f7f7f7;
 
-            width: 100%;
+    }
 
-            margin-bottom: 1em;
+    table tr {
 
-            border: 1px solid #dedede;
+        border-bottom: 1px solid #dedede;
 
-            color: #333;
+    }
 
-        }
+    .wp-block-table td,
+    .wp-block-table th {
 
-        .wp-block-table {
+        word-break: normal;
 
-            margin: 0 0 1em;
+    }
 
-        }
+    .wp-block-table td,
+    .wp-block-table th {
 
-        .wp-block-table {
+        border: 1px solid;
 
-            overflow-x: auto;
+        padding: .5em;
 
-            display: block;
+    }
 
-        }
+    table td,
+    table th {
 
-        table tbody tr:nth-child(odd) {
+        border-inline-end: 1px solid #dedede;
 
-            background-color: #f7f7f7;
+    }
 
-        }
+    .aligncenter {
 
-        table tr {
+        margin-left: auto;
 
-            border-bottom: 1px solid #dedede;
+        margin-right: auto;
 
-        }
+        text-align: center;
 
-        .wp-block-table td,
-        .wp-block-table th {
+    }
 
-            word-break: normal;
 
-        }
 
-        .wp-block-table td,
-        .wp-block-table th {
+    .alignleft {
 
-            border: 1px solid;
+        text-align: left;
 
-            padding: .5em;
+    }
 
-        }
 
-        table td,
-        table th {
 
-            border-inline-end: 1px solid #dedede;
+    .alignright {
 
-        }
+        text-align: right;
 
-        .aligncenter {
+    }
 
-            margin-left: auto;
 
-            margin-right: auto;
 
-            text-align: center;
+    .wp-block-embed__wrapper:before {
 
-        }
+        content: "";
 
+        display: block;
 
+        padding-top: 50%;
 
-        .alignleft {
+    }
 
-            text-align: left;
 
-        }
 
+    .wp-block-embed__wrapper:before {
 
+        padding-top: 56.25%;
 
-        .alignright {
+    }
 
-            text-align: right;
 
-        }
 
+    .wp-block-embed__wrapper {
 
+        position: relative;
 
-        .wp-block-embed__wrapper:before {
+    }
 
-            content: "";
 
-            display: block;
 
-            padding-top: 50%;
+    .wp-block-embed {
 
-        }
+        clear: both;
 
+        margin-left: 0;
 
+        margin-right: 0;
 
-        .wp-block-embed__wrapper:before {
+    }
 
-            padding-top: 56.25%;
 
-        }
 
+    .wp-block-embed iframe {
 
+        max-width: 100%;
 
-        .wp-block-embed__wrapper {
+    }
 
-            position: relative;
 
-        }
 
+    html.wp-has-aspect-ratio,
 
+    body.wp-has-aspect-ratio,
 
-        .wp-block-embed {
+    body.wp-has-aspect-ratio>div,
 
-            clear: both;
+    body.wp-has-aspect-ratio>div iframe {
 
-            margin-left: 0;
+        width: 100%;
 
-            margin-right: 0;
+        height: 100%;
 
-        }
+        overflow: hidden;
 
+    }
 
 
-        .wp-block-embed iframe {
 
-            max-width: 100%;
+    .wp-has-aspect-ratio iframe {
 
-        }
+        bottom: 0;
 
+        height: 100%;
 
+        left: 0;
 
-        html.wp-has-aspect-ratio,
+        position: absolute;
 
-        body.wp-has-aspect-ratio,
+        right: 0;
 
-        body.wp-has-aspect-ratio>div,
+        top: 0;
 
-        body.wp-has-aspect-ratio>div iframe {
+        width: 100%;
 
-            width: 100%;
+    }
 
-            height: 100%;
 
-            overflow: hidden;
 
-        }
+    .wp-caption {
 
+        width: 100% !important;
 
+    }
 
-        .wp-has-aspect-ratio iframe {
 
-            bottom: 0;
 
-            height: 100%;
+    .wp-caption-text {
 
-            left: 0;
+        font-size: 15px;
 
-            position: absolute;
+        color: #333;
 
-            right: 0;
+        padding: 10px;
 
-            top: 0;
+        border-radius: 5px;
 
-            width: 100%;
+        text-align: center;
 
-        }
+        margin-top: 5px;
 
+        margin-bottom: 0;
 
+        font-style: italic;
 
-        .wp-caption {
+    }
 
-            width: 100% !important;
+    .div-cate-footer {
 
-        }
+        border-top: 1px solid #e0e0e0;
 
+        padding-top: 48px;
 
+        padding-bottom: 24px;
 
-        .wp-caption-text {
+        margin-top: 10px;
 
-            font-size: 15px;
+    }
 
-            color: #333;
+    .d-grid {
 
-            padding: 10px;
+        display: grid;
 
-            border-radius: 5px;
+    }
 
-            text-align: center;
+    #blog-box {
+        margin-top: 1em;
+    }
 
-            margin-top: 5px;
+    #blog-box figcaption {
+        margin-bottom: 1em;
+        margin-top: .5em;
+    }
 
-            margin-bottom: 0;
+    #blog-box h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 0.5em;
+    }
 
-            font-style: italic;
+    #blog-box .wp-block-image {
+        margin: 20px 0 !important;
+    }
 
-        }
+    #the-blog .p-title {
+        text-align: justify;
+        font-weight: 700;
+        font-size: 30px;
+    }
 
-        .div-cate-footer {
 
-            border-top: 1px solid #e0e0e0;
 
-            padding-top: 48px;
+    #blog-box .p-content {
+        overflow: auto !important;
+        text-align: justify;
+    }
 
-            padding-bottom: 24px;
 
-            margin-top: 10px;
+    #blog-box p {
+        margin-bottom: 1rem;
+    }
 
-        }
 
-        .d-grid {
+    #blog-box .p-content h2 {
+        font-size: 24px;
+    }
 
-            display: grid;
+    #blog-box .p-content h3 {
+        font-size: 22px;
+    }
 
-        }
+    #blog-box .p-content .wp-element-caption {
+        text-align: center;
+        font-size: 15px;
+        color: #666;
+        font-style: italic
+    }
 
-        #blog-box {
-            margin-top: 1em;
-        }
-
-        #blog-box figcaption {
-            margin-bottom: 1em;
-            margin-top: .5em;
-        }
-
-        #blog-box h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            margin-bottom: 0.5em;
-        }
-
-        #blog-box .wp-block-image {
-            margin: 20px 0 !important;
-        }
+    @media screen and (max-width: 576px) {
 
         #the-blog .p-title {
-            text-align: justify;
-            font-weight: 700;
-            font-size: 30px;
+            font-size: 23px !important;
+
         }
 
-
-
-        #blog-box .p-content {
-            overflow: auto !important;
-            text-align: justify;
+        #blog-box h2 {
+            font-size: 22px !important;
         }
 
-
-        #blog-box p {
-            margin-bottom: 1rem;
+        #blog-box h3 {
+            font-size: 20px !important;
         }
 
+        #blog-box .p-content p {
+            font-size: 16px !important;
+        }
 
-        #blog-box .p-content h2 {
+    }
+
+
+    @media screen and (max-width: 1024px) {
+
+        #the-blog .p-title {
+            font-size: 28px;
+
+        }
+
+        #blog-box h2 {
             font-size: 24px;
         }
 
-        #blog-box .p-content h3 {
+        #blog-box h3 {
             font-size: 22px;
         }
 
-        #blog-box .p-content .wp-element-caption {
-            text-align: center;
-            font-size: 15px;
-            color: #666;
-            font-style: italic
+        #blog-box .p-content p {
+            font-size: 16px;
         }
 
-        @media screen and (max-width: 576px) {
+    }
 
-            #the-blog .p-title {
-                font-size: 23px !important;
-
-            }
-
-            #blog-box h2 {
-                font-size: 22px !important;
-            }
-
-            #blog-box h3 {
-                font-size: 20px !important;
-            }
-
-            #blog-box .p-content p {
-                font-size: 16px !important;
-            }
-
-        }
-
-
-        @media screen and (max-width: 1024px) {
-
-            #the-blog .p-title {
-                font-size: 28px;
-
-            }
-
-            #blog-box h2 {
-                font-size: 24px;
-            }
-
-            #blog-box h3 {
-                font-size: 22px;
-            }
-
-            #blog-box .p-content p {
-                font-size: 16px;
-            }
-
-        }
-
-        @media (min-width: 992px) {
-            .c-box {
-                margin-bottom: 35px;
-            }
-        }
-
-        @media (min-width: 768px) {
-            .c-box {
-                margin-bottom: 30px;
-            }
-        }
-
+    @media (min-width: 992px) {
         .c-box {
-            margin-bottom: 25px;
+            margin-bottom: 35px;
         }
+    }
 
-        .c-widget-tags {
-            padding-left: 27px;
-            position: relative;
-            z-index: 1;
-            min-height: 20px;
+    @media (min-width: 768px) {
+        .c-box {
+            margin-bottom: 30px;
         }
+    }
 
-        .c-widget-tags:before {
-            content: "";
-            position: absolute;
-            z-index: 2;
-            top: 20px;
-            left: 0;
-            width: 20px;
-            height: 20px;
-            background-image: url(https://gacmai.vn/public/images/tags-fill.svg);
-            background-position: center center;
-            background-repeat: no-repeat;
-        }
+    .c-box {
+        margin-bottom: 25px;
+    }
 
-        .c-widget-tags ul {
-            list-style: none;
-            margin: 0;
-            padding: 0 !important;
-        }
+    .c-widget-tags {
+        padding-left: 27px;
+        position: relative;
+        z-index: 1;
+        min-height: 20px;
+    }
+
+    .c-widget-tags:before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        top: 20px;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background-image: url(https://gacmai.vn/public/images/tags-fill.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .c-widget-tags ul {
+        list-style: none;
+        margin: 0;
+        padding: 0 !important;
+    }
 
 
-        .c-widget-tags ul li {
-            margin: 0 4px 5px 0;
-            display: inline-block;
-            vertical-align: middle;
-            position: relative;
-            z-index: 1;
+    .c-widget-tags ul li {
+        margin: 0 4px 5px 0;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        z-index: 1;
 
-        }
+    }
 
-        .c-widget-tags h4 {
-            margin: 0;
-            line-height: 1.3;
-        }
+    .c-widget-tags h4 {
+        margin: 0;
+        line-height: 1.3;
+    }
 
-        .c-widget-tags ul li a {
-            display: block;
-        }
+    .c-widget-tags ul li a {
+        display: block;
+    }
 
-        @media (min-width: 992px) {
-            .c-widget-tags a {
-                -webkit-transition: all .2s ease;
-                -moz-transition: all .2s ease;
-                transition: all .2s ease;
-            }
-        }
-
+    @media (min-width: 992px) {
         .c-widget-tags a {
-            text-decoration: none;
-            font-size: 12px;
-            display: inline-block;
-            vertical-align: middle;
-            line-height: 1.3;
-            background-color: #22A3FE;
-            color: white;
-            padding: 2px 10px;
-            -moz-border-radius: 10px;
-            -webkit-border-radius: 10px;
-            border-radius: 10px;
+            -webkit-transition: all .2s ease;
+            -moz-transition: all .2s ease;
+            transition: all .2s ease;
         }
+    }
 
-        .collapse-button {
-            position: relative;
-            background-color: rgba(238, 238, 238, .95);
-            color: #333;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 18px;
-            margin-bottom: 10px;
-            transition: background-color 0.3s;
-            display: block;
-            width: 100%;
-            text-align: left;
-            font-weight: 700;
-            transition: 0.3s;
+    .c-widget-tags a {
+        text-decoration: none;
+        font-size: 12px;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1.3;
+        background-color: #22A3FE;
+        color: white;
+        padding: 2px 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
 
-        }
+    .collapse-button {
+        position: relative;
+        background-color: rgba(238, 238, 238, .95);
+        color: #333;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 18px;
+        margin-bottom: 10px;
+        transition: background-color 0.3s;
+        display: block;
+        width: 100%;
+        text-align: left;
+        font-weight: 700;
+        transition: 0.3s;
 
-
-        .collapse-button:hover {
-            color: white;
-            background-color: rgb(182, 182, 182);
-        }
-
-
-        .collapse.show a{
-            padding: 0;
-            margin-left: 10px;
-        }
-
-        .collapse ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .collapse ul li {
-            list-style: none;
-        }
-
-        .collapse li {
-            margin: 10px 0;
-        }
-
-        .collapse a {
-            font-size: 15.4px;
-            color: #333;
-            text-decoration: none;
-            transition: color 0.3s;
-            font-weight: 400;
-        }
-
-        .collapse li:hover a {
-            color: #406CFF;
-        }
+    }
 
 
+    .collapse-button:hover {
+        color: white;
+        background-color: rgb(182, 182, 182);
+    }
 
-        .collapse a:hover {
-            color: #0056b3;
-        }
 
-        .active-target {
-            color: #4287F5 !important;
-        }
+    .collapse.show a {
+        padding: 0;
+        margin-left: 10px;
+    }
 
-        #jump-link {
-            width: 100%;
-            height: auto;
+    .collapse ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
-        }
+    .collapse ul li {
+        list-style: none;
+    }
 
-        #jump-link ul {
-            transition: 0.5s;
-            padding: 0 !important;
-        }
+    .collapse li {
+        margin: 10px 0;
+    }
 
-        article {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
+    .collapse a {
+        font-size: 15.4px;
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s;
+        font-weight: 400;
+    }
 
-        /* .table_of_content {
+    .collapse li:hover a {
+        color: #406CFF;
+    }
+
+
+
+    .collapse a:hover {
+        color: #0056b3;
+    }
+
+    .active-target {
+        color: #4287F5 !important;
+    }
+
+    #jump-link {
+        width: 100%;
+        height: auto;
+
+    }
+
+    #jump-link ul {
+        transition: 0.5s;
+        padding: 0 !important;
+    }
+
+    article {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* .table_of_content {
             display: none;
         }
 
@@ -980,281 +907,272 @@ $posts_relation = get_all_posts_relation();
 
         } */
 
-        #blog-box .p-content>h2,
-        h3,
-        h4,
-        h5,
-        h6 {
+    #blog-box .p-content>h2,
+    h3,
+    h4,
+    h5,
+    h6 {
 
-            margin-top: 16px !important;
+        margin-top: 16px !important;
 
-        }
-
-
-
-        .toc-wrap {
-            height: auto;
-            border-radius: unset;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-                0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            background-color: rgba(243, 243, 243, 0.95);
-            border-width: 1px;
-            border-color: #d2d6dc;
-
-
-        }
-
-
-        .toc-title {
-            position: relative;
-            font-size: 1rem;
-            margin-top: 1rem;
-            cursor: pointer;
-            /* Thêm dòng này để làm tiêu đề có thể nhấp */
-            padding: 10px 10px;
-            font-weight: 700;
-            color: #333333;
-            padding-bottom: 5px !important;
-        }
-
-        #toc {
-            height: 0;
-            /* padding: 0 1rem; */
-            padding-top: 0px !important;
-            overflow: auto;
-            transition: max-height 0.5s ease-out, padding 0.5s ease-out;
-
-            /* Thêm hiệu ứng chuyển tiếp */
+    }
 
 
 
-        }
-
-        a {
-            &:hover {
-                text-decoration: none;
-
-            }
-        }
-
-        .toc-active {
-            font-weight: bold;
-            color: #2563eb;
-        }
-
-        .toc-item {
-            /* padding: 0.1em 0; */
-        }
-
-        #toc a {
-            padding: 0.25em 0.5em;
-            color: #333333 !important;
-        }
+    .toc-wrap {
+        height: auto;
+        border-radius: unset;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+            0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        background-color: rgba(243, 243, 243, 0.95);
+        border-width: 1px;
+        border-color: #d2d6dc;
 
 
+    }
 
 
-        .toc-item a:hover {
-            color: #1e73be !important;
-        }
+    .toc-title {
+        position: relative;
+        font-size: 1rem;
+        margin-top: 1rem;
+        cursor: pointer;
+        /* Thêm dòng này để làm tiêu đề có thể nhấp */
+        padding: 10px 10px;
+        font-weight: 700;
+        color: #333333;
+        padding-bottom: 5px !important;
+    }
 
-        .toc-h2 {
-            margin-left: 0.5em;
-        }
+    #toc {
+        height: 0;
+        /* padding: 0 1rem; */
+        padding-top: 0px !important;
+        overflow: auto;
+        transition: max-height 0.5s ease-out, padding 0.5s ease-out;
 
-        .toc-h3 {
-            margin-left: 1.75em;
-        }
+        /* Thêm hiệu ứng chuyển tiếp */
 
-        .toc-h4 {
-            margin-left: 3em;
-        }
 
-        .toc-h5 {
-            margin-left: 4.25em;
-        }
 
-        .toc-h6 {
-            margin-left: 5.5em;
-        }
+    }
 
-        #toc ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        #toc>ul>ul>ul li a {
-            font-size: 13px !important;
-        }
-
-        #toc>ul>ul>ul li {
-            line-height: 20px !important;
-        }
-
-        #toc li a {
+    a {
+        &:hover {
             text-decoration: none;
-            font-size: 14px;
+
+        }
+    }
+
+    .toc-active {
+        font-weight: bold;
+        color: #2563eb;
+    }
+
+    .toc-item {
+        /* padding: 0.1em 0; */
+    }
+
+    #toc a {
+        padding: 0.25em 0.5em;
+        color: #333333 !important;
+    }
+
+
+
+
+    .toc-item a:hover {
+        color: #1e73be !important;
+    }
+
+    .toc-h2 {
+        margin-left: 0.5em;
+    }
+
+    .toc-h3 {
+        margin-left: 1.75em;
+    }
+
+    .toc-h4 {
+        margin-left: 3em;
+    }
+
+    .toc-h5 {
+        margin-left: 4.25em;
+    }
+
+    .toc-h6 {
+        margin-left: 5.5em;
+    }
+
+    #toc ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #toc>ul>ul>ul li a {
+        font-size: 13px !important;
+    }
+
+    #toc>ul>ul>ul li {
+        line-height: 20px !important;
+    }
+
+    #toc li a {
+        text-decoration: none;
+        font-size: 14px;
+    }
+
+    #toc li {
+        margin-top: 0 !important;
+    }
+
+
+    .toc-parent {
+        font-weight: bold;
+        color: #333333 !important;
+    }
+
+    .toc-title span {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        font-size: 25px;
+    }
+
+    @media screen and (max-width: 431px) {
+        .gfs-root {
+            flex-direction: column;
         }
 
-        #toc li {
-            margin-top: 0 !important;
+        .gfs-root .rating-stars {
+            margin-left: unset !important;
         }
 
+        .thank-you {
+            justify-content: center;
+            padding: 5px 6px;
+            margin-left: unset !important;
+        }
+    }
 
-        .toc-parent {
-            font-weight: bold;
-            color: #333333 !important;
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    @media screen and (min-width: 768px) {
+        .col-md-8 {
+            flex: 0 0 66.666667%;
+            max-width: 66.666667%;
         }
 
-        .toc-title span {
-            position: absolute;
-            right: 5px;
-            top: 5px;
-            font-size: 25px;
+        .col-md-4 {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
         }
+    }
 
-        @media screen and (max-width: 431px) {
-            .gfs-root {
-                flex-direction: column;
-            }
+    .cta-image img {
+        border-radius: 5px !important;
+    }
 
-            .gfs-root .rating-stars {
-                margin-left: unset !important;
-            }
+    #contact {
+        margin-top: 30px;
+        padding-bottom: 20px;
+        border-radius: 5px;
+        background-color: #F1F1F1;
+    }
 
-            .thank-you {
-                justify-content: center;
-                padding: 5px 6px;
-                margin-left: unset !important;
-            }
-        }
+    #contact>div {
+        padding: 10px 0;
+        background-color: #9F0012;
+        border-radius: 5px 5px 0 0;
+    }
 
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            margin-right: -15px;
-            margin-left: -15px;
-        }
+    #contact>div>p {
+        margin: 0 !important;
+        padding-left: 16px !important;
+        color: white;
+        font-size: 18px;
+    }
 
-        @media screen and (min-width: 768px) {
-            .col-md-8 {
-                flex: 0 0 66.666667%;
-                max-width: 66.666667%;
-            }
 
-            .col-md-4 {
-                flex: 0 0 33.333333%;
-                max-width: 33.333333%;
-            }
-        }
+    #contact form#contactForm {
+        padding: 0 16px;
+    }
 
-        .cta-image img {
-            border-radius: 5px !important;
-        }
+    #contact form#contactForm .form-group input.form-control {
+        border: 1px solid gray !important;
+        font-size: 0.9em !important;
 
-        #contact {
-            margin-top: 30px;
-            padding-bottom: 20px;
-            border-radius: 5px;
-            background-color: #F1F1F1;
-        }
+    }
 
-        #contact>div {
-            padding: 10px 0;
-            background-color: #9F0012;
-            border-radius: 5px 5px 0 0;
+    #contact form#contactForm input#email {
+        border: 1px solid gray;
+        font-size: 0.9em !important;
+        padding: 10px 10px
+    }
+
+    #contact form#contactForm textarea#message {
+        border: 1px solid gray;
+        font-size: 0.9em !important;
+        font-family: Arial, Tahoma, Bitstream Vera Sans, sans-serif !important;
+
+    }
+
+    #contact form#contactForm .form-group textarea.form-control {
+        border: 1px solid gray !important;
+        font-family: Arial, Tahoma, Bitstream Vera Sans, sans-serif !important;
+    }
+
+    #contact form#contactForm .form-group textarea.form-control:focus {
+        outline: none;
+        border-color: rgb(255, 200, 20) !important;
+        transition: border-color .4s ease;
+    }
+
+    #contact form#contactForm .form-group input.form-control:focus {
+        outline: none;
+        border-color: rgb(255, 200, 20) !important;
+        transition: border-color .4s ease;
+    }
+
+    #contact form#contactForm .form-group input#email:focus {
+        outline: none;
+        border-color: rgb(255, 200, 20) !important;
+        transition: border-color .4s ease;
+    }
+
+    #contact form#contactForm button {
+        width: 100%;
+        font-size: 0.8em !important;
+        padding: 10px 20px !important;
+    }
+
+    @media screen and (max-width: 431px) {
+        #contact form#contactForm .inputFullname {
+            padding-right: calc(var(--bs-gutter-x)* 0.5) !important;
         }
 
         #contact>div>p {
-            margin: 0 !important;
-            padding-left: 16px !important;
-            color: white;
-            font-size: 18px;
-        }
-
-
-        #contact form#contactForm {
-            padding: 0 16px;
-        }
-
-        #contact form#contactForm .form-group input.form-control {
-            border: 1px solid gray !important;
-            font-size: 0.9em !important;
-
-        }
-
-        #contact form#contactForm input#email {
-            border: 1px solid gray;
-            font-size: 0.9em !important;
-            padding: 10px 10px
-        }
-
-        #contact form#contactForm textarea#message {
-            border: 1px solid gray;
-            font-size: 0.9em !important;
-            font-family: Arial, Tahoma, Bitstream Vera Sans, sans-serif !important;
-
+            font-size: 16px;
         }
 
         #contact form#contactForm .form-group textarea.form-control {
-            border: 1px solid gray !important;
-            font-family: Arial, Tahoma, Bitstream Vera Sans, sans-serif !important;
-        }
-
-        #contact form#contactForm .form-group textarea.form-control:focus {
-            outline: none;
-            border-color: rgb(255, 200, 20) !important;
-            transition: border-color .4s ease;
-        }
-
-        #contact form#contactForm .form-group input.form-control:focus {
-            outline: none;
-            border-color: rgb(255, 200, 20) !important;
-            transition: border-color .4s ease;
-        }
-
-        #contact form#contactForm .form-group input#email:focus {
-            outline: none;
-            border-color: rgb(255, 200, 20) !important;
-            transition: border-color .4s ease;
+            font-size: 15px !important;
         }
 
         #contact form#contactForm button {
-            width: 100%;
-            font-size: 0.8em !important;
-            padding: 10px 20px !important;
+            padding: 5px 10px;
+            font-size: 16px;
         }
-
-        @media screen and (max-width: 431px) {
-            #contact form#contactForm .inputFullname {
-                padding-right: calc(var(--bs-gutter-x)* 0.5) !important;
-            }
-
-            #contact>div>p {
-                font-size: 16px;
-            }
-
-            #contact form#contactForm .form-group textarea.form-control {
-                font-size: 15px !important;
-            }
-
-            #contact form#contactForm button {
-                padding: 5px 10px;
-                font-size: 16px;
-            }
-        }
-    </style>
-	
-	<!-- Event snippet for Lượt xem trang conversion page -->
-	<script>
-	  gtag('event', 'conversion', {'send_to': 'AW-11137653179/6KM0CM7w9MYZELuz7L4p'});
-	</script>
-	
-</head>
-
-<body>
-    <?php include 'inc/header.php'; ?>
+    }
+</style>
+<main>
     <div class="site-inner">
         <div class="breadcrumbs-container">
             <div class="container">
@@ -1582,393 +1500,391 @@ $posts_relation = get_all_posts_relation();
             </div>
         </div>
     </div>
-    <?php include 'inc/footer.php'; ?>
-    <?php include 'inc/js.php'; ?>
-    <script>
+</main>
+<?php include 'inc/footer.php'; ?>
+<?php include 'inc/js.php'; ?>
+<script>
 
-        $(document).ready(function () {
+    $(document).ready(function () {
 
 
 
-            // editorBlock('#content')
+        // editorBlock('#content')
 
-            var $form = document.querySelector('#contactForm')
+        var $form = document.querySelector('#contactForm')
 
-            $form.addEventListener('submit', function (e) {
+        $form.addEventListener('submit', function (e) {
 
-                e.preventDefault()
+            e.preventDefault()
 
-                if (!checkValidity()) {
+            if (!checkValidity()) {
 
-                    return 1
+                return 1
 
-                } else {
+            } else {
 
-                    var formData = new FormData(this)
+                var formData = new FormData(this)
 
-                    $('button[type=submit]').attr('disabled', true)
+                $('button[type=submit]').attr('disabled', true)
 
-                    $.ajax({
+                $.ajax({
 
-                        url: '/ajax/contact.php',
+                    url: '/ajax/contact.php',
 
-                        method: 'post',
+                    method: 'post',
 
-                        data: formData,
+                    data: formData,
 
-                        processData: false,
+                    processData: false,
 
-                        contentType: false,
+                    contentType: false,
 
-                        afterSend: function () {
+                    afterSend: function () {
 
-                            $('#loadingMessage').removeClass('d-none')
+                        $('#loadingMessage').removeClass('d-none')
 
-                        },
+                    },
 
-                        success: function (res) {
+                    success: function (res) {
 
-                            try {
-                                if (res.data.status == 'success') {
-                                    $('#submitSuccessMessage').removeClass('d-none')
+                        try {
+                            if (res.data.status == 'success') {
+                                $('#submitSuccessMessage').removeClass('d-none')
 
-                                } else {
+                            } else {
 
-                                    $('#submitErrorMessage').removeClass('d-none')
-
-                                }
-
-                            } catch (e) {
                                 $('#submitErrorMessage').removeClass('d-none')
 
                             }
 
-                        },
-
-                        error: function (xhr, status, error) {
-
+                        } catch (e) {
                             $('#submitErrorMessage').removeClass('d-none')
-
-
-                        },
-
-                        complete: function () {
-
-                            $('#loadingMessage').addClass('d-none')
 
                         }
 
-                    })
+                    },
 
-                }
+                    error: function (xhr, status, error) {
 
-            })
+                        $('#submitErrorMessage').removeClass('d-none')
+
+
+                    },
+
+                    complete: function () {
+
+                        $('#loadingMessage').addClass('d-none')
+
+                    }
+
+                })
+
+            }
 
         })
 
-
-
-        function checkValidity() {
-
-            var form = document.getElementById("contactForm");
-
-            var nameInput = $("#name");
-
-            var emailInput = $("#email");
-
-            var phoneInput = $("#phone");
-
-            var messageInput = $("#message");
-
-            var isValid = true;
-
-            $('[data-feedback="name:required"]').hide()
-
-            $('[data-feedback="email:required"]').hide()
-
-            $('[data-feedback="email:email"]').hide()
-
-            $('[data-feedback="phone:required"]').hide()
-
-            $('[data-feedback="phone:phone"]').hide()
-
-            $('[data-feedback="message:required"]').hide()
-
-            if (!nameInput.val()) {
-
-                $('[data-feedback="name:required"]').show()
-
-                isValid = false;
-
-            }
-
-            if (!messageInput.val()) {
-
-                $('[data-feedback="message:required"]').show()
-
-                isValid = false;
-
-            }
+    })
 
 
 
-            if (!emailInput.val()) {
+    function checkValidity() {
 
-                $('[data-feedback="email:required"]').show()
+        var form = document.getElementById("contactForm");
 
-                isValid = false;
+        var nameInput = $("#name");
 
-            } else if (!validateEmail(emailInput.val())) {
+        var emailInput = $("#email");
 
-                $('[data-feedback="email:email"]').show()
+        var phoneInput = $("#phone");
 
-                isValid = false;
+        var messageInput = $("#message");
 
-            }
+        var isValid = true;
 
-            if (!phoneInput.val()) {
+        $('[data-feedback="name:required"]').hide()
 
-                $('[data-feedback="phone:required"]').show()
+        $('[data-feedback="email:required"]').hide()
 
-                isValid = false;
+        $('[data-feedback="email:email"]').hide()
 
-            } else if (phoneInput.val().length < 10) {
+        $('[data-feedback="phone:required"]').hide()
 
-                $('[data-feedback="phone:phone"]').show()
+        $('[data-feedback="phone:phone"]').hide()
 
-                isValid = false;
+        $('[data-feedback="message:required"]').hide()
 
-            } else if (phoneInput.val().length > 11) {
+        if (!nameInput.val()) {
 
-                $('[data-feedback="phone:phone"]').show()
+            $('[data-feedback="name:required"]').show()
 
-                isValid = false;
+            isValid = false;
 
-            } else if (isNaN(phoneInput.val())) {
+        }
 
-                $('[data-feedback="phone:phone"]').show()
+        if (!messageInput.val()) {
 
-                isValid = false;
+            $('[data-feedback="message:required"]').show()
 
-            }
-
-
-
-            return isValid;
+            isValid = false;
 
         }
 
 
 
-        function validateEmail(email) {
+        if (!emailInput.val()) {
 
-            var re = /\S+@\S+\.\S+/;
+            $('[data-feedback="email:required"]').show()
 
-            return re.test(email);
+            isValid = false;
+
+        } else if (!validateEmail(emailInput.val())) {
+
+            $('[data-feedback="email:email"]').show()
+
+            isValid = false;
 
         }
 
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        if (!phoneInput.val()) {
 
-            anchor.addEventListener('click', function (e) {
+            $('[data-feedback="phone:required"]').show()
 
-                e.preventDefault();
+            isValid = false;
 
-                let target = document.querySelector(this.getAttribute('href'));
+        } else if (phoneInput.val().length < 10) {
 
-                let headerOffset = 100; // Chiều cao của header cố định
+            $('[data-feedback="phone:phone"]').show()
 
-                let elementPosition = target.getBoundingClientRect().top;
+            isValid = false;
 
-                let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        } else if (phoneInput.val().length > 11) {
+
+            $('[data-feedback="phone:phone"]').show()
+
+            isValid = false;
+
+        } else if (isNaN(phoneInput.val())) {
+
+            $('[data-feedback="phone:phone"]').show()
+
+            isValid = false;
+
+        }
 
 
 
-                window.scrollTo({
+        return isValid;
 
-                    top: offsetPosition,
+    }
 
-                    behavior: "smooth"
 
-                });
 
-                history.pushState(null, null, this.getAttribute('href'));
+    function validateEmail(email) {
+
+        var re = /\S+@\S+\.\S+/;
+
+        return re.test(email);
+
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+        anchor.addEventListener('click', function (e) {
+
+            e.preventDefault();
+
+            let target = document.querySelector(this.getAttribute('href'));
+
+            let headerOffset = 100; // Chiều cao của header cố định
+
+            let elementPosition = target.getBoundingClientRect().top;
+
+            let offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+
+
+            window.scrollTo({
+
+                top: offsetPosition,
+
+                behavior: "smooth"
 
             });
+
+            history.pushState(null, null, this.getAttribute('href'));
 
         });
 
+    });
 
-        $(".star").on("mouseover", function () {
-            var e = parseInt($(this).data("value"), 10);
-            $(this).parent().children(".star").each(function (t) {
-                t < e ? $(this).find("img").attr("src", "/public/images/star-rating-full.svg") : $(this).not(".selected").find("img").attr("src", "/public/images/star-rating.svg")
-            })
-        }).on("mouseout", function () {
-            $(this).parent().children(".star:not(.selected)").each(function (e) {
-                $(this).find("img").attr("src", "/public/images/star-rating.svg")
-            })
-            // cảm ơn
-        }).on("click", function () {
-            let point = $('#number-star');
-            let reviewTotal = $('#number_rating');
-            let pointRating = parseFloat(point.text());
-            let reviewRatings = parseInt(reviewTotal.text());
-            const rating = parseInt($(this).data('value'));
-            const totalCurrent = pointRating * reviewRatings;
-            const newPoint = totalCurrent + rating;
-            const newViewTotal = reviewRatings + 1;
-            let dtb = newPoint / newViewTotal;
-            let adjustedDtb = dtb < 0 ? 0 : (dtb > 5 ? 5 : dtb);
-            adjustedDtb = adjustedDtb.toFixed(1);
-            $.ajax({
-                url: "/ajax/post_ratings.php",
-                type: "POST",
-                data: {
-                    id_post: <?= $post_id ?>,
-                    rating: adjustedDtb,
-                    number_rating: newViewTotal,
-                    date: '<?= $last_updated_date ?>'
-                },
-                success: function (response) {
-                    response = JSON.parse(response);
-                    if (response.status == 'success') {
-                        reviewTotal.text(newViewTotal);
-                        point.text(adjustedDtb);
-                        console.log($('.thank-you'));
-                        $('.rating-stars').empty();
-                        $('.thank-you').css('display', 'flex');
-                    }
-                },
-                error: function (xhr, status, error) {
-                    console.error(error);
-                }
-            });
 
+    $(".star").on("mouseover", function () {
+        var e = parseInt($(this).data("value"), 10);
+        $(this).parent().children(".star").each(function (t) {
+            t < e ? $(this).find("img").attr("src", "/public/images/star-rating-full.svg") : $(this).not(".selected").find("img").attr("src", "/public/images/star-rating.svg")
         })
-
-
-
-
-
-        // table_of_content
-
-
-
-        document.addEventListener("DOMContentLoaded", function () {
-
-            function removeLeadingNumbersAndDots(input) {
-                return input.replace(/^[\d.]+/, '');
+    }).on("mouseout", function () {
+        $(this).parent().children(".star:not(.selected)").each(function (e) {
+            $(this).find("img").attr("src", "/public/images/star-rating.svg")
+        })
+        // cảm ơn
+    }).on("click", function () {
+        let point = $('#number-star');
+        let reviewTotal = $('#number_rating');
+        let pointRating = parseFloat(point.text());
+        let reviewRatings = parseInt(reviewTotal.text());
+        const rating = parseInt($(this).data('value'));
+        const totalCurrent = pointRating * reviewRatings;
+        const newPoint = totalCurrent + rating;
+        const newViewTotal = reviewRatings + 1;
+        let dtb = newPoint / newViewTotal;
+        let adjustedDtb = dtb < 0 ? 0 : (dtb > 5 ? 5 : dtb);
+        adjustedDtb = adjustedDtb.toFixed(1);
+        $.ajax({
+            url: "/ajax/post_ratings.php",
+            type: "POST",
+            data: {
+                id_post: <?= $post_id ?>,
+                rating: adjustedDtb,
+                number_rating: newViewTotal,
+                date: '<?= $last_updated_date ?>'
+            },
+            success: function (response) {
+                response = JSON.parse(response);
+                if (response.status == 'success') {
+                    reviewTotal.text(newViewTotal);
+                    point.text(adjustedDtb);
+                    console.log($('.thank-you'));
+                    $('.rating-stars').empty();
+                    $('.thank-you').css('display', 'flex');
+                }
+            },
+            error: function (xhr, status, error) {
+                console.error(error);
             }
-
-            const headings = document.querySelectorAll(
-                ".p-content h1, .p-content h2, .p-content h3, .p-content h4, .p-content h5, .p-content h6"
-            );
-
-            if (headings.length > 0) {
-                const tocContainer = document.querySelector("#toc");
-                const startingLevel = headings[0].tagName[1];
-                const toc = document.createElement("ul");
-                const prevLevels = [0, 0, 0, 0, 0, 0];
-
-                let currentUl = toc;
-                const ulStack = [currentUl];
-
-                for (let i = 0; i < headings.length; i++) {
-                    const heading = headings[i];
-                    const level = parseInt(heading.tagName[1]);
-
-                    // Tăng các cấp độ trước đó lên đến cấp độ hiện tại
-                    prevLevels[level - 1]++;
-
-                    for (let j = level; j < prevLevels.length; j++) {
-                        prevLevels[j] = 0;
-                    }
-
-                    const sectionNumber = prevLevels
-                        .slice(startingLevel - 1, level)
-                        .join(".")
-                        .replace(/\.0/g, "");
-
-                    const newHeadingId = `${heading.textContent
-                        .toLowerCase()
-                        .replace(/ /g, "-")}`;
-                    heading.id = newHeadingId;
-
-                    const anchor = document.createElement("a");
-                    anchor.setAttribute("href", `#${newHeadingId}`);
-                    anchor.textContent = sectionNumber + ". " + removeLeadingNumbersAndDots(heading.textContent);
-
-                    anchor.addEventListener("click", (event) => {
-                        event.preventDefault();
-                        const targetId = event.target.getAttribute("href").slice(1);
-                        const targetElement = document.getElementById(targetId);
-                        targetElement.scrollIntoView({ behavior: "smooth" });
-                        history.pushState(null, null, `#${targetId}`);
-                    });
-
-                    const listItem = document.createElement("li");
-                    listItem.appendChild(anchor);
-
-                    const className = `toc-${heading.tagName.toLowerCase()}`;
-                    listItem.classList.add("toc-item");
-                    listItem.classList.add(className);
-
-                    if (level == startingLevel) {
-                        listItem.classList.add("toc-parent");
-                    }
-
-
-                    if (level > ulStack.length) {
-                        const newUl = document.createElement("ul");
-                        ulStack[ulStack.length - 1].appendChild(newUl);
-                        ulStack.push(newUl);
-                    } else if (level < ulStack.length) {
-                        ulStack.length = level;
-                    }
-
-                    ulStack[level - 1].appendChild(listItem);
-                }
-
-                tocContainer.innerHTML = "";
-                tocContainer.appendChild(toc);
-            }
-
-            // Sự kiện nhấp vào tiêu đề để ẩn/hiện TOC
-            const tocTitle = document.querySelector(".toc-title");
-            tocTitle.addEventListener("click", function () {
-                const toc = document.querySelector("#toc");
-                if (toc.style.height === "0px" || toc.style.height === "") {
-                    toc.style.height = "auto";
-                    toc.style.padding = "1rem";
-                } else {
-                    toc.style.height = "0";
-                    toc.style.padding = "0 1rem";
-                }
-
-                var spanButton = document.querySelector('.toc-title span');
-
-                if (spanButton.classList.toggle('open')) {
-                    spanButton.innerHTML = `<i id="bi-chevron-compact-down" class="bi bi-chevron-compact-down"></i>`;
-                } else {
-                    spanButton.innerHTML = `<i id="bi-chevron-compact-down" class="bi bi-chevron-compact-right"></i>`;
-                }
-            });
-
-            // Sự kiện nhấp vào li để ẩn/hiện ul con
-            const tocItems = document.querySelectorAll("#toc li");
-            tocItems.forEach(item => {
-                item.addEventListener("click", function (event) {
-                    const subList = this.querySelector("ul");
-                    if (subList) {
-                        event.stopPropagation(); // Ngăn chặn sự kiện click lan ra bên ngoài
-                        subList.classList.toggle("show");
-                    }
-                });
-            });
         });
 
-    </script>
-</body>
+    })
 
-</html>
+
+
+
+
+    // table_of_content
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+
+        function removeLeadingNumbersAndDots(input) {
+            return input.replace(/^[\d.]+/, '');
+        }
+
+        const headings = document.querySelectorAll(
+            ".p-content h1, .p-content h2, .p-content h3, .p-content h4, .p-content h5, .p-content h6"
+        );
+
+        if (headings.length > 0) {
+            const tocContainer = document.querySelector("#toc");
+            const startingLevel = headings[0].tagName[1];
+            const toc = document.createElement("ul");
+            const prevLevels = [0, 0, 0, 0, 0, 0];
+
+            let currentUl = toc;
+            const ulStack = [currentUl];
+
+            for (let i = 0; i < headings.length; i++) {
+                const heading = headings[i];
+                const level = parseInt(heading.tagName[1]);
+
+                // Tăng các cấp độ trước đó lên đến cấp độ hiện tại
+                prevLevels[level - 1]++;
+
+                for (let j = level; j < prevLevels.length; j++) {
+                    prevLevels[j] = 0;
+                }
+
+                const sectionNumber = prevLevels
+                    .slice(startingLevel - 1, level)
+                    .join(".")
+                    .replace(/\.0/g, "");
+
+                const newHeadingId = `${heading.textContent
+                    .toLowerCase()
+                    .replace(/ /g, "-")}`;
+                heading.id = newHeadingId;
+
+                const anchor = document.createElement("a");
+                anchor.setAttribute("href", `#${newHeadingId}`);
+                anchor.textContent = sectionNumber + ". " + removeLeadingNumbersAndDots(heading.textContent);
+
+                anchor.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    const targetId = event.target.getAttribute("href").slice(1);
+                    const targetElement = document.getElementById(targetId);
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                    history.pushState(null, null, `#${targetId}`);
+                });
+
+                const listItem = document.createElement("li");
+                listItem.appendChild(anchor);
+
+                const className = `toc-${heading.tagName.toLowerCase()}`;
+                listItem.classList.add("toc-item");
+                listItem.classList.add(className);
+
+                if (level == startingLevel) {
+                    listItem.classList.add("toc-parent");
+                }
+
+
+                if (level > ulStack.length) {
+                    const newUl = document.createElement("ul");
+                    ulStack[ulStack.length - 1].appendChild(newUl);
+                    ulStack.push(newUl);
+                } else if (level < ulStack.length) {
+                    ulStack.length = level;
+                }
+
+                ulStack[level - 1].appendChild(listItem);
+            }
+
+            tocContainer.innerHTML = "";
+            tocContainer.appendChild(toc);
+        }
+
+        // Sự kiện nhấp vào tiêu đề để ẩn/hiện TOC
+        const tocTitle = document.querySelector(".toc-title");
+        tocTitle.addEventListener("click", function () {
+            const toc = document.querySelector("#toc");
+            if (toc.style.height === "0px" || toc.style.height === "") {
+                toc.style.height = "auto";
+                toc.style.padding = "1rem";
+            } else {
+                toc.style.height = "0";
+                toc.style.padding = "0 1rem";
+            }
+
+            var spanButton = document.querySelector('.toc-title span');
+
+            if (spanButton.classList.toggle('open')) {
+                spanButton.innerHTML = `<i id="bi-chevron-compact-down" class="bi bi-chevron-compact-down"></i>`;
+            } else {
+                spanButton.innerHTML = `<i id="bi-chevron-compact-down" class="bi bi-chevron-compact-right"></i>`;
+            }
+        });
+
+        // Sự kiện nhấp vào li để ẩn/hiện ul con
+        const tocItems = document.querySelectorAll("#toc li");
+        tocItems.forEach(item => {
+            item.addEventListener("click", function (event) {
+                const subList = this.querySelector("ul");
+                if (subList) {
+                    event.stopPropagation(); // Ngăn chặn sự kiện click lan ra bên ngoài
+                    subList.classList.toggle("show");
+                }
+            });
+        });
+    });
+
+</script>
