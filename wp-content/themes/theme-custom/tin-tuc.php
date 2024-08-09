@@ -24,6 +24,9 @@ $args = array(
 
 $query = new WP_Query($args);
 
+my_print($query);
+die;
+
 include 'inc/head.php';
 ?>
 <link rel="stylesheet" href="<?= site_url() . '/public/css/library_grid.css' ?>">
