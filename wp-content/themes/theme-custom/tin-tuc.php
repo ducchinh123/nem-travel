@@ -614,6 +614,7 @@ include 'inc/header.php';
                                     $query->the_post();
 
                                     echo the_title();
+                                    echo the_post_thumbnail_url();
 
                                     // Lấy ngày tạo bài viết
                                     $post_date = get_the_date('Y-m-d H:i:s', get_the_ID());
