@@ -2,6 +2,68 @@
 
 global $post;
 
+global $jumpLink_check;
+
+// bài viết nổi bật
+
+$args_feature = array(
+
+    'post_type' => 'post',
+
+    'posts_per_page' => 5,
+
+    'orderby' => 'date',
+
+    'order' => 'DESC',
+
+    'post_status' => 'publish',
+
+    'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
+
+    'category__not_in' => array(29)
+
+);
+
+
+
+$query_feature = new WP_Query($args_feature);
+
+// end nổi bật
+
+function hashFromDate($date)
+{
+
+    return crc32($date); // Sử dụng CRC32 hoặc một hàm hash khác
+
+}
+
+function randomFromDateTime($dateTime)
+{
+
+    $hash = hashFromDate($dateTime);
+
+    mt_srand($hash); // Đặt hạt giống cho số ngẫu nhiên
+
+
+
+    // Số ngẫu nhiên từ 4.0 đến 5.0
+
+    $min = 400; // 4.0 * 100
+
+    $max = 500; // 5.0 * 100
+
+    $randomNum = mt_rand($min, $max) / 100;
+
+
+
+    mt_srand(); // Reset hạt giống để không ảnh hưởng các hàm mt_rand() khác
+
+
+
+    return round($randomNum, 1);
+
+}
+
 if ($post) {
 
     $post_title = get_the_title();
@@ -149,7 +211,7 @@ function custom_breadcrumb()
 
     if (!is_home()) {
 
-        echo '<div class="breadcrumb"><span><span><a style="color: black;" href="';
+        echo '<div class="breadcrumb"><span><span><a href="';
 
         echo get_option('home');
 
@@ -200,10 +262,46 @@ function custom_breadcrumb()
 }
 
 
+$logo_name = get_option('blogname');
+$meta_keywords = get_option('meta_keywords');
+$posts_relation = get_all_posts_relation();
+
 ?>
 
+
 <?php include 'inc/head.php'; ?>
+
 <?php include 'inc/header.php'; ?>
+
+<script type="application/ld+json">
+
+{
+
+"@context": "http://schema.org",
+
+"@type": "CreativeWorkSeason",
+
+"aggregateRating": {
+
+"@type": "AggregateRating",
+
+"bestRating": "5",
+
+"ratingCount": "<?= $number_rating ?>",
+
+"ratingValue": "<?= $rating ?>"
+
+},
+
+"image": "<?= $image_share_social ?>",
+
+"name": "<?php echo $title; ?>",
+
+"description": "<?php echo $description; ?>"
+
+}
+
+</script>
 <style type="text/css">
     #the-blog {
         font-weight: normal;
@@ -235,28 +333,6 @@ function custom_breadcrumb()
         padding-inline-start: 40px;
 
     }
-
-
-
-    .jump-link-div ul {
-
-        list-style-type: none !important;
-
-        padding-inline-start: 0 !important;
-
-        margin-block-start: 0 !important;
-
-    }
-
-
-
-    .jump-link-div {
-
-        padding-left: 0;
-
-    }
-
-
 
     .col-lg-9 {
 
@@ -806,83 +882,6 @@ function custom_breadcrumb()
         border-radius: 10px;
     }
 
-    .collapse-button {
-        position: relative;
-        background-color: rgba(238, 238, 238, .95);
-        color: #333;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        font-size: 18px;
-        margin-bottom: 10px;
-        transition: background-color 0.3s;
-        display: block;
-        width: 100%;
-        text-align: left;
-        font-weight: 700;
-        transition: 0.3s;
-
-    }
-
-
-    .collapse-button:hover {
-        color: white;
-        background-color: rgb(182, 182, 182);
-    }
-
-
-    .collapse.show a {
-        padding: 0;
-        margin-left: 10px;
-    }
-
-    .collapse ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .collapse ul li {
-        list-style: none;
-    }
-
-    .collapse li {
-        margin: 10px 0;
-    }
-
-    .collapse a {
-        font-size: 15.4px;
-        color: #333;
-        text-decoration: none;
-        transition: color 0.3s;
-        font-weight: 400;
-    }
-
-    .collapse li:hover a {
-        color: #406CFF;
-    }
-
-
-
-    .collapse a:hover {
-        color: #0056b3;
-    }
-
-    .active-target {
-        color: #4287F5 !important;
-    }
-
-    #jump-link {
-        width: 100%;
-        height: auto;
-
-    }
-
-    #jump-link ul {
-        transition: 0.5s;
-        padding: 0 !important;
-    }
 
     article {
         max-width: 800px;
@@ -934,7 +933,6 @@ function custom_breadcrumb()
 
     .toc-title {
         position: relative;
-        font-size: 1rem;
         margin-top: 1rem;
         cursor: pointer;
         /* Thêm dòng này để làm tiêu đề có thể nhấp */
@@ -1072,7 +1070,7 @@ function custom_breadcrumb()
 
         .col-md-4 {
             flex: 0 0 33.333333%;
-            max-width: 33.333333%;
+            max-width: 33.333333% !important;
         }
     }
 
@@ -1089,7 +1087,7 @@ function custom_breadcrumb()
 
     #contact>div {
         padding: 10px 0;
-        background-color: #9F0012;
+        background-color: #003c71;
         border-radius: 5px 5px 0 0;
     }
 
@@ -1114,7 +1112,11 @@ function custom_breadcrumb()
     #contact form#contactForm input#email {
         border: 1px solid gray;
         font-size: 0.9em !important;
-        padding: 10px 10px
+        /* padding: 10px 10px */
+    }
+
+    #contact form#contactForm .form-group input.form-control {
+        height: unset;
     }
 
     #contact form#contactForm textarea#message {
@@ -1171,344 +1173,1928 @@ function custom_breadcrumb()
             font-size: 16px;
         }
     }
+
+    .swiper {
+        padding-bottom: 33px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: 2px !important;
+    }
+
+    .swiper-slide {
+        font-size: 18px;
+        background: #fff;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .mySwiper {
+        display: block !important;
+    }
+
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    @font-face {
+        font-family: 'NVNMotherlandSignature';
+        src: url('../fonts/Merienda-VariableFont_wght.ttf');
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+    @font-face {
+
+        font-family: 'Monoton';
+
+        src: url('https://fonts.gstatic.com/s/monoton/v19/5h1aiZUrOngCibe4TkHLQg.woff2') format('woff2');
+
+        font-weight: normal;
+
+        font-style: normal;
+
+    }
+
+    @font-face {
+        font-family: 'fira-san';
+        src: url('../fonts/FiraSans-Regular.ttf');
+        font-weight: 400;
+    }
+
+
+
+    .col-1 {
+        flex: 0 0 8.33%;
+        max-width: 8.33%;
+    }
+
+    .col-2 {
+        flex: 0 0 16.67%;
+        max-width: 16.67%;
+    }
+
+    .col-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .col-4 {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+
+    .col-5 {
+        flex: 0 0 41.67%;
+        max-width: 41.67%;
+    }
+
+    .col-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .col-7 {
+        flex: 0 0 58.33%;
+        max-width: 58.33%;
+    }
+
+    .col-8 {
+        flex: 0 0 66.67%;
+        max-width: 66.67%;
+    }
+
+    .col-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .col-10 {
+        flex: 0 0 83.33%;
+        max-width: 83.33%;
+    }
+
+    .col-11 {
+        flex: 0 0 91.67%;
+        max-width: 91.67%;
+    }
+
+    .col-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .fw-700 {
+
+        font-weight: 700;
+
+    }
+
+
+
+    .fs-16 {
+
+        font-size: 16px;
+
+    }
+
+    .container {
+
+        padding-left: 16px;
+
+        padding-right: 16px;
+
+    }
+
+
+
+
+    .d-none {
+
+        display: none;
+
+    }
+
+    .relative {
+
+        position: relative;
+
+    }
+
+
+
+    .justify-content-center {
+
+        -webkit-box-pack: center !important;
+
+        -ms-flex-pack: center !important;
+
+        justify-content: center !important;
+
+    }
+
+    svg:not(:root) {
+
+        overflow: hidden;
+
+    }
+
+
+
+    .sesions-home1 h1 {
+
+        letter-spacing: .02em;
+
+        font: normal 32px / 50px Arial, sans-serif;
+
+        margin-top: 48px;
+
+        color: #000;
+
+        font-weight: 700;
+
+    }
+
+
+
+    .text-center {
+
+        text-align: center;
+
+    }
+
+
+
+    .sesions-home2 {
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        margin: 16px 0 16px;
+
+    }
+
+
+
+    .sesions-home2 form {
+
+        max-width: 752px;
+
+        width: 100%;
+
+    }
+
+
+
+
+
+    .w-100 {
+
+        width: 100%;
+
+    }
+
+
+    .text-bold {
+
+        font-weight: bold;
+
+    }
+
+    .mb-3,
+
+    .my-3 {
+
+        margin-bottom: 1rem !important;
+
+    }
+
+
+
+    h1 {
+
+        font-size: 32px;
+
+    }
+
+
+
+    .groupCategory-title {
+
+        margin-bottom: 24px;
+
+        display: flex;
+
+        justify-content: space-between;
+
+        flex-wrap: wrap;
+
+        align-items: center;
+
+    }
+
+
+
+    .mb-0,
+
+    .my-0 {
+
+        margin-bottom: 0 !important;
+
+    }
+
+
+
+    .groupCategory-title .groupCategory-tlt {
+
+        font-size: 20px;
+
+        color: #222;
+
+        font-weight: 600;
+
+        margin-bottom: 0;
+
+    }
+
+
+
+    .groupCategory-title .readMore {
+
+        color: #333 !important;
+
+    }
+
+    .icon-logo {
+
+        /* width: 39.5px; */
+        width: 100%;
+
+        margin: 0;
+
+        margin-right: 8px;
+
+        margin-left: -8px;
+
+    }
+
+    .list-post-home>ul {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        margin-left: -20px;
+
+    }
+
+
+
+    .list-post-home>ul>li {
+
+        width: 33.333333%;
+
+        padding-left: 20px;
+
+        margin-top: 20px;
+
+    }
+
+
+
+    .post-home-head {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        align-items: center;
+
+        margin-bottom: 14px;
+
+    }
+
+
+
+    .post-home-head__item {
+
+        width: 32px;
+
+        height: 32px;
+
+        overflow: hidden;
+
+        border-radius: 50%;
+
+    }
+
+
+
+    .post-home-head__item img {
+
+        width: 100%;
+
+        height: 100%;
+
+        -o-object-fit: cover;
+
+        object-fit: cover;
+
+    }
+
+
+
+    img {
+
+        max-width: 100%;
+
+        vertical-align: middle;
+
+    }
+
+
+
+    .post-home-head__text {
+
+        width: calc(100% - 32px);
+
+        padding-left: 8px;
+
+    }
+
+
+
+    .post-home-head__text .tlt {
+
+        color: #444;
+
+        font-weight: 600;
+
+        line-height: 20px;
+
+        display: -webkit-box;
+
+        -webkit-line-clamp: 1;
+
+        -webkit-box-orient: vertical;
+
+        overflow: hidden;
+
+    }
+
+
+
+    .post-home .post-home-thumb {
+
+        border-radius: 8px;
+
+        overflow: hidden;
+
+        position: relative;
+
+        margin-bottom: 4px;
+
+        padding-top: calc(100% - 50%);
+
+        background: #f2f2f2;
+
+    }
+
+
+
+    .post-home .post-home-thumb a {
+
+        position: absolute;
+
+        top: 0;
+
+        height: 100%;
+
+        width: 100%;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+    }
+
+
+
+    .list-post-home>ul>li .post-home-thumb a img {
+
+        max-height: inherit !important;
+
+        width: 100%;
+
+    }
+
+
+
+    .post-home .post-home-thumb a img {
+
+        max-height: 172px;
+
+    }
+
+
+
+    .wrap-next-image img {
+
+        width: auto !important;
+
+        height: 100% !important;
+
+        min-width: 100% !important;
+
+        max-width: 100% !important;
+
+        min-height: 0px !important;
+
+        max-height: 100% !important;
+
+        -o-object-fit: cover;
+
+        object-fit: cover;
+
+    }
+
+
+
+    .post-home .post-home-thumb .post-home-lable {
+
+        position: absolute;
+
+        top: 0;
+
+        left: 0;
+
+        width: 100%;
+
+        padding: 8px;
+
+    }
+
+
+
+    .post-home .post-home-thumb .post-home-lable span {
+
+        font-weight: 600;
+
+        font-size: 12px;
+
+        line-height: 16px;
+
+        background: #ff7572;
+
+        border-radius: 4px;
+
+        color: #fff;
+
+        padding: 2px 5px;
+
+        display: inline-block;
+
+    }
+
+
+
+    .post-home-item {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        margin-left: -8px;
+
+    }
+
+
+
+    .post-home .post-home-title {
+
+        margin-top: 10px;
+
+        overflow: hidden;
+
+        display: -webkit-box;
+
+        max-width: 100%;
+
+        -webkit-line-clamp: 2;
+
+        -webkit-box-orient: vertical;
+
+        line-height: 20px;
+
+    }
+
+
+
+    .ml-2,
+
+    .mx-2 {
+
+        margin-left: 0.5rem !important;
+
+    }
+
+
+
+    .post-home .post-home-title a {
+
+        color: #222;
+
+        font-size: 16px;
+
+        font-weight: 600;
+
+    }
+
+
+
+    .post-home .post-home-date {
+
+        margin-top: 4px;
+
+    }
+
+
+
+    .post-home .post-home-date span {
+
+        color: #666;
+
+        font-size: 13px;
+
+        margin-right: 20px;
+
+    }
+
+
+
+    .post-home .post-home-date span {
+
+        color: #666;
+
+        font-size: 13px;
+
+        margin-right: 20px;
+
+    }
+
+
+
+    .post-home .post-home-date span:last-child {
+
+        margin-right: 0;
+
+    }
+
+
+
+    ol,
+
+    ul,
+
+    dl {
+
+        padding-left: 0;
+
+        list-style: none;
+
+        margin: 0;
+
+    }
+
+
+    .breadcrumb {
+
+        font-size: 14px;
+
+        font-weight: 500;
+
+        overflow: hidden;
+
+        text-overflow: ellipsis;
+
+        white-space: nowrap;
+
+    }
+
+    .breadcrumb a,
+    .breadcrumb_last {
+
+        color: #40a6f2;
+
+    }
+
+    .breadcrumb a:hover {
+
+        color: #545454;
+
+        text-decoration: underline;
+    }
+
+    .fa-chevron-right {
+
+        margin: 0 2px;
+
+        width: 13px;
+
+        display: inline-block;
+
+        height: 1em;
+
+        vertical-align: -0.125em;
+
+    }
+
+    .d-flex {
+
+        display: flex;
+
+    }
+
+
+
+    .justify-content-start {
+
+        -webkit-box-pack: start !important;
+
+        -ms-flex-pack: start !important;
+
+        justify-content: flex-start !important;
+
+    }
+
+
+
+    .align-items-center {
+
+        align-items: center !important;
+
+    }
+
+
+
+    .pl-2,
+
+    .px-2 {
+
+        padding-left: 0.5rem !important;
+
+    }
+
+
+
+    .pr-2,
+
+    .px-2 {
+
+        padding-right: 0.5rem !important;
+
+    }
+
+
+
+    h1,
+
+    h2,
+
+    h3,
+
+    h4,
+
+    h5,
+
+    h6 {
+
+        margin-top: 0;
+
+        margin-bottom: .5rem;
+
+    }
+
+
+
+    p {
+
+        margin: 16px 0;
+
+        padding: 0;
+
+    }
+
+
+
+    .page-section h2.section-heading,
+
+    .page-section .section-heading.h2 {
+
+        margin-top: 1.5rem;
+
+        margin-bottom: 0;
+
+    }
+
+
+
+    .text-uppercase {
+
+        text-transform: uppercase !important;
+
+    }
+
+
+
+    .mb-5 {
+
+        margin-bottom: 3rem !important;
+
+    }
+
+
+
+    .align-items-stretch {
+
+        align-items: stretch !important;
+
+    }
+
+
+
+    .row {
+
+        --bs-gutter-x: 1.5rem;
+
+        --bs-gutter-y: 0;
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        margin-top: calc(-1* var(--bs-gutter-y));
+
+        margin-right: calc(-0.5* var(--bs-gutter-x));
+
+        margin-left: calc(-0.5* var(--bs-gutter-x));
+
+    }
+
+
+
+    .form-control {
+
+        display: block;
+
+        width: 100%;
+
+        padding: 0.375rem 0.75rem;
+
+        font-size: 1rem;
+
+        font-weight: 400;
+
+        line-height: 1.5;
+
+        color: #212529;
+
+        background-color: #fff;
+
+        background-clip: padding-box;
+
+        border: 1px solid #ced4da;
+
+        -webkit-appearance: none;
+
+        -moz-appearance: none;
+
+        appearance: none;
+
+        border-radius: 0.375rem;
+
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    }
+
+
+
+    .invalid-feedback {
+
+        display: none;
+
+    }
+
+
+
+    .invalid-feedback {
+
+        display: none;
+
+        width: 100%;
+
+        margin-top: 0.25rem;
+
+        font-size: 0.875em;
+
+        color: #dc3545;
+
+    }
+
+
+
+    .btn {
+
+        --bs-btn-padding-x: 0.75rem;
+
+        --bs-btn-padding-y: 0.375rem;
+
+        --bs-btn-font-family: ;
+
+        --bs-btn-font-size: 1rem;
+
+        --bs-btn-font-weight: 400;
+
+        --bs-btn-line-height: 1.5;
+
+        --bs-btn-color: #212529;
+
+        --bs-btn-bg: transparent;
+
+        --bs-btn-border-width: 1px;
+
+        --bs-btn-border-color: transparent;
+
+        --bs-btn-border-radius: 0.375rem;
+
+        --bs-btn-hover-border-color: transparent;
+
+        --bs-btn-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+
+        --bs-btn-disabled-opacity: 0.65;
+
+        --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+
+        display: inline-block;
+
+        padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+
+        font-family: var(--bs-btn-font-family);
+
+        font-size: var(--bs-btn-font-size);
+
+        font-weight: var(--bs-btn-font-weight);
+
+        line-height: var(--bs-btn-line-height);
+
+        color: var(--bs-btn-color);
+
+        text-align: center;
+
+        text-decoration: none;
+
+        vertical-align: middle;
+
+        cursor: pointer;
+
+        -webkit-user-select: none;
+
+        -moz-user-select: none;
+
+        user-select: none;
+
+        border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+
+        border-radius: var(--bs-btn-border-radius);
+
+        background-color: var(--bs-btn-bg);
+
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    }
+
+
+
+    .btn-primary {
+
+        --bs-btn-color: #fff;
+
+        --bs-btn-bg: #ffc800;
+
+        --bs-btn-border-color: #ffc800;
+
+        --bs-btn-hover-color: #fff;
+
+        --bs-btn-hover-bg: #d9aa00;
+
+        --bs-btn-hover-border-color: #cca000;
+
+        --bs-btn-focus-shadow-rgb: 255, 208, 38;
+
+        --bs-btn-active-color: #fff;
+
+        --bs-btn-active-bg: #cca000;
+
+        --bs-btn-active-border-color: #bf9600;
+
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+
+        --bs-btn-disabled-color: #fff;
+
+        --bs-btn-disabled-bg: #ffc800;
+
+        --bs-btn-disabled-border-color: #ffc800;
+
+    }
+
+
+
+    .row>* {
+
+        flex-shrink: 0;
+
+        width: 100%;
+
+        max-width: 100%;
+
+        padding-right: calc(var(--bs-gutter-x)* 0.5);
+
+        padding-left: calc(var(--bs-gutter-x)* 0.5);
+
+        margin-top: var(--bs-gutter-y);
+
+    }
+
+
+
+    .border-yellow-300 {
+
+        --tw-border-opacity: 1;
+
+        border-color: rgb(252 211 77 / var(--tw-border-opacity));
+
+    }
+
+
+
+    .alert-warning {
+
+        background: #fff3cd;
+
+        color: #664d03;
+
+        border: 1px solid #ffe69c;
+
+    }
+
+
+
+    .alert {
+
+        font-size: 13px;
+
+        font-weight: bold;
+
+        margin-bottom: 0;
+
+        font-weight: normal;
+
+        padding: 1rem;
+
+        border-radius: 0.375rem;
+
+    }
+
+
+
+    .alert-success {
+
+        background: #d1e7dd;
+
+        color: #0a3622;
+
+        border: 1px solid #a3cfbb;
+
+    }
+
+
+
+    .alert-danger {
+
+        background: #f8d7da;
+
+        color: #58151c;
+
+        border: 1px solid #f1aeb5;
+
+    }
+
+
+
+    .mt-3 {
+
+        margin-top: 16px;
+
+    }
+
+
+
+    .col {
+
+        flex: 1 0 0%;
+
+    }
+
+
+
+    #contact form#contactForm .form-group input.form-control {
+
+        height: 44px;
+
+        border-radius: 5px;
+
+        border: 2px solid rgb(255, 200, 20);
+
+    }
+
+
+
+
+    #contact form#contactForm .form-group-textarea textarea {
+
+        height: 100%;
+
+        min-height: 180px;
+
+        border: 1px solid rgb(0 0 0);
+
+        border-radius: 5px;
+
+    }
+
+
+    #contact_single form#contactForm .form-group input.form-control {
+
+        height: 44px;
+
+        border-radius: 5px;
+
+        border: 2px solid rgb(255, 200, 20);
+
+    }
+
+
+
+    #contact_single form#contactForm .form-group-textarea textarea {
+
+        height: 100%;
+
+        min-height: 180px;
+
+        border: 1px solid rgb(0 0 0);
+
+        border-radius: 5px;
+
+    }
+
+
+
+
+
+    .btn:disabled {
+
+        opacity: 0.5;
+
+    }
+
+
+
+    .alert {
+
+        font-size: 18px;
+
+    }
+
+
+
+    .btn.btn-blue {
+
+        /* background: rgb(255, 200, 20); */
+        background-color: #26bed6;
+
+        border: 0px solid transparent;
+
+        color: #000000;
+
+        padding: 12px 20px;
+
+        font-size: 13px;
+
+        font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+        margin-top: 22px;
+
+        border-radius: 5px !important;
+
+        font-weight: 700;
+
+        cursor: pointer;
+
+    }
+
+
+
+    .form-control:focus {
+
+        outline: none;
+
+        border-color: rgb(255, 200, 20) !important;
+
+        transition: border-color .4s ease;
+
+    }
+
+
+
+    .form-label {
+
+        display: inline-block;
+
+        font-size: 16px;
+
+        font-weight: 700;
+
+        margin-bottom: 8px;
+
+        padding: 0;
+
+    }
+
+
+
+    .field_required {
+
+        color: #c02b0a;
+
+        display: inline-block;
+
+        font-size: 13.008px;
+
+        padding-left: .25em;
+
+        font-style: italic;
+
+        font-weight: 400;
+
+    }
+
+
+
+    .thank-review {
+
+        padding-top: .25rem;
+
+        padding-bottom: .25rem;
+
+        padding-left: .75rem;
+
+        padding-right: .75rem;
+
+        border-width: 1px;
+
+        border-radius: .25rem;
+
+        display: inline-block;
+
+        background-color: rgb(255 251 235 / 1);
+
+        border-color: rgb(252 211 77 / 1);
+
+        border-style: solid;
+
+        font-size: 15px;
+
+    }
+
+    .loop-footer {
+
+        clear: both;
+
+        text-align: center;
+
+    }
+
+    .load-more,
+    .load-more-loading {
+
+        padding: 12px 35px 12px 35px;
+
+        border-color: #E9E9E9;
+
+        border-radius: 30px;
+
+        color: #333;
+
+        font-weight: 600;
+
+        border-width: 2px;
+
+        font-size: 13px;
+
+        line-height: 18px;
+        position: relative;
+
+        display: inline-flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        outline: none;
+
+        vertical-align: middle;
+
+        text-align: center;
+
+        text-decoration: none;
+
+        text-transform: uppercase;
+
+        text-shadow: none;
+        cursor: pointer;
+        /* border-style: solid; */
+        margin-top: 16px;
+
+        transition: color .3s ease, background-color .25s ease, border-color .25s ease, box-shadow .25s ease, opacity .25s ease;
+
+    }
+
+    .load-more:hover {
+        background-color: #212121;
+    }
+
+    .load-more:hover a {
+        color: white !important;
+    }
+
+    .load-more:hover span {
+        color: white !important;
+    }
+
+    .load-more-loading:hover a {
+        color: white !important;
+    }
+
+
+
+    .load-more:not(:hover) {
+
+        background-color: transparent !important;
+
+    }
+
+    @media (min-width: 1024px) {
+
+
+
+        .logo {
+
+            flex: unset;
+            /* margin-left: -8px; */
+
+        }
+
+        .flickity-viewport {
+            height: 400.15px !important;
+        }
+
+    }
+
+
+
+    .session-slider {
+        display: none;
+    }
+
+    .session-slider-mobi {
+        display: none;
+    }
+
+    @media (min-width: 1184px) {
+
+        .container {
+
+            box-sizing: border-box;
+
+            max-width: 100%;
+
+            width: calc(1136px + 24px* 2);
+
+            margin-left: auto;
+
+            margin-right: auto;
+
+            padding-left: 24px;
+
+            padding-right: 24px;
+
+        }
+
+    }
+
+    @media (min-width: 992px) {
+
+        .align-items-lg-center {
+
+            -webkit-box-align: center !important;
+
+            -ms-flex-align: center !important;
+
+            align-items: center !important;
+
+        }
+
+
+
+        .d-lg-block {
+
+            display: block !important;
+
+        }
+
+        .session-slider {
+            display: block !important;
+        }
+
+
+    }
+
+    @media (max-width: 992px) {
+
+        .hero {
+
+            min-height: 280px;
+
+        }
+
+        .form-search {
+            display: none;
+        }
+
+        .session-slider-mobi {
+            display: block !important;
+        }
+
+
+
+    }
+
+    @media (max-width: 767px) {
+
+        .list-post-home>ul>li {
+
+            width: 100%;
+
+        }
+
+        .sesions-home1 h1 {
+
+            display: none;
+
+        }
+
+        .icon-logo {
+
+            /* width: 30px; */
+            width: 100%;
+
+            height: 30px;
+
+            margin-right: 4px;
+
+        }
+
+        .modal-navbar-body .icon-logo {
+            height: 38px;
+            margin-left: -9px;
+        }
+
+
+
+    }
+
+
+
+    @media (min-width: 768px) {
+
+        .logo-login-navbar {
+
+            display: none;
+        }
+
+        .col-md-6 {
+
+            flex: 0 0 auto;
+
+            width: 50%;
+
+        }
+
+        .col-md {
+
+            flex: 1 0 0%;
+
+        }
+
+
+
+        h1 {
+
+            font-size: 36px;
+
+        }
+
+
+
+        .btn-login-header {
+
+            background-color: #000;
+
+            padding: 10px 16px;
+
+        }
+
+
+
+        .d-md-block {
+
+            display: block;
+
+        }
+
+
+
+        .img-logo {
+
+            width: 188px;
+
+        }
+
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            margin: 36px 0;
+        }
+
+        to {
+            margin: 0;
+        }
+    }
+
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+    .post-home img {
+        transition: all 0.5s ease;
+    }
+
+    .post-home:hover img {
+        transform: scale(1.1, 1.1);
+    }
+
+    .post-home:hover .overlay-post {
+        opacity: 1;
+    }
+
+    .overlay-post {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, .3);
+        opacity: 0;
+        transition: opacity .3s ease;
+        z-index: 99;
+        width: 100%;
+        height: 100%;
+    }
 </style>
-<main>
-    <div class="site-inner">
-        <div class="breadcrumbs-container">
-            <div class="container">
-                <?php custom_breadcrumb(); ?>
-            </div>
-        </div>
+<div class="site-inner">
+    <div class="breadcrumbs-container">
         <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <section class="section pt-0 mt-0">
-                        <div id="the-blog">
-                            <div class="d-flex justify-content-between pb-0 pb-lg-2" id="box-content">
-                                <?= $div_jump_link ?>
-                                <div class="d-grid <?= ($jumpLink_check == true) ? 'col-lg-9' : '' ?> mb-4 mb-lg-0 order-lg-2"
-                                    id="blog-box">
-                                    <h1 class="text-bold mb-3 p-title"><?= $post_title ?></h1>
-                                    <div class="d-flex justify-content-start align-items-center">
-                                        <div class="text-600-14" style="padding-right: 8px;">Tác giả:</div>
-                                        <div class="text-600-14" style="color: #F2994A;padding-right: 8px;">
-                                            <?= $author_name ?>
-                                        </div> - <div class="text-400-14 px-2 border-start"><?= $last_updated_date ?>
-                                        </div>
+            <?php custom_breadcrumb(); ?>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <section class="section pt-0 mt-0">
+                    <div id="the-blog">
+                        <div class="d-flex justify-content-between pb-0 pb-lg-2" id="box-content">
+                            <div class="d-grid mb-4 mb-lg-0 order-lg-2" id="blog-box">
+                                <h1 class="text-bold mb-3 p-title"><?= $post_title ?></h1>
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <div class="text-600-14" style="padding-right: 8px;">Tác giả:</div>
+                                    <div class="text-600-14" style="color: #F2994A;padding-right: 8px;">
+                                        <?= $author_name ?>
+                                    </div> - <div class="text-400-14 px-2 border-start"><?= $last_updated_date ?>
                                     </div>
-                                    <div class="table_of_content" style="padding-top: 10px;">
-                                        <div class="toc-wrap">
-                                            <div class="toc-title"><i class="bi bi-list-ol"></i> Tóm tắt nội dung
-                                                <span><i id="bi-chevron-compact-down"
-                                                        class="bi bi-chevron-compact-right"></i></span>
+                                </div>
+                                <div class="table_of_content" style="padding-top: 10px;">
+                                    <div class="toc-wrap">
+                                        <div class="toc-title"><i class="bi bi-list-ol"></i> Tóm tắt nội dung
+                                            <span><i id="bi-chevron-compact-down"
+                                                    class="bi bi-chevron-compact-right"></i></span>
+                                        </div>
+                                        <div id="toc"></div>
+                                    </div>
+                                </div>
+                                <div class="p-content">
+                                    <?= $post_content ?>
+                                </div>
+                                <div class="c-box">
+                                    <div class="c-box__content">
+
+                                        <?php
+                                        if (!empty($tags)):
+                                            ?>
+                                            <div class="c-widget-tags onecms__tags">
+                                                <ul>
+                                                    <?php
+                                                    foreach ($tags as $tag):
+                                                        ?>
+                                                        <li>
+                                                            <h4>
+                                                                <a href="/tag/<?php echo sanitize_title($tag->name); ?>"
+                                                                    title=""
+                                                                    previewlistener="true"><?php echo $tag->name; ?></a>
+                                                            </h4>
+                                                        </li>
+
+                                                        <?php
+
+                                                    endforeach;
+
+                                                    ?>
+                                                </ul>
                                             </div>
-                                            <div id="toc"></div>
-                                        </div>
-                                    </div>
-                                    <div class="p-content">
-                                        <?= $post_content ?>
-                                    </div>
-                                    <div class="c-box">
-                                        <div class="c-box__content">
 
                                             <?php
-                                            if (!empty($tags)):
-                                                ?>
-                                                <div class="c-widget-tags onecms__tags">
-                                                    <ul>
-                                                        <?php
-                                                        foreach ($tags as $tag):
-                                                            ?>
-                                                            <li>
-                                                                <h4>
-                                                                    <a href="/tag/<?php echo sanitize_title($tag->name); ?>"
-                                                                        title="lẩu của đồng"
-                                                                        previewlistener="true"><?php echo $tag->name; ?></a>
-                                                                </h4>
-                                                            </li>
+                                        endif;
+                                        ?>
 
-                                                            <?php
-
-                                                        endforeach;
-
-                                                        ?>
-                                                    </ul>
-                                                </div>
-
-                                                <?php
-                                            endif;
-                                            ?>
-
-                                            <!-- c-widget-tags-->
-                                        </div>
-                                        <!-- c-box__content-->
+                                        <!-- c-widget-tags-->
                                     </div>
-                                    <div class="d-flex gfs-root align-self-center" style="min-height: 37px;">
-                                        <div class="gfs-14 d-flex align-items-center">
-                                            <span style="white-space: nowrap;padding-right: 4px;">Đánh giá :
-                                            </span><span id="number-star"><?= $rating ?></span>/ 5 (<span
-                                                id="number_rating"
-                                                style="margin-left: 2px; margin-right: 2px;"><?= $number_rating ?></span>
-                                            bình chọn)
-                                        </div>
-                                        <div class="inline-block rounded border border-yellow-300 bg-yellow-50 px-3 py-1 d-flex text-yellow-800 ml-2 align-items-center thank-you"
-                                            style="display: none;">Cảm ơn đánh giá của bạn 😘</div>
-                                        <div class="rating-stars ml-2 d-flex">
-                                            <div id="stars" class="d-flex gap-2 align-items-center">
-                                                <div class="star" title="Poor" data-value="1">
-                                                    <img src="<?= site_url() ?>/public/images/star-rating.svg"
-                                                        width="27" height="27" alt="star">
-                                                </div>
-                                                <div class="star" title="Fair" data-value="2">
-                                                    <img src="<?= site_url() ?>/public/images/star-rating.svg"
-                                                        width="27" height="27" alt="star">
-                                                </div>
-                                                <div class="star" title="Good" data-value="3">
-                                                    <img src="<?= site_url() ?>/public/images/star-rating.svg"
-                                                        width="27" height="27" alt="star">
-                                                </div>
-                                                <div class="star" title="Excellent" data-value="4">
-                                                    <img src="<?= site_url() ?>/public/images/star-rating.svg"
-                                                        width="27" height="27" alt="star">
-                                                </div>
-                                                <div class="star" title="WOW!!!" data-value="5">
-                                                    <img src="<?= site_url() ?>/public/images/star-rating.svg"
-                                                        width="27" height="27" alt="star">
-                                                </div>
+                                    <!-- c-box__content-->
+                                </div>
+                                <div class="d-flex gfs-root align-self-center" style="min-height: 37px;">
+                                    <div class="gfs-14 d-flex align-items-center">
+                                        <span style="white-space: nowrap;padding-right: 4px;">Đánh giá :
+                                        </span><span id="number-star"><?= $rating ?></span>/ 5 (<span id="number_rating"
+                                            style="margin-left: 2px; margin-right: 2px;"><?= $number_rating ?></span>
+                                        bình chọn)
+                                    </div>
+                                    <div class="inline-block rounded border border-yellow-300 bg-yellow-50 px-3 py-1 d-flex text-yellow-800 ml-2 align-items-center thank-you"
+                                        style="display: none;">Cảm ơn đánh giá của bạn 😘</div>
+                                    <div class="rating-stars ml-2 d-flex">
+                                        <div id="stars" class="d-flex gap-2 align-items-center">
+                                            <div class="star" title="Poor" data-value="1">
+                                                <img src="<?= site_url() ?>/public/images/star-rating.svg" width="27"
+                                                    height="27" alt="star">
+                                            </div>
+                                            <div class="star" title="Fair" data-value="2">
+                                                <img src="<?= site_url() ?>/public/images/star-rating.svg" width="27"
+                                                    height="27" alt="star">
+                                            </div>
+                                            <div class="star" title="Good" data-value="3">
+                                                <img src="<?= site_url() ?>/public/images/star-rating.svg" width="27"
+                                                    height="27" alt="star">
+                                            </div>
+                                            <div class="star" title="Excellent" data-value="4">
+                                                <img src="<?= site_url() ?>/public/images/star-rating.svg" width="27"
+                                                    height="27" alt="star">
+                                            </div>
+                                            <div class="star" title="WOW!!!" data-value="5">
+                                                <img src="<?= site_url() ?>/public/images/star-rating.svg" width="27"
+                                                    height="27" alt="star">
                                             </div>
                                         </div>
                                     </div>
-
-
                                 </div>
+
+
                             </div>
                         </div>
-                    </section>
-                </div>
-                <div class="col-md-4" style="margin-top: 1em;">
-                    <div class="cta-image">
-                        <img src="<?= site_url() ?>/public/images/cta.jpg" alt="">
                     </div>
+                </section>
+            </div>
+            <div class="col-md-4" style="margin-top: 1em;" id="contact__cta">
+                <div class="cta-image">
+                    <img src="<?= site_url() ?>/public/images/nemtv-cta.jpg" alt="">
+                </div>
 
-                    <div class="page-section mb-3" id="contact">
-                        <div class="">
-                            <p>Liên Hệ Tư Vấn</p>
-                        </div>
-                        <form id="contactForm" action="" enctype="multipart/form-data">
-                            <div>
-                                <div class="form-group mt-3">
-                                    <div class="row">
-                                        <div class="col-md col-12 mb-3 inputFullname" style="padding-right: 0;">
-                                            <input class="form-control" placeholder="Họ và tên" name="name" id="name"
-                                                type="text">
-                                            <div class="invalid-feedback" data-feedback="name:required">Trống họ và tên.
-                                            </div>
-                                        </div>
-
-                                        <div class="col-md col-12 mb-3">
-                                            <input class="form-control" placeholder="Số điện thoại" name="phone"
-                                                id="phone" type="tel">
-                                            <div class="invalid-feedback" data-feedback="phone:required">Trống số điện
-                                                thoại.</div>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="page-section mb-3" id="contact">
+                    <div class="">
+                        <p>Liên Hệ Tư Vấn</p>
+                    </div>
+                    <form id="contactForm" action="" enctype="multipart/form-data">
+                        <div>
+                            <div class="form-group mt-3">
                                 <div class="row">
-                                    <div class="col-md-12 pl-lg-1 mb-3">
-                                        <input class="form-control is-invalid" placeholder="Email của bạn" name="email"
-                                            id="email" type="email">
-                                        <div class="invalid-feedback" data-feedback="email:required">Email
-                                            không được trống.</div>
-                                        <div class="invalid-feedback" data-feedback="email:email">Email
-                                            không đúng định dạng.</div>
+                                    <div class="col-md col-12 mb-3 inputFullname" style="padding-right: 0;">
+                                        <input class="form-control" placeholder="Họ và tên" name="name" id="name"
+                                            type="text">
+                                        <div class="invalid-feedback" data-feedback="name:required">Trống họ và tên.
+                                        </div>
                                     </div>
 
-                                    <div class="col-md-12">
-                                        <textarea class="form-control" placeholder="Nội dung liên hệ" name="message"
-                                            id="message"></textarea>
-                                        <div class="invalid-feedback" data-feedback="message:required">Trống nội dung
-                                            liên
-                                            hệ.</div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div>
-                                <div class="d-none mt-3" id="loadingMessage">
-                                    <div class="alert alert-warning" role="alert">
-                                        Đang gửi...
-                                    </div>
-                                </div>
-                                <div class="d-none mt-3" id="submitSuccessMessage">
-                                    <div class="alert alert-success" role="alert">
-                                        Tin nhắn đã được gửi thành công!
-                                    </div>
-                                </div>
-                                <div class="d-none mt-3" id="submitErrorMessage">
-                                    <div class="alert alert-danger" role="alert">
-                                        Lỗi khi gửi tin nhắn!
+                                    <div class="col-md col-12 mb-3">
+                                        <input class="form-control" placeholder="Số điện thoại" name="phone" id="phone"
+                                            type="tel">
+                                        <div class="invalid-feedback" data-feedback="phone:required">Trống số điện
+                                            thoại.</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
+                                <div class="col-md-12 pl-lg-1 mb-3">
+                                    <input class="form-control is-invalid" placeholder="Email của bạn" name="email"
+                                        id="email" type="email">
+                                    <div class="invalid-feedback" data-feedback="email:required">Email
+                                        không được trống.</div>
+                                    <div class="invalid-feedback" data-feedback="email:email">Email
+                                        không đúng định dạng.</div>
+                                </div>
+
                                 <div class="col-md-12">
-                                    <div style="text-align: center;">
-                                        <button class="btn btn-blue text-uppercase" id="submitButton" type="submit">Gửi
-                                            yêu cầu</button>
-                                    </div>
+                                    <textarea class="form-control" placeholder="Nội dung liên hệ" name="message"
+                                        id="message"></textarea>
+                                    <div class="invalid-feedback" data-feedback="message:required">Trống nội dung
+                                        liên
+                                        hệ.</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="d-none mt-3" id="loadingMessage">
+                                <div class="alert alert-warning" role="alert">
+                                    Đang gửi...
                                 </div>
                             </div>
-                        </form>
-                    </div>
-
-
-                </div>
-
-            </div>
-            <?php if (!empty($posts_relation['posts'])): ?>
-                <div class="div-cate-footer">
-                    <div class="groupCategory-title mb-0">
-                        <h2 class="groupCategory-tlt">Bài viết liên quan</h2>
-                    </div>
-                    <div class="list-post-home">
-                        <ul>
-                            <?php
-                            foreach ($posts_relation['posts'] as $post):
-                                $post_timestamp = strtotime($post['date_new_old']);
-                                $current_timestamp = current_time('timestamp');
-                                $days_diff = floor(($current_timestamp - $post_timestamp) / (60 * 60 * 24));
-                                ?>
-                                <li>
-                                    <div class="post-home">
-                                        <div class="post-home-thumb">
-                                            <a href="<?php echo $post['link']; ?>" class="wrap-next-image">
-                                                <?php if (!empty($post['avatar'])): ?>
-                                                    <div class="overlay-post"></div>
-                                                    <img layout="fill" lazy-src="<?php echo $post['avatar']; ?>"
-                                                        lazy-alt="<?php echo $post['title']; ?>" alt="..." class="lazy-wave">
-                                                <?php else: ?>
-                                                    <img layout="fill"
-                                                        src="https://gacmai.vn/wp-content/uploads/2024/06/default_image.png"
-                                                        alt="default image" class="">
-                                                <?php endif; ?>
-                                            </a>
-                                            <?php if ($days_diff < 2): ?>
-                                                <div class="post-home-lable" style="width: unset !important;"><span>Mới</span>
-                                                </div>
-                                            <?php endif; ?>
-                                        </div>
-                                        <ul class="post-home-item"></ul>
-                                        <h2 class="post-home-title">
-                                            <a href="<?php echo $post['link']; ?>"
-                                                style="width:100%"><?php echo $post['title']; ?></a>
-                                        </h2>
-                                        <div class="post-home-date" style="position:relative">
-                                            <span><?php echo $post['date']; ?></span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <?php
-                            endforeach;
-                            wp_reset_postdata();
-                            ?>
-                        </ul>
-                    </div>
-                    <div class="loop-footer">
-                        <div class="no-ajx">
-                            <div class="load-more"><a href="/<?php echo $posts_relation['category_name']; ?>"
-                                    style="color: black;">Xem thêm</a></div>
-                        </div>
-                    </div>
-                </div>
-            <?php endif; ?>
-            <div class="div-cate-footer">
-                <?php
-
-                // Lấy các chuyên mục không có parent
-                
-                $parent_categories = get_categories(
-                    array(
-
-                        'parent' => 0,
-
-                        'hide_empty' => 0,
-
-                        'exclude' => get_option('default_category')
-
-                    )
-                );
-
-                foreach ($parent_categories as $parent_category) {
-
-                    // Lấy các chuyên mục con của từng chuyên mục không có parent
-                
-                    $child_categories = get_categories(
-                        array(
-
-                            'parent' => $parent_category->term_id,
-
-                            'hide_empty' => 0
-
-                        )
-                    );
-
-                    ?>
-                    <?php
-
-
-                    if (count($child_categories) > 0) {
-
-                        ?>
-
-                        <div>
-                            <button class="btn-cate collapsed" style="padding-top: 12px;" type="button"
-                                data-bs-toggle="collapse" data-bs-target="#collapse-<?php echo $parent_category->term_id; ?>"
-                                aria-expanded="false" aria-controls="collapse-<?php echo $parent_category->term_id; ?>">
-                                <?php echo $parent_category->name; ?>
-                                <span class="btn-svg-cate">
-                                    <svg viewBox="0 0 24 24" width="1em" height="1em">
-                                        <path d="M18.4 7.4L12 13.7 5.6 7.4 4.2 8.8l7.8 7.8 7.8-7.8-1.4-1.4z"></path>
-                                    </svg>
-                                </span>
-                            </button>
-                            <div class="collapse" id="collapse-<?php echo $parent_category->term_id; ?>">
-                                <?php
-                                foreach ($child_categories as $child_category) {
-                                    ?>
-                                    <a href="<?php echo get_category_link($child_category->term_id); ?>"
-                                        class="link-card"><?php echo $child_category->name; ?></a>
-                                    <?php
-
-                                }
-
-                                ?>
+                            <div class="d-none mt-3" id="submitSuccessMessage">
+                                <div class="alert alert-success" role="alert">
+                                    Tin nhắn đã được gửi thành công!
+                                </div>
+                            </div>
+                            <div class="d-none mt-3" id="submitErrorMessage">
+                                <div class="alert alert-danger" role="alert">
+                                    Lỗi khi gửi tin nhắn!
+                                </div>
                             </div>
                         </div>
-                        <?php
-                    } else {
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div style="text-align: center;">
+                                    <button class="btn btn-blue text-uppercase" id="submitButton" type="submit">Gửi
+                                        yêu cầu</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
 
-                        ?>
-                        <a href="<?php echo site_url() . '/' . $parent_category->slug; ?>"
-                            class="link-card"><?php echo $parent_category->name; ?></a>
-                        <?php
-                    }
-                    ?>
-                    <?php
-                }
-                ?>
+
+                <div class="page-section mb-3 swiperPostFeature">
+                    <div class="">
+                        <h4 style="text-align: center;">BÀI VIẾT NỔI BẬT</h4>
+                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <?php if ($query_feature->have_posts()):
+
+                                while ($query_feature->have_posts()):
+                                    $query_feature->the_post();
+
+                                    // Lấy ngày tạo bài viết
+                                    $post_date = get_the_date('Y-m-d H:i:s', get_the_ID());
+                                    $post_timestamp = strtotime($post_date);
+                                    $current_timestamp = current_time('timestamp');
+
+                                    // Tính toán số ngày đã trôi qua
+                                    $days_diff = floor(($current_timestamp - $post_timestamp) / (60 * 60 * 24));
+
+                                    ?>
+
+
+
+                                    <div class="swiper-slide">
+                                        <div class="post-home">
+
+                                            <div class="post-home-thumb">
+
+                                                <a href="<?php the_permalink(); ?>" class="wrap-next-image">
+
+                                                    <?php if (has_post_thumbnail()): ?>
+                                                        <div class="overlay-post"></div>
+                                                        <img layout="fill" lazy-src="<?php the_post_thumbnail_url(); ?>"
+                                                            lazy-alt="<?php the_title(); ?>" class="lazy-wave">
+
+                                                    <?php else: ?>
+
+                                                        <img layout="fill"
+                                                            src="https://gacmai.vn/wp-content/uploads/2024/06/default_image.png"
+                                                            alt="default image" class="">
+
+                                                    <?php endif; ?>
+
+                                                </a>
+
+                                                <?php if ($days_diff < 2): ?>
+                                                    <div class="post-home-lable" style="width: unset !important;">
+                                                        <span>Mới</span>
+                                                    </div>
+                                                <?php endif; ?>
+
+                                            </div>
+
+                                            <h2 class="post-home-title">
+                                                <a href="<?php the_permalink(); ?>" style="width:100%"><?php the_title(); ?></a>
+
+                                            </h2>
+
+                                            <div class="post-home-date" style="position:relative">
+
+                                                <span><?php echo get_the_date('d/m/Y H:i'); ?></span>
+
+                                                <!--<span style="position:absolute;right:0">-->
+
+                                                <!--    <?php echo get_post_meta(get_the_ID(), 'post_likes', true); ?> lượt thích | -->
+
+                                                <!--    <?php echo get_post_meta(get_the_ID(), 'post_views', true); ?> lượt xem-->
+
+                                                <!--</span>-->
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+
+
+                                    <?php
+
+                                endwhile;
+                            endif;
+
+                            wp_reset_postdata();
+                            ?>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </div>
+
+
             </div>
+
         </div>
+        <?php if (!empty($posts_relation['posts'])): ?>
+            <div class="div-cate-footer">
+                <div class="groupCategory-title mb-0">
+                    <h2 class="groupCategory-tlt">Bài viết liên quan</h2>
+                </div>
+                <div class="list-post-home">
+                    <ul>
+                        <?php
+                        foreach ($posts_relation['posts'] as $post):
+                            $post_timestamp = strtotime($post['date_new_old']);
+                            $current_timestamp = current_time('timestamp');
+                            $days_diff = floor(($current_timestamp - $post_timestamp) / (60 * 60 * 24));
+                            ?>
+                            <li>
+                                <div class="post-home">
+                                    <div class="post-home-thumb">
+                                        <a href="<?php echo $post['link']; ?>" class="wrap-next-image">
+                                            <?php if (!empty($post['avatar'])): ?>
+                                                <div class="overlay-post"></div>
+                                                <img layout="fill" lazy-src="<?php echo $post['avatar']; ?>"
+                                                    lazy-alt="<?php echo $post['title']; ?>" alt="..." class="lazy-wave">
+                                            <?php else: ?>
+                                                <img layout="fill"
+                                                    src="https://gacmai.vn/wp-content/uploads/2024/06/default_image.png"
+                                                    alt="default image" class="">
+                                            <?php endif; ?>
+                                        </a>
+                                        <?php if ($days_diff < 2): ?>
+                                            <div class="post-home-lable" style="width: unset !important;"><span>Mới</span>
+                                            </div>
+                                        <?php endif; ?>
+                                    </div>
+                                    <ul class="post-home-item"></ul>
+                                    <h2 class="post-home-title">
+                                        <a href="<?php echo $post['link']; ?>"
+                                            style="width:100%"><?php echo $post['title']; ?></a>
+                                    </h2>
+                                    <div class="post-home-date" style="position:relative">
+                                        <span><?php echo $post['date']; ?></span>
+                                    </div>
+                                </div>
+                            </li>
+                            <?php
+                        endforeach;
+                        wp_reset_postdata();
+                        ?>
+                    </ul>
+                </div>
+                <div class="loop-footer">
+                    <div class="no-ajx">
+                        <div class="load-more"><a href="/<?php echo $posts_relation['category_name']; ?>"
+                                style="color: black;">Xem thêm</a></div>
+                    </div>
+                </div>
+            </div>
+        <?php endif; ?>
     </div>
-</main>
-<?php include 'inc/footer.php'; ?>
-<?php include 'inc/js.php'; ?>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
 
     $(document).ready(function () {
 
 
-
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
         // editorBlock('#content')
 
         var $form = document.querySelector('#contactForm')
@@ -1851,6 +3437,11 @@ function custom_breadcrumb()
 
             tocContainer.innerHTML = "";
             tocContainer.appendChild(toc);
+
+
+        } else {
+            var table_of_content = document.querySelector('.table_of_content');
+            table_of_content.style.display = 'none'
         }
 
         // Sự kiện nhấp vào tiêu đề để ẩn/hiện TOC
@@ -1888,3 +3479,5 @@ function custom_breadcrumb()
     });
 
 </script>
+<?php include 'inc/js.php'; ?>
+<?php include 'inc/footer.php'; ?>

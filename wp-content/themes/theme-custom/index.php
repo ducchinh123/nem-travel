@@ -12,9 +12,6 @@
       href="https://res.ivivu.com/hotel/vendor/owlcarousel2/assets/owl.carousel.min.css?v=89.8">
     <link rel="stylesheet" type="text/css"
       href="https://res.ivivu.com/hotel/vendor/owlcarousel2/assets/owl.theme.default.min.css?v=89.8">
-
-    <link rel="stylesheet" type="text/css"
-      href="https://res.ivivu.com/hotel/vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://res.ivivu.com/hotel/vendor/animate/animate.min.css">
   </noscript>
 

@@ -689,3 +689,294 @@
 
     });
   </script>
+
+<script>
+
+$(document).ready(function () {
+
+    $(window).on('scroll', function () {
+        
+        // end điện thoại
+
+
+        var scrollBtn = document.getElementById('scroll_btn');
+        var contact = document.querySelector('#contact');
+        var contact__cta = document.getElementById('contact__cta');
+        var swiper_content = document.querySelector('.swiperPostFeature');
+        var contactSection = document.querySelectorAll('.div-cate-footer');
+        var footer = document.querySelector('.footer');
+
+        if (document.documentElement.scrollTop >= 1100) {
+            scrollBtn.style.display = 'block';
+
+            scrollBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            })
+        } else {
+            scrollBtn.style.display = 'none';
+        }
+
+        // Kiểm tra kích thước màn hình
+        if (window.matchMedia("(min-width: 992px)").matches) {
+            if (document.documentElement.scrollTop >= 560) {
+
+                $('#contact').css('position', 'fixed');
+                $('#contact').css('top', '20px');
+                $('#contact').css('width', '365px');
+
+                //
+
+                $('.mySwiper').css('display', 'block');
+                $('.swiperPostFeature').css('position', 'fixed');
+                $('.swiperPostFeature').css('top', '347px');
+                $('.swiperPostFeature').css('width', '365px');
+
+                // $('#contact__cta').css('position', 'fixed');
+                // $('#contact__cta').css('top', '50px');
+                // $('#contact__cta').css('width', '388px');
+
+                contactSection.forEach((item, index) => {
+
+                    const fixedRect = contact.getBoundingClientRect();
+                    const fixedRect_swiper = swiper_content.getBoundingClientRect();
+                    const itemSection = item.getBoundingClientRect();
+
+                    if (
+                        fixedRect_swiper.top < itemSection.bottom &&
+                        fixedRect_swiper.bottom > itemSection.top &&
+                        fixedRect_swiper.left < itemSection.right &&
+                        fixedRect_swiper.right > itemSection.left
+                    ) {
+                        $('#contact').css('display', 'none');
+                        $('.swiperPostFeature').css('display', 'none');
+                        // $('#contact__cta').css('display', 'none');
+                    }
+
+                    if (document.documentElement.scrollTop < itemSection.top) {
+                        $('#contact').css('display', 'block');
+                        $('.swiperPostFeature').css('display', 'block');
+                        $('.mySwiper').css('display', 'block');
+                        // $('#contact__cta').css('display', 'block');
+                    }
+                })
+
+                if (contact && footer) {
+                    const contactFixed = contact.getBoundingClientRect();
+                    const fixedRect_swiper = swiper_content.getBoundingClientRect();
+                    const footerTarget = footer.getBoundingClientRect();
+                    if (
+                        fixedRect_swiper.top < footerTarget.bottom &&
+                        fixedRect_swiper.bottom > footerTarget.top &&
+                        fixedRect_swiper.left < footerTarget.right &&
+                        fixedRect_swiper.right > footerTarget.left
+                    ) {
+                        $('#contact').css('display', 'none');
+                        $('.swiperPostFeature').css('display', 'none');
+                        // $('#contact__cta').css('display', 'none');
+                    }
+                }
+
+
+
+
+                // $('#contact').css('height', '388.66px');
+            } else {
+                $('#contact').css('position', 'unset');
+                $('#contact').css('width', 'unset');
+
+                $('.swiperPostFeature').css('position', 'unset');
+                $('.swiperPostFeature').css('width', 'unset');
+
+                // $('#contact__cta').css('position', 'unset');
+                // $('#contact__cta').css('width', 'unset');
+            }
+
+        } else {
+            $('#contact').css('position', 'unset');
+            $('#contact').css('width', 'unset');
+
+            $('.swiperPostFeature').css('position', 'unset');
+            $('.swiperPostFeature').css('width', 'unset');
+
+            // $('#contact__cta').css('position', 'unset');
+            // $('#contact__cta').css('width', 'unset');
+        }
+
+        if (window.matchMedia("(min-width: 1024px)").matches) {
+
+            if (document.documentElement.scrollTop >= 560) {
+                $('#contact').css('width', '300px');
+                $('.swiperPostFeature').css('width', '300px');
+                // $('#contact__cta').css('width', '300px');
+            }
+
+        }
+
+
+        if (window.matchMedia("(min-width: 1200px)").matches) {
+
+            if (document.documentElement.scrollTop >= 560) {
+                $('#contact').css('width', '365px');
+                $('.swiperPostFeature').css('width', '365px');
+                // $('#contact__cta').css('width', '388px');
+            }
+
+        }
+
+    })
+
+
+    function load(img) {
+        const url = img.getAttribute('lazy-src');
+        const alt = img.getAttribute('lazy-alt');
+        img.setAttribute('src', url);
+        img.setAttribute('alt', alt);
+        img.removeAttribute('lazy-src');
+        img.removeAttribute('lazy-alt');
+        img.onload = function () {
+            img.classList.remove('lazy-wave');
+        }
+    }
+
+    function lazy_loading() {
+        if ('IntersectionObserver' in window) {
+            const lazyImgs = document.querySelectorAll('img[lazy-src]');
+            let observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        load(entry.target);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.05
+            });
+
+            lazyImgs.forEach(img => {
+                observer.observe(img);
+            });
+        } else {
+            const lazyImgs = document.querySelectorAll('img[lazy-src]');
+            lazyImgs.forEach(img => {
+                load(img);
+            });
+        }
+    }
+
+    lazy_loading();
+
+    $('.navbar-toggler').on('click', function () {
+
+        $('.modal-navbar').toggleClass('show');
+
+        $('.modal-navbar-backdrop').toggleClass('show');
+
+    });
+
+    $('.btn-navbar-close, .modal-navbar-backdrop').on('click', function () {
+
+        $('.modal-navbar').removeClass('show');
+
+        $('.modal-navbar-backdrop').removeClass('show');
+
+    });
+
+    let currentPage = 1;
+
+    let debounceTimeout;
+
+    var input = $('#form_search');
+    var myDomain = $('#myDomain').val();
+    var show = 0;
+    $(input).on('input', () => {
+        show = 0;
+        currentPage = 1;
+        var keyword = $(input).val();
+        clearTimeout(debounceTimeout);
+
+        debounceTimeout = setTimeout(() => {
+            if (keyword) {
+                $('.groupCategory-tlt').text(`Kết quả cho khóa: ${keyword}`)
+                searchPosts(keyword, currentPage);
+            }
+        }, 500);
+    });
+
+    function searchPosts(keyword, page) {
+
+        $.ajax({
+            url: `${myDomain}/wp-json/custom/v1/search-posts`,
+            method: 'POST',
+            data: {
+                keyword: keyword,
+                paged: page
+            },
+            success: function (res) {
+                $('.loop-footer .no-ajx').remove();
+                $('.sesions-home4').remove();
+                $('.sesions-home5').remove();
+                $('.bg-projec').remove();
+
+                if (show == 0) {
+                    $('.list-post-home ul').empty();
+                }
+                show++;
+                displayPosts(res.posts);
+
+                handleLoadMoreButton(res.max_num_pages, res.posts);
+            },
+            error: function (e) {
+                console.log(e);
+            }
+        });
+    }
+
+    function displayPosts(posts) {
+        lazy_loading();
+        const currentTimestamp = new Date().getTime();
+        posts.forEach(post => {
+            const postTimestamp = new Date(post.post_date).getTime();
+            const daysDiff = Math.floor((currentTimestamp - postTimestamp) / (1000 * 60 * 60 * 24));
+            const newLabel = daysDiff < 2 ? '<div class="post-home-lable"><span>Mới</span></div>' : '';
+            var html = `
+            <li>
+            <div class="post-home">
+            <div class="post-home-thumb">
+            <a href="${post.post_permalink}" class="wrap-next-image">
+            <div class="overlay-post"></div>
+            <img src="${post.post_thumb != '' ? post.post_thumb : 'https://gacmai.vn/wp-content/uploads/2024/06/default_image.png'}" alt="${post.post_title}">
+            </a>
+            ${newLabel}
+            </div>
+            <h2 class="post-home-title">
+            <a href="${post.post_permalink}">${post.post_title}</a>
+            </h2>
+            <div class="post-home-date">
+            <span>${post.post_date}</span>
+            </div>
+            </div>
+            </li>`;
+
+            $('.list-post-home ul').append(html);
+        });
+    }
+
+    function handleLoadMoreButton(maxPages, data) {
+        $('#pagination').empty();
+
+        var loadMoreBtn = $('<div class="load-more"><span>Xem thêm</span></div>');
+
+        if (data.length >= 9) {
+            $('.loop-footer').html(loadMoreBtn);
+
+            loadMoreBtn.on('click', function () {
+                currentPage++;
+                searchPosts($('#form_search').val(), currentPage);
+            });
+        } else {
+            $('.loop-footer').empty();
+        }
+    }
+
+});
+</script>

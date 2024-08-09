@@ -632,8 +632,8 @@ include 'inc/header.php';
 
                                                     <?php if (has_post_thumbnail()): ?>
                                                         <div class="overlay-post"></div>
-                                                        <img layout="fill" lazy-src="<?php the_post_thumbnail_url(); ?>"
-                                                            lazy-alt="<?php the_title(); ?>" class="lazy-wave">
+                                                        <img layout="fill" src="<?php the_post_thumbnail_url(); ?>"
+                                                            alt="<?php the_title(); ?>" class="lazy-wave">
 
                                                     <?php else: ?>
 
@@ -709,5 +709,6 @@ include 'inc/header.php';
     </div>
 </main>
 <?php
+include 'inc/js.php';
 include 'inc/footer.php';
 ?>
