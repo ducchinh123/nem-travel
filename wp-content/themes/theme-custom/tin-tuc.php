@@ -24,12 +24,6 @@ $args = array(
 
 $query = new WP_Query($args);
 
-if($query->have_posts()) {
-    while ($query->have_posts()) {
-        my_print($query->posts());
-    }
-}
-die;
 include 'inc/head.php';
 ?>
 <link rel="stylesheet" href="<?= site_url() . '/public/css/library_grid.css' ?>">
