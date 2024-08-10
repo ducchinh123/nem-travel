@@ -23810,4 +23810,5 @@ h6,
 .mobi_menu a > img {
     height: 45px;
     object-fit: contain;
+    padding-bottom: 7px;
 }
