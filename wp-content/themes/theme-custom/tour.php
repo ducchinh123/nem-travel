@@ -14756,12 +14756,6 @@
         }
     }
 
-    @media only screen and (-ms-high-contrast: none) and (min-width: 992px),
-    only screen and (-ms-high-contrast: active) and (min-width: 992px) {
-        .main-header.ivivu-main-header .navbar .navbar-header .navbar-brand img {
-            width: 80px
-        }
-    }
 
     .header-search-form {
         border-radius: 0 0 4px 4px;
