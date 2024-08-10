@@ -14,7 +14,7 @@
             alt="ivivu" class="loading" data-was-processed="true">
         </a>
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-          <div class="img-wrapper-mb visible-xs"> <img class="img-circle loaded"
+          <div class="img-wrapper-mb"> <img class="img-circle loaded"
               data-src="https://res.ivivu.com/hotel/img/avatars/avatar-default-white.svg"
               src="https://res.ivivu.com/hotel/img/avatars/avatar-default-white.svg" data-was-processed="true"> </div>
           <div class="hidden-xs hidden-sm">
