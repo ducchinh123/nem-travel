@@ -76,11 +76,14 @@
       <p class="top-sale visible-xs row ng-scope" ng-if="topSaleCount>0"><img width="20"
           style="vertical-align: text-bottom;" src="https://res.ivivu.com/hotel/img/fire-sale.svg"><span
           class="ng-binding">1.098 khách đã đặt phòng trong 24h qua</span></p><!-- end ngIf: topSaleCount>0 -->
-      <div class="col-xs-12 no-padding v-margin-top-30 v-margin-bottom-30 visible-xs">
+   
+
+      <div class="col-xs-12 no-padding v-margin-top-30 hidden-xs">
         <div class="col-xs-12 no-padding heading">
-          <h2 class="heading__title">
-            Combo tốt nhất hôm nay
-          </h2>
+          <h2 class="heading__title">Combo tốt nhất hôm nay <!-- ngIf: topSaleCount>0 --><span
+              class="top-sale ng-binding ng-scope" ng-if="topSaleCount>0"><img width="20"
+                style="vertical-align: text-bottom;" src="https://res.ivivu.com/hotel/img/fire-sale.svg">1.098 khách
+              đã đặt phòng trong 24h qua</span><!-- end ngIf: topSaleCount>0 --></h2>
           <p class="heading__description">Nhanh tay đặt ngay. Để mai sẽ lỡ</p>
         </div>
         <div class="col-xs-12 no-padding promotion-cards">
@@ -89,37 +92,52 @@
           </div>
           <div class="col-xs-12 no-padding owl-carousel owl-carousel-promotion owl-theme owl-loaded owl-drag">
             <div class="owl-stage-outer">
-              <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all;">
-                <div class="owl-item">
+              <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all; width: 5775px;">
+                <div class="owl-item active" style="width: 1140px; margin-right: 15px;">
                   <div class="col-xs-12 promotion-card item" style="display: block;">
-                    <a href="https://www.ivivu.com/khach-san-phan-thiet/khu-nghi-duong-movenpick-phan-thiet"
+                    <a href="https://www.ivivu.com/khach-san-quy-nhon/khach-san-flc-luxury-quy-nhon" target="_blank">
+                      <figure>
+                        <picture>
+
+
+
+                          <img src="https://cdn1.ivivu.com/images/2024/07/12/11/FLC-QN_sd_3swl7c_.webp" class="loading"
+                            data-was-processed="true">
+                        </picture>
+                      </figure>
+                    </a>
+                  </div>
+                </div>
+                <div class="owl-item" style="width: 1140px; margin-right: 15px;">
+                  <div class="col-xs-12 promotion-card item" style="display: block;">
+                    <a href="https://www.ivivu.com/khach-san-can-tho/azerai-can-tho" target="_blank">
+                      <figure>
+                        <picture>
+
+
+
+                          <img src="https://cdn1.ivivu.com/images/2024/08/07/15/Azerai_CT-sd_g1uh94_.webp">
+                        </picture>
+                      </figure>
+                    </a>
+                  </div>
+                </div>
+                <div class="owl-item" style="width: 1140px; margin-right: 15px;">
+                  <div class="col-xs-12 promotion-card item" style="display: block;">
+                    <a href="https://www.ivivu.com/khach-san-phu-quoc/khu-nghi-duong-intercontinental-phu-quoc-long-beach"
                       target="_blank">
                       <figure>
                         <picture>
 
 
 
-                          <img src="https://cdn1.ivivu.com/images/2024/07/12/11/Movenpick_PT-mb_9ci7k4_.webp">
+                          <img src="https://cdn1.ivivu.com/images/2024/04/22/19/intercon_pq-sd_xxdxtd_.webp">
                         </picture>
                       </figure>
                     </a>
                   </div>
                 </div>
-                <div class="owl-item">
-                  <div class="col-xs-12 promotion-card item" style="display: block;">
-                    <a href="https://www.ivivu.com/khach-san-tinh-phu-yen/zannier-hotels-bai-san-ho" target="_blank">
-                      <figure>
-                        <picture>
-
-
-
-                          <img src="https://cdn1.ivivu.com/images/2024/08/01/13/Zannier-mb_h61ecn_.webp">
-                        </picture>
-                      </figure>
-                    </a>
-                  </div>
-                </div>
-                <div class="owl-item">
+                <div class="owl-item" style="width: 1140px; margin-right: 15px;">
                   <div class="col-xs-12 promotion-card item" style="display: block;">
                     <a href="https://www.ivivu.com/khach-san-vung-tau/khu-nghi-duong-holiday-inn-ho-tram"
                       target="_blank">
@@ -128,37 +146,21 @@
 
 
 
-                          <img src="https://cdn1.ivivu.com/images/2024/07/12/11/HOLIDAYINN_HT-mb_tskoce_.webp">
+                          <img src="https://cdn1.ivivu.com/images/2024/07/12/11/HOLIDAYINN_HT-sd_3i1zpz_.webp">
                         </picture>
                       </figure>
                     </a>
                   </div>
                 </div>
-                <div class="owl-item">
+                <div class="owl-item" style="width: 1140px; margin-right: 15px;">
                   <div class="col-xs-12 promotion-card item" style="display: block;">
-                    <a href="https://www.ivivu.com/khach-san-nha-trang/swandor-cam-ranh-hotels-resorts" target="_blank">
+                    <a href="https://www.ivivu.com/khach-san-hoi-an/khu-nghi-duong-the-nam-hai-hoi-an" target="_blank">
                       <figure>
                         <picture>
 
 
 
-                          <img src="https://cdn1.ivivu.com/images/2024/07/12/11/Swandor_CR-mb_vomun5_.webp">
-                        </picture>
-                      </figure>
-                    </a>
-                  </div>
-                </div>
-                <div class="owl-item">
-                  <div class="col-xs-12 promotion-card item" style="display: block;">
-                    <a href="https://www.ivivu.com/khach-san-quy-nhon/khu-nghi-duong-crown-retreat-quy-nhon"
-                      target="_blank">
-                      <figure>
-                        <picture>
-
-
-
-                          <img
-                            src="https://cdn1.ivivu.com/images/2024/06/19/11/KhunghiduongCrownRetreatQuyNhon_nt-mb_3xknp4_.webp">
+                          <img src="https://cdn1.ivivu.com/images/2024/07/12/11/FourSeasons-sd_3bseb7_.webp">
                         </picture>
                       </figure>
                     </a>
@@ -180,6 +182,7 @@
           </div>
         </div>
       </div>
+
       <div class="col-xs-12 no-padding v-margin-top-30 v-margin-bottom-30">
         <div class="col-xs-12 no-padding heading">
 
