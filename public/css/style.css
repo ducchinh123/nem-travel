@@ -23791,3 +23791,7 @@ h6,
     flex: 0 0 100%;
     max-width: 100%;
 }
+
+.navbar-header-mobi {
+    display: none;
+}

@@ -1,0 +1,9 @@
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar-header-mobi {
+        display: block;
+    }
+}
