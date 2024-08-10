@@ -665,7 +665,7 @@
 
     // Thêm sự kiện click để lưu trạng thái vào localStorage
     list_menu_direc.on("click", function () {
-      // Xóa class 'active' khỏi tất cả các menu item
+      // Xóa class 'active' khỏi tất cả các menu items
       list_menu_direc.removeClass("active");
 
       // Thêm class 'active' vào menu item được click
@@ -678,14 +678,18 @@
       });
     });
 
-
     var myLogo = $('.navbar-header img');
 
     myLogo.on('click', function () {
-      list_menu_direc.each(function (index, ele) {
-        $(ele).removeClass("active");
+      // Xóa class 'active' khỏi tất cả các menu items
+      list_menu_direc.removeClass("active");
+
+      // Xóa trạng thái active trong localStorage
+      list_menu_direc.each(function (index) {
+        localStorage.removeItem("menu_" + index);
       });
-    })
+    });
+
 
 
 
