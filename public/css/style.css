@@ -23943,3 +23943,18 @@ h6,
     background: #fff;
     display: none;
 }
+
+.btn-navbar-close {
+    color: #000;
+    height: 53px;
+    transition: opacity .2s;
+    width: 53px;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    text-align: center;
+    position: absolute;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
