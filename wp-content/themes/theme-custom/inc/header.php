@@ -7,22 +7,24 @@
   <nav class="navbar" style="border:0px solid transparent;">
 
     <div class="container" id="mobi">
-      <span class="bars-mobi"><i class="bi bi-list"></i></span>
-      <a href="">
-        <img src="https://nemtravel.vn/wp-content/uploads/2024/08/1-removebg-preview-123.png?time=<?= time() ?>"
-          alt="ivivu" class="loading" data-was-processed="true">
-      </a>
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <div class="img-wrapper-mb visible-xs"> <img class="img-circle loaded"
-            data-src="https://res.ivivu.com/hotel/img/avatars/avatar-default-white.svg"
-            src="https://res.ivivu.com/hotel/img/avatars/avatar-default-white.svg" data-was-processed="true"> </div>
-        <div class="hidden-xs hidden-sm">
-          <div class="img-wrapper"> <img class="img-circle loaded"
+      <div class="mobi_menu">
+        <span class="bars-mobi"><i class="bi bi-list"></i></span>
+        <a href="">
+          <img src="https://nemtravel.vn/wp-content/uploads/2024/08/1-removebg-preview-123.png?time=<?= time() ?>"
+            alt="ivivu" class="loading" data-was-processed="true">
+        </a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          <div class="img-wrapper-mb visible-xs"> <img class="img-circle loaded"
               data-src="https://res.ivivu.com/hotel/img/avatars/avatar-default-white.svg"
               src="https://res.ivivu.com/hotel/img/avatars/avatar-default-white.svg" data-was-processed="true"> </div>
-          <span class="username-header">Tài khoản</span> <i class="fa fa-angle-down"></i>
-        </div>
-      </a>
+          <div class="hidden-xs hidden-sm">
+            <div class="img-wrapper"> <img class="img-circle loaded"
+                data-src="https://res.ivivu.com/hotel/img/avatars/avatar-default-white.svg"
+                src="https://res.ivivu.com/hotel/img/avatars/avatar-default-white.svg" data-was-processed="true"> </div>
+            <span class="username-header">Tài khoản</span> <i class="fa fa-angle-down"></i>
+          </div>
+        </a>
+      </div>
     </div>
     <div class="container" id="pc">
       <div class="navbar-header">
