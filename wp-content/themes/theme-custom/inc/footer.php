@@ -823,8 +823,6 @@
     <div class="modal-navbar-dialog">
       <div class="modal-navbar-content">
         <div class="modal-navbar-body">
-          <div class="logo"> <a class="navbar-brand" href="/"> <img class="icon-logo"
-                src="https://gacmai.vn/wp-content/uploads/2024/07/logo-header.png" alt=""> </a> </div>
           <hr class="navbar-hr">
           <div>
             <div class="navbar-nav-mobi">
