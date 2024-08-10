@@ -5,7 +5,26 @@
   <input type="hidden" id="datepicker-temp-chkin" value="">
   <input type="hidden" id="datepicker-temp-chkout" value="">
   <nav class="navbar" style="border:0px solid transparent;">
-    <div class="container">
+
+    <div class="container" id="mobi">
+      <span class="bars-mobi"><i class="bi bi-list"></i></span>
+      <a href="">
+        <img src="https://nemtravel.vn/wp-content/uploads/2024/08/1-removebg-preview-123.png?time=<?= time() ?>"
+          alt="ivivu" class="loading" data-was-processed="true">
+      </a>
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <div class="img-wrapper-mb visible-xs"> <img class="img-circle loaded"
+            data-src="https://res.ivivu.com/hotel/img/avatars/avatar-default-white.svg"
+            src="https://res.ivivu.com/hotel/img/avatars/avatar-default-white.svg" data-was-processed="true"> </div>
+        <div class="hidden-xs hidden-sm">
+          <div class="img-wrapper"> <img class="img-circle loaded"
+              data-src="https://res.ivivu.com/hotel/img/avatars/avatar-default-white.svg"
+              src="https://res.ivivu.com/hotel/img/avatars/avatar-default-white.svg" data-was-processed="true"> </div>
+          <span class="username-header">Tài khoản</span> <i class="fa fa-angle-down"></i>
+        </div>
+      </a>
+    </div>
+    <div class="container" id="pc">
       <div class="navbar-header">
         <a href="<?= site_url() ?>" class="navbar-brand" style="justify-content: end;display: flex;">
           <img src="https://nemtravel.vn/wp-content/uploads/2024/08/1-removebg-preview-123.png?time=<?= time() ?>"
@@ -16,18 +35,6 @@
           <i class="fa fa-bars"></i>
         </button>
       </div>
-
-      <div class="navbar-header-mobi">
-        <a href="<?= site_url() ?>" class="navbar-brand" style="justify-content: end;display: flex;">
-          <img src="https://nemtravel.vn/wp-content/uploads/2024/08/1-removebg-preview-123.png?time=<?= time() ?>"
-            alt="ivivu" class="loading" data-was-processed="true">
-        </a>
-        <button type="button" class="navbar-toggle collapsed hidden" data-toggle="collapse"
-          data-target="#navbar-collapse">
-          <i class="fa fa-bars"></i>
-        </button>
-      </div>
-
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
         <ul class="nav navbar-nav">

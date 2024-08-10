@@ -23792,6 +23792,6 @@ h6,
     max-width: 100%;
 }
 
-.navbar-header-mobi {
+.navbar #mobi {
     display: none;
 }
