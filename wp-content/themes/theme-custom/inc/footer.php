@@ -818,14 +818,80 @@
   </div>
 
   <div class="nav__overlay"></div>
-  
+
+  <div class="modal-navbar show" style="top: 0px; bottom: 0px; left: 0px;">
+    <div class="modal-navbar-dialog">
+      <div class="modal-navbar-content">
+        <div class="modal-navbar-body">
+          <div class="logo"> <a class="navbar-brand" href="/"> <img class="icon-logo"
+                src="https://gacmai.vn/wp-content/uploads/2024/07/logo-header.png" alt=""> </a> </div>
+          <hr class="navbar-hr">
+          <div>
+            <div class="navbar-nav-mobi">
+              <div class="nav-item"><a href="https://gacmai.vn/gioi-thieu/" class="nav-link-mobi">VỀ GÁC MÁI</a></div>
+              <div class="nav-item"><a href="https://gacmai.vn/thiet-ke-noi-that/" class="nav-link-mobi">THIẾT KẾ NỘI
+                  THẤT<button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z">
+                      </path>
+                    </svg></button></a></div>
+              <ul data-id="0">
+                <li><a href="https://gacmai.vn/chung-cu/" class="" type="button"><span class="fw-700 fs-16">Chung
+                      cư</span></a></li>
+                <li><a href="https://gacmai.vn/nha-pho/" class="" type="button"><span class="fw-700 fs-16">Nhà
+                      phố</span></a></li>
+                <li><a href="https://gacmai.vn/biet-thu/" class="" type="button"><span class="fw-700 fs-16">Biệt
+                      thự</span></a></li>
+                <li><a href="https://gacmai.vn/phong-cach-thiet-ke/" class="" type="button"><span
+                      class="fw-700 fs-16">Phong cách thiết kế</span></a></li>
+                <li><a href="https://gacmai.vn/thiet-ke-noi-that-phong-khach/" class="" type="button"><span
+                      class="fw-700 fs-16">Phòng khách</span></a></li>
+                <li><a href="https://gacmai.vn/./phong-ngu/" class="" type="button"><span class="fw-700 fs-16">Phòng
+                      ngủ</span></a></li>
+                <li><a href="https://gacmai.vn/thiet-ke-noi-that-phong-bep-dep-bien-uoc-mo-thanh-hien-thuc/" class=""
+                    type="button"><span class="fw-700 fs-16">Phòng bếp</span></a><button><svg
+                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                      <path
+                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z">
+                      </path>
+                    </svg></button>
+                  <ul data-id="1">
+                    <li><a href="https://gacmai.vn/./phong-bep/tu-bep/tu-bep-go-tu-nhien/" class="" type="button"><span
+                          class="fw-700 fs-16">Tủ bếp gỗ tự nhiên</span></a></li>
+                    <li><a href="https://gacmai.vn/./phong-bep/tu-bep/tu-bep-go-cong-nghiep/" class=""
+                        type="button"><span class="fw-700 fs-16">Tủ bếp gỗ công nghiệp</span></a></li>
+                    <li><a href="https://gacmai.vn/./phong-bep/tu-bep/tu-bep-inox/" class="" type="button"><span
+                          class="fw-700 fs-16">Tủ bếp inox</span></a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="nav-item"><a href="https://gacmai.vn/thi-cong-noi-that/" class="nav-link-mobi">THI CÔNG NỘI
+                  THẤT</a></div>
+              <div class="nav-item"><a href="https://gacmai.vn/./cong-trinh-thuc-te/" class="nav-link-mobi">CÔNG TRÌNH
+                  THỰC TẾ</a></div>
+              <div class="nav-item"><a href="https://gacmai.vn/lien-he/" class="nav-link-mobi">LIÊN HỆ</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-navbar-close" role="button" tabindex="0" aria-label="Close"> <svg xmlns="http://www.w3.org/2000/svg"
+        style=" width: 20px; height: 20px; " viewBox="0 0 384 512">
+        <path
+          d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+        </path>
+      </svg> </div>
+  </div>
+
   <iframe sandbox="" style="display: none;"></iframe><iframe id="ssIFrame_google"
     sandbox="allow-scripts allow-same-origin allow-storage-access-by-user-activation" allow="identity-credentials-get"
     aria-hidden="true" frame-border="0"
     src="https://accounts.google.com/o/oauth2/iframe#origin=https%3A%2F%2Fwww.ivivu.com&amp;rpcToken=863927980.6543182"
     style="position: absolutezzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz; width: 1px; height: 1px; inset: -9999px; display: none;"></iframe><iframe
     src="https://www.google.com/recaptcha/api2/aframe" width="0" height="0" style="display: none;"></iframe>
-  
+
   </body>
   <iframe id="google_esf" name="google_esf"
     src="https://googleads.g.doubleclick.net/pagead/html/r20240801/r20110914/zrt_lookup_fy2021.html"
