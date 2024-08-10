@@ -694,7 +694,7 @@
     $('.navbar-toggler').on('click', function () {
 
       console.log($('.modal-navbar'));
-      
+
       $('.nav__overlay').css('display', 'block');
 
 
@@ -707,6 +707,13 @@
       $('.nav__overlay').css('display', 'none');
 
     });
+
+    $('.nav__overlay').on('click', function () {
+      
+      $('.modal-navbar').removeClass('show');
+
+      $('.nav__overlay').css('display', 'none');
+    })
 
 
 
@@ -897,6 +904,8 @@
       $('.modal-navbar-backdrop').removeClass('show');
 
     });
+
+   
 
     let currentPage = 1;
 
