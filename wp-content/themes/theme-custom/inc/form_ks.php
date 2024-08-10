@@ -2,7 +2,7 @@
     <div class="col-xs-12 no-padding">
       <div class="hero-container" id="hero-banner-home"
         data-href="#"
-        style="background-image:url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/85/83/92/ana-mandara-hue.jpg?w=700&h=-1&s=1); cursor: pointer;">
+        style="background-image:url(https://homepage.momocdn.net/blogscontents/momo-upload-api-220628112627-637920123870939258.jpg); cursor: pointer;">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
