@@ -2269,7 +2269,7 @@ $posts_relation = get_all_posts_relation();
 
     #contact form#contactForm .form-group input.form-control {
 
-        height: 44px;
+        height: 36px;
 
         border-radius: 5px;
 
@@ -2861,7 +2861,7 @@ $posts_relation = get_all_posts_relation();
                     </div>
                     <form id="contactForm" action="" enctype="multipart/form-data">
                         <div>
-                            <div class="form-group mt-3">
+                            <div class="form-group mt-3" style="margin-bottom: unset;">
                                 <div class="row">
                                     <div class="col-md col-12 mb-3 inputFullname" style="padding-right: 0;">
                                         <input class="form-control" placeholder="Họ và tên" name="name" id="name"
