@@ -2,7 +2,7 @@
     <div class="col-xs-12 no-padding">
       <div class="hero-container" id="hero-banner-home"
         data-href="#"
-        style="background-image:url(https://khachsanvietnam.com.vn/vnt_upload/news/03_2023/resort_o_vinh_ninh_van_1.jpg); cursor: pointer;">
+        style="background-image:url(https://aristino.com/Data/ResizeImage/images/news/phong-cach-aristino/khu-nghi-duong-cao-capx600x315x2.jpg); cursor: pointer;">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
