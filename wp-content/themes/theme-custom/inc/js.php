@@ -677,15 +677,7 @@
       });
     });
 
-    var myLogo = $('.navbar-header img');
-
-    myLogo.on('click', function () {
-
-      list_menu_direc.each(function (index, ele) {
-        localStorage.setItem("menu_" + index, false);
-      });
-
-
+  
 
       $(window).on('scroll', function () {
 
