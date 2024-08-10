@@ -147,18 +147,7 @@
                               <!-- ngRepeat: itemAge in FilterRooms.RoomsRequest[0].AgeChilds track by $index -->
                             </ul>
                           </div>
-                          <!--<div class="col-xs-12 room-popover__item child-age-selection-mb  div-mobile" ng-show="FilterRooms.RoomsRequest[0].AgeChilds.length>0">
-
-                                                    <ul class="child-ages">
-                                                        <li class="col-xs-12 child-ages__item" ng-repeat="itemAge in FilterRooms.RoomsRequest[0].AgeChilds track by $index">
-                                                            <div class="col-xs-6 child-age-index">Tuổi trẻ em {{$index + 1}}</div>
-                                                            <div class="col-xs-6 no-padding select-child">
-                                                                <select name="name" class="form-control" ng-model="FilterRooms.RoomsRequest[0].AgeChilds[$index]" ng-options="option.label for option in AgeChildConfig track by option.value"></select>-->
-
-                          <!--</div>
-                                                        </li>
-                                                    </ul>
-                                                </div>-->
+                          
                         </div>
                         <div class="col-xs-12 room-popover__item request-group-popover none-padding">
                           <div class="col-xs-6 room-popover__quantity no-padding div-contact">
