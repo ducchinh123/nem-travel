@@ -17,6 +17,17 @@
         </button>
       </div>
 
+      <div class="navbar-header-mobi">
+        <a href="<?= site_url() ?>" class="navbar-brand" style="justify-content: end;display: flex;">
+          <img src="https://nemtravel.vn/wp-content/uploads/2024/08/1-removebg-preview-123.png?time=<?= time() ?>"
+            alt="ivivu" class="loading" data-was-processed="true">
+        </a>
+        <button type="button" class="navbar-toggle collapsed hidden" data-toggle="collapse"
+          data-target="#navbar-collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+      </div>
+
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
         <ul class="nav navbar-nav">
