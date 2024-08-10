@@ -819,7 +819,7 @@
 
   <div class="nav__overlay"></div>
 
-  <div class="modal-navbar" style="top: 0px; bottom: 0px; left: 0px;">
+  <div class="modal-navbar show" style="top: 0px; bottom: 0px; left: 0px;">
     <div class="modal-navbar-dialog">
       <div class="modal-navbar-content">
         <div class="modal-navbar-body">
