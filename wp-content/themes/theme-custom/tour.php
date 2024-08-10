@@ -12505,11 +12505,7 @@
         }
     }
 
-    @media only screen and (min-width:321px) {
-        .main-header.ivivu-main-header .navbar .navbar-header .navbar-brand img {
-            width: 65px
-        }
-    }
+   
 
     @media only screen and (min-width:992px) {
         .main-header.ivivu-main-header .navbar .navbar-header .navbar-brand img {
@@ -14268,11 +14264,7 @@
         }
     }
 
-    @media only screen and (min-width: 321px) {
-        .main-header.ivivu-main-header .navbar .navbar-header .navbar-brand img {
-            width: 65px
-        }
-    }
+   
 
 
 
