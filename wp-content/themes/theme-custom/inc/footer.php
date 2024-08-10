@@ -826,50 +826,11 @@
           <hr class="navbar-hr">
           <div>
             <div class="navbar-nav-mobi">
-              <div class="nav-item"><a href="https://gacmai.vn/gioi-thieu/" class="nav-link-mobi">VỀ GÁC MÁI</a></div>
-              <div class="nav-item"><a href="https://gacmai.vn/thiet-ke-noi-that/" class="nav-link-mobi">THIẾT KẾ NỘI
-                  THẤT<button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                      class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                      <path
-                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z">
-                      </path>
-                    </svg></button></a></div>
-              <ul data-id="0">
-                <li><a href="https://gacmai.vn/chung-cu/" class="" type="button"><span class="fw-700 fs-16">Chung
-                      cư</span></a></li>
-                <li><a href="https://gacmai.vn/nha-pho/" class="" type="button"><span class="fw-700 fs-16">Nhà
-                      phố</span></a></li>
-                <li><a href="https://gacmai.vn/biet-thu/" class="" type="button"><span class="fw-700 fs-16">Biệt
-                      thự</span></a></li>
-                <li><a href="https://gacmai.vn/phong-cach-thiet-ke/" class="" type="button"><span
-                      class="fw-700 fs-16">Phong cách thiết kế</span></a></li>
-                <li><a href="https://gacmai.vn/thiet-ke-noi-that-phong-khach/" class="" type="button"><span
-                      class="fw-700 fs-16">Phòng khách</span></a></li>
-                <li><a href="https://gacmai.vn/./phong-ngu/" class="" type="button"><span class="fw-700 fs-16">Phòng
-                      ngủ</span></a></li>
-                <li><a href="https://gacmai.vn/thiet-ke-noi-that-phong-bep-dep-bien-uoc-mo-thanh-hien-thuc/" class=""
-                    type="button"><span class="fw-700 fs-16">Phòng bếp</span></a><button><svg
-                      xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                      class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                      <path
-                        d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z">
-                      </path>
-                    </svg></button>
-                  <ul data-id="1">
-                    <li><a href="https://gacmai.vn/./phong-bep/tu-bep/tu-bep-go-tu-nhien/" class="" type="button"><span
-                          class="fw-700 fs-16">Tủ bếp gỗ tự nhiên</span></a></li>
-                    <li><a href="https://gacmai.vn/./phong-bep/tu-bep/tu-bep-go-cong-nghiep/" class=""
-                        type="button"><span class="fw-700 fs-16">Tủ bếp gỗ công nghiệp</span></a></li>
-                    <li><a href="https://gacmai.vn/./phong-bep/tu-bep/tu-bep-inox/" class="" type="button"><span
-                          class="fw-700 fs-16">Tủ bếp inox</span></a></li>
-                  </ul>
-                </li>
-              </ul>
-              <div class="nav-item"><a href="https://gacmai.vn/thi-cong-noi-that/" class="nav-link-mobi">THI CÔNG NỘI
-                  THẤT</a></div>
-              <div class="nav-item"><a href="https://gacmai.vn/./cong-trinh-thuc-te/" class="nav-link-mobi">CÔNG TRÌNH
-                  THỰC TẾ</a></div>
-              <div class="nav-item"><a href="https://gacmai.vn/lien-he/" class="nav-link-mobi">LIÊN HỆ</a></div>
+              <div class="nav-item"><a href="" class="nav-link-mobi">KHÁCH SẠN</a></div>
+              <div class="nav-item"><a href="" class="nav-link-mobi">TOUR DU DỊCH</a></div>
+              <div class="nav-item"><a href="" class="nav-link-mobi">TIN TỨC</a></div>
+              <div class="nav-item"><a href="" class="nav-link-mobi">LIÊN HỆ</a></div>
+              <div class="nav-item"><a href="" class="nav-link-mobi">VỀ NẾM TRAVEL</a></div>
             </div>
           </div>
         </div>
