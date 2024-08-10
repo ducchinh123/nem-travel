@@ -8,7 +8,7 @@
 
     <div class="container" id="mobi">
       <div class="mobi_menu">
-        <span class="bars-mobi"><i class="bi bi-list"></i></span>
+        <span class="bars-mobi navbar-toggler"><i class="bi bi-list"></i></span>
         <a href="">
           <img src="https://nemtravel.vn/wp-content/uploads/2024/08/1-removebg-preview-123.png?time=<?= time() ?>"
             alt="ivivu" class="loading" data-was-processed="true">

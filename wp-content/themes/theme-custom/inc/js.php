@@ -691,6 +691,23 @@
     });
 
 
+    $('.navbar-toggler').on('click', function () {
+
+      $('.modal-navbar').toggleClass('show');
+
+      $('.modal-navbar-backdrop').toggleClass('show');
+
+    });
+
+    $('.btn-navbar-close, .modal-navbar-backdrop').on('click', function () {
+
+      $('.modal-navbar').removeClass('show');
+
+      $('.modal-navbar-backdrop').removeClass('show');
+
+    });
+
+
 
 
     $(window).on('scroll', function () {
