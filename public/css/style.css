@@ -23932,3 +23932,14 @@ h6,
     top: 7px;
     padding: 5px 5px;
 }
+
+.navbar-nav-mobi svg {
+    color: #000;
+}
+
+.navbar-nav-mobi>ul {
+    border-radius: 4px;
+    width: 230px;
+    background: #fff;
+    display: none;
+}
