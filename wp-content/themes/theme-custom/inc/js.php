@@ -695,6 +695,8 @@
 
       $('.modal-navbar').toggleClass('show');
 
+      $('.nav__overlay').css('display', 'block');
+
       $('.modal-navbar-backdrop').toggleClass('show');
 
     });
@@ -704,6 +706,8 @@
       $('.modal-navbar').removeClass('show');
 
       $('.modal-navbar-backdrop').removeClass('show');
+
+      $('.nav__overlay').css('display', 'none');
 
     });
 
