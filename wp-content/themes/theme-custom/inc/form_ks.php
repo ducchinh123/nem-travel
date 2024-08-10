@@ -2,7 +2,7 @@
     <div class="col-xs-12 no-padding">
       <div class="hero-container" id="hero-banner-home"
         data-href="#"
-        style="background-image:url(https://vcdn1-dulich.vnecdn.net/2022/04/14/240083761-1741577756052534-2678507850394095374-n.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=HVjRJMaa29WeG5QYuvHF7w); cursor: pointer;">
+        style="background-image:url(https://khachsanvietnam.com.vn/vnt_upload/news/03_2023/resort_o_vinh_ninh_van_1.jpg); cursor: pointer;">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
