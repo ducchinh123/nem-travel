@@ -817,9 +817,7 @@
     </div>
   </div>
 
-  <div class="nav__overlay">
-      
-  </div>
+  <div class="nav__overlay"></div>
   
   <iframe sandbox="" style="display: none;"></iframe><iframe id="ssIFrame_google"
     sandbox="allow-scripts allow-same-origin allow-storage-access-by-user-activation" allow="identity-credentials-get"
