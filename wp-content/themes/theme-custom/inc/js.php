@@ -693,8 +693,8 @@
 
     $('.navbar-toggler').on('click', function () {
 
-      $('.modal-navbar').toggleClass('show');
-
+      console.log($('.modal-navbar'));
+      
       $('.nav__overlay').css('display', 'block');
 
 
