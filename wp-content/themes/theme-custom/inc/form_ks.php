@@ -1,8 +1,8 @@
 <div class="main-home ng-scope" ng-app="Contracting" ng-controller="homepage.ctrl">
     <div class="col-xs-12 no-padding">
       <div class="hero-container" id="hero-banner-home"
-        data-href="https://www.ivivu.com/khach-san-da-nang/intercontinental-danang-sun-peninsula-resort"
-        style="background-image:url(https://cdn1.ivivu.com/images/2024/06/18/11/InterContinental_dn-t_hbekz7_.webp); cursor: pointer;">
+        data-href="#"
+        style="background-image:url(https://vcdn1-dulich.vnecdn.net/2022/04/14/240083761-1741577756052534-2678507850394095374-n.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=HVjRJMaa29WeG5QYuvHF7w); cursor: pointer;">
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
