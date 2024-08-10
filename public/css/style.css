@@ -23825,6 +23825,7 @@ h6,
     bottom: 0;
     z-index: 2000;
     background-color: rgba(0, 0, 0, 0.3);
+    display: none;
 }
 
 .modal-navbar {
@@ -23957,4 +23958,16 @@ h6,
     align-items: center;
     display: flex;
     justify-content: center;
+}
+
+.modal-navbar-backdrop.show {
+
+    display: block;
+
+}
+
+.modal-navbar.show {
+
+    transform: translate3d(0, 0, 0);
+
 }
