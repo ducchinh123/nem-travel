@@ -655,31 +655,37 @@
 
     var list_menu_direc = $(".navbar-nav li");
 
-// Khôi phục trạng thái active từ localStorage
-list_menu_direc.each(function (index, ele) {
-  var isActive = localStorage.getItem("menu_" + index) === "true";
-  if (isActive) {
-    $(ele).addClass("active");
-  }
-});
+    // Khôi phục trạng thái active từ localStorage
+    list_menu_direc.each(function (index, ele) {
+      var isActive = localStorage.getItem("menu_" + index) === "true";
+      if (isActive) {
+        $(ele).addClass("active");
+      }
+    });
 
-// Thêm sự kiện click để lưu trạng thái vào localStorage
-list_menu_direc.on("click", function () {
-  // Xóa class 'active' khỏi tất cả các menu item
-  list_menu_direc.removeClass("active");
+    // Thêm sự kiện click để lưu trạng thái vào localStorage
+    list_menu_direc.on("click", function () {
+      // Xóa class 'active' khỏi tất cả các menu item
+      list_menu_direc.removeClass("active");
 
-  // Thêm class 'active' vào menu item được click
-  $(this).addClass("active");
+      // Thêm class 'active' vào menu item được click
+      $(this).addClass("active");
 
-  // Cập nhật trạng thái active trong localStorage
-  list_menu_direc.each(function (index, ele) {
-    var isActive = $(ele).hasClass("active");
-    localStorage.setItem("menu_" + index, isActive);
-  });
-});
+      // Cập nhật trạng thái active trong localStorage
+      list_menu_direc.each(function (index, ele) {
+        var isActive = $(ele).hasClass("active");
+        localStorage.setItem("menu_" + index, isActive);
+      });
+    });
 
 
-  
+    var myLogo = $('.navbar-header img');
+
+    myLogo.on('click', function () {
+      list_menu_direc.removeClass("active");
+    })
+
+
 
       $(window).on('scroll', function () {
 
