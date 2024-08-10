@@ -23795,3 +23795,19 @@ h6,
 .navbar #mobi {
     display: none;
 }
+
+.mobi_menu  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bars-mobi i {
+    color: white;
+    font-size: 24px;
+}
+
+.mobi_menu a > img {
+    height: 45px;
+    object-fit: contain;
+}
