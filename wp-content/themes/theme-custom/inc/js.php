@@ -697,15 +697,12 @@
 
       $('.nav__overlay').css('display', 'block');
 
-      $('.modal-navbar-backdrop').toggleClass('show');
 
     });
 
-    $('.btn-navbar-close, .modal-navbar-backdrop').on('click', function () {
+    $('.btn-navbar-close').on('click', function () {
 
       $('.modal-navbar').removeClass('show');
-
-      $('.modal-navbar-backdrop').removeClass('show');
 
       $('.nav__overlay').css('display', 'none');
 
