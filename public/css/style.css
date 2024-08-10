@@ -23972,8 +23972,7 @@ h6,
 
 }
 
-
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .modal-navbar.show {
         transform: translate3d(0, 0, 0);
     }
