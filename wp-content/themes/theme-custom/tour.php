@@ -14274,11 +14274,7 @@
         }
     }
 
-    @media only screen and (min-width: 992px) {
-        .main-header.ivivu-main-header .navbar .navbar-header .navbar-brand img {
-            width: 80px
-        }
-    }
+
 
     @media only screen and (min-width: 320px) {
         .main-header.ivivu-main-header .navbar ul.nav>li {
