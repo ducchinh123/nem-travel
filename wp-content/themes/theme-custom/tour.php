@@ -18218,12 +18218,18 @@
 </style>
 
 
-<main>
-    <div class="container mainContainer">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mainContent">
+
+<body class="skin-blue layout-top-nav">
+
+    <div class="wrapper">
+
+
+
+        <!-- Full Width Column -->
+        <div class="content-wrapper" style="min-height: 267px;">
 
             <!-- form search -->
-
+         
             <!-- end form search -->
 
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 whyIvivu no-padding hidden-xs">
@@ -18335,8 +18341,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Thái Lan
-                                                                            5N4Đ: Bangkok - Pattaya - Vườn Nong
-                                                                            Nooch -
+                                                                            5N4Đ: Bangkok - Pattaya - Vườn Nong Nooch -
                                                                             Lâu Đài Tỷ Phú - 1 Đêm Resort Ven
                                                                             Sông</span>
                                                                     </div>
@@ -18360,8 +18365,7 @@
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-5 cardItemDepartDiv">
 
                                                                             <ul class="tourListPros list-inline">
-                                                                                <li>Ăn Buffet Trong Lâu Đài Tỷ Phú
-                                                                                </li>
+                                                                                <li>Ăn Buffet Trong Lâu Đài Tỷ Phú</li>
                                                                                 <li>Thành Phố Ngầm Nakhon Nayok</li>
                                                                                 <li>Trải Nghiệm Resort Ven Sông</li>
                                                                                 <li>Xem Trận Đấu Muay Thái</li>
@@ -18370,8 +18374,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2479">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2479">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">6.850.000
@@ -18418,10 +18421,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Trung
-                                                                            Quốc
-                                                                            4N3Đ: Giang Nam Hành - Thượng Hải - Tô
-                                                                            Châu
+                                                                        <span class="cardItemTourName">Tour Trung Quốc
+                                                                            4N3Đ: Giang Nam Hành - Thượng Hải - Tô Châu
                                                                             - Ô Trấn - Hàng Châu</span>
                                                                     </div>
                                                                     <div
@@ -18500,8 +18501,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Thái Lan
-                                                                            5N4Đ: Bangkok - Pattaya - Công Viên
-                                                                            Khủng
+                                                                            5N4Đ: Bangkok - Pattaya - Công Viên Khủng
                                                                             Long (Bay Sáng, Trưa)</span>
                                                                     </div>
                                                                     <div
@@ -18533,15 +18533,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="4235">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="4235">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">5.990.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">6.100.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">6.100.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -18583,8 +18581,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Trung
-                                                                            Quốc
+                                                                        <span class="cardItemTourName">Tour Trung Quốc
                                                                             6N5Đ: Lệ Giang - Đại Lý - Shangrila (No
                                                                             Shopping)</span>
                                                                     </div>
@@ -18622,8 +18619,7 @@
                                                                             <span class="price vcolor-info">19.750.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">21.990.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">21.990.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -18642,8 +18638,7 @@
                                                                 <div class="ribbonContainerOuter">
                                                                     <div class="ribbonContainerInner">
                                                                         <span class="v-ribbon">
-                                                                            <h1>💥 Giảm Thêm 1,5 triệu/nhóm 2 🔥
-                                                                            </h1>
+                                                                            <h1>💥 Giảm Thêm 1,5 triệu/nhóm 2 🔥</h1>
                                                                         </span>
                                                                     </div>
                                                                 </div>
@@ -18667,8 +18662,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Châu Âu
-                                                                            9N8Đ: HCM - Đức - Luxembourg - Pháp - Bỉ
-                                                                            -
+                                                                            9N8Đ: HCM - Đức - Luxembourg - Pháp - Bỉ -
                                                                             Hà Lan - Làng Giethoorn</span>
                                                                     </div>
                                                                     <div
@@ -18708,8 +18702,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2976">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2976">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">55.490.000
@@ -18756,10 +18749,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Trung
-                                                                            Quốc
-                                                                            6N5Đ: Nghi Xương - Trương Gia Giới -
-                                                                            Thiên
+                                                                        <span class="cardItemTourName">Tour Trung Quốc
+                                                                            6N5Đ: Nghi Xương - Trương Gia Giới - Thiên
                                                                             Môn Sơn - Phượng Hoàng Cổ Trấn</span>
                                                                     </div>
                                                                     <div
@@ -18798,8 +18789,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="4546">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="4546">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">9.875.000
@@ -18875,12 +18865,9 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Cao Cấp
-                                                                            Miền
-                                                                            Tây 2N2Đ (Xe Limousine): HCM - Cà Mau -
-                                                                            Cha
-                                                                            Diệp - Sóc Trăng Cánh Đồng Quạt
-                                                                            Gió</span>
+                                                                        <span class="cardItemTourName">Tour Cao Cấp Miền
+                                                                            Tây 2N2Đ (Xe Limousine): HCM - Cà Mau - Cha
+                                                                            Diệp - Sóc Trăng Cánh Đồng Quạt Gió</span>
                                                                     </div>
                                                                     <div
                                                                         class="col-xs-12 no-padding cardItemTourDetailDiv">
@@ -18912,15 +18899,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="818">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="818">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">2.476.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">2.500.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">2.500.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -19040,8 +19025,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Ninh
-                                                                            Bình
+                                                                        <span class="cardItemTourName">Tour Ninh Bình
                                                                             Trong Ngày: Hà Nội - Bái Đính - Tràng
                                                                             An</span>
                                                                     </div>
@@ -19056,8 +19040,7 @@
                                                                                         <span
                                                                                             class="score-description">Tuyệt
                                                                                             vời </span>
-                                                                                        <span> | 170 đánh giá
-                                                                                        </span>
+                                                                                        <span> | 170 đánh giá </span>
                                                                                     </span>
                                                                                 </div>
                                                                             </div>
@@ -19067,11 +19050,9 @@
 
                                                                             <ul class="tourListPros list-inline">
                                                                                 <li>Chùa Bái Đính</li>
-                                                                                <li>Tượng Phật Bằng Đồng Lớn Nhất
-                                                                                    Châu Á
+                                                                                <li>Tượng Phật Bằng Đồng Lớn Nhất Châu Á
                                                                                 </li>
-                                                                                <li>Bối Cảnh Phim Bom Tấn Kong:
-                                                                                    Skull
+                                                                                <li>Bối Cảnh Phim Bom Tấn Kong: Skull
                                                                                     Island</li>
                                                                             </ul>
                                                                         </div>
@@ -19083,8 +19064,7 @@
                                                                             <span class="price vcolor-info">780.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">850.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">850.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -19103,8 +19083,7 @@
                                                                 <div class="ribbonContainerOuter">
                                                                     <div class="ribbonContainerInner">
                                                                         <span class="v-ribbon">
-                                                                            <h1>Tăng Ni Giảm 2,000,000 VNĐ/khách
-                                                                            </h1>
+                                                                            <h1>Tăng Ni Giảm 2,000,000 VNĐ/khách</h1>
                                                                         </span>
                                                                     </div>
                                                                 </div>
@@ -19127,12 +19106,9 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Hành
-                                                                            Hương
-                                                                            Ấn Độ 7N7Đ: Vườn Lộc Uyển - Kỳ Viên Tịnh
-                                                                            Xá
-                                                                            - Vườn Lâm Tì Ni - Bồ Đề Đạo
-                                                                            Tràng</span>
+                                                                        <span class="cardItemTourName">Tour Hành Hương
+                                                                            Ấn Độ 7N7Đ: Vườn Lộc Uyển - Kỳ Viên Tịnh Xá
+                                                                            - Vườn Lâm Tì Ni - Bồ Đề Đạo Tràng</span>
                                                                     </div>
                                                                     <div
                                                                         class="col-xs-12 no-padding cardItemTourDetailDiv">
@@ -19163,8 +19139,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2052">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2052">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">27.950.000
@@ -19211,10 +19186,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Côn Đảo
-                                                                            2N2Đ
-                                                                            bằng Xe Giường Nằm + Tàu Cao Tốc (cảng
-                                                                            Trần
+                                                                        <span class="cardItemTourName">Tour Côn Đảo 2N2Đ
+                                                                            bằng Xe Giường Nằm + Tàu Cao Tốc (cảng Trần
                                                                             Đề, Sóc Trăng)</span>
                                                                     </div>
                                                                     <div
@@ -19245,15 +19218,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1365">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1365">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">2.775.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">2.790.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">2.790.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -19296,8 +19267,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Tây Ninh
-                                                                            Trong Ngày: Núi Bà - Cáp Treo Đỉnh Vân
-                                                                            Sơn -
+                                                                            Trong Ngày: Núi Bà - Cáp Treo Đỉnh Vân Sơn -
                                                                             Buffet Năm Châu - Tòa Thánh</span>
                                                                     </div>
                                                                     <div
@@ -19323,8 +19293,7 @@
                                                                                 <li>Núi Bà Đen</li>
                                                                                 <li>Tòa Thánh Tây Ninh</li>
                                                                                 <li>Chùa Gò Kén</li>
-                                                                                <li>Nhà Ga Cáp Treo Lớn Nhất Thế
-                                                                                    Giới
+                                                                                <li>Nhà Ga Cáp Treo Lớn Nhất Thế Giới
                                                                                 </li>
                                                                             </ul>
                                                                         </div>
@@ -19336,8 +19305,7 @@
                                                                             <span class="price vcolor-info">880.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">990.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">990.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -19408,8 +19376,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour
-                                                                            Singapore -
+                                                                        <span class="cardItemTourName">Tour Singapore -
                                                                             Malaysia 5N4Đ: Hành trình liên tuyến hai
                                                                             nước</span>
                                                                     </div>
@@ -19442,15 +19409,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1691">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1691">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">12.290.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">12.600.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">12.600.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -19493,8 +19458,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Tây Bắc
-                                                                            2N1Đ: Hà Nội - Mai Châu - Pù Luông -
-                                                                            Suối Cá
+                                                                            2N1Đ: Hà Nội - Mai Châu - Pù Luông - Suối Cá
                                                                             Thần</span>
                                                                     </div>
                                                                     <div
@@ -19525,15 +19489,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1186">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1186">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">1.741.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">1.760.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">1.760.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -19576,8 +19538,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Thái Lan
-                                                                            5N4Đ: Nong Nooch - Đảo Coral - BaiYoke
-                                                                            Sky -
+                                                                            5N4Đ: Nong Nooch - Đảo Coral - BaiYoke Sky -
                                                                             Bảo Tàng Nghệ Thuật Ánh Sáng</span>
                                                                     </div>
                                                                     <div
@@ -19602,22 +19563,19 @@
                                                                             <ul class="tourListPros list-inline">
                                                                                 <li>Đảo San Hô</li>
                                                                                 <li>Chùa Phật Vàng</li>
-                                                                                <li>Bảo Tàng Nghệ Thuật Ánh Sáng
-                                                                                </li>
+                                                                                <li>Bảo Tàng Nghệ Thuật Ánh Sáng</li>
                                                                             </ul>
                                                                         </div>
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="632">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="632">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">6.620.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">7.420.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">7.420.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -19660,8 +19618,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Lễ Quốc
-                                                                            Khánh Đà Lạt 3N3Đ: Đà Lạt - Thác Datanla
-                                                                            -
+                                                                            Khánh Đà Lạt 3N3Đ: Đà Lạt - Thác Datanla -
                                                                             Hoàng Long Ohayo - Puppy Farm</span>
                                                                     </div>
                                                                     <div
@@ -19697,8 +19654,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="4528">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="4528">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">2.375.000
@@ -19745,10 +19701,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Tà Xùa
-                                                                            Mùa
-                                                                            Lễ 2N1Đ: Hà Nội - Bắc Yên - Trải Nghiệm
-                                                                            Săn
+                                                                        <span class="cardItemTourName">Tour Tà Xùa Mùa
+                                                                            Lễ 2N1Đ: Hà Nội - Bắc Yên - Trải Nghiệm Săn
                                                                             Mây Tà Xùa</span>
                                                                     </div>
                                                                     <div
@@ -19786,15 +19740,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="4433">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="4433">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">1.970.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">1.999.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">1.999.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -19837,8 +19789,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Đông Bắc
-                                                                            2N1Đ: Hà Nội - Cao Bằng - Pắc Pó - Thác
-                                                                            Bản
+                                                                            2N1Đ: Hà Nội - Cao Bằng - Pắc Pó - Thác Bản
                                                                             Giốc - Động Ngườm Ngoa - Hồ Ba Bể</span>
                                                                     </div>
                                                                     <div
@@ -19870,15 +19821,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2993">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2993">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">2.115.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">2.140.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">2.140.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -19949,10 +19898,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Trải Nghiệm
-                                                                            Du
-                                                                            Lịch Singapore - Kuala Lumpur -
-                                                                            Singapore
+                                                                        <span class="cardItemTourName">Trải Nghiệm Du
+                                                                            Lịch Singapore - Kuala Lumpur - Singapore
                                                                             3N2Đ Cùng Siêu Du Thuyền Genting Dream
                                                                             5*</span>
                                                                     </div>
@@ -19985,8 +19932,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2231">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2231">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">7.130.000
@@ -20065,15 +20011,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2022">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2022">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">6.630.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">7.390.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">7.390.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -20115,10 +20059,8 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Lào 4N3Đ
-                                                                            Đường Bộ: Thác Khone Phapheng - Cao
-                                                                            Nguyên
-                                                                            Bolaven - Di Sản Thế Giới Wat
-                                                                            Phou</span>
+                                                                            Đường Bộ: Thác Khone Phapheng - Cao Nguyên
+                                                                            Bolaven - Di Sản Thế Giới Wat Phou</span>
                                                                     </div>
                                                                     <div
                                                                         class="col-xs-12 no-padding cardItemTourDetailDiv">
@@ -20148,15 +20090,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2384">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2384">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">7.250.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">7.290.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">7.290.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -20198,10 +20138,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour
-                                                                            Singapore -
-                                                                            Malaysia 4N3Đ: HCM - Sentosa - Cao
-                                                                            Nguyên
+                                                                        <span class="cardItemTourName">Tour Singapore -
+                                                                            Malaysia 4N3Đ: HCM - Sentosa - Cao Nguyên
                                                                             Genting - Tháp Đôi Petronas - Kuala
                                                                             Lumpur</span>
                                                                     </div>
@@ -20234,15 +20172,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2497">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2497">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">8.440.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">8.490.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">8.490.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -20283,10 +20219,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Trung
-                                                                            Quốc
-                                                                            3N2Đ: Đảo Hải Nam - Tam Á - Hawaii
-                                                                            Phương
+                                                                        <span class="cardItemTourName">Tour Trung Quốc
+                                                                            3N2Đ: Đảo Hải Nam - Tam Á - Hawaii Phương
                                                                             Đông</span>
                                                                     </div>
                                                                     <div
@@ -20317,8 +20251,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="3059">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="3059">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">9.990.000
@@ -20366,8 +20299,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Thái Lan
-                                                                            5N4Đ (Mùa Hè): Hà Nội - Bangkok -
-                                                                            Pattaya -
+                                                                            5N4Đ (Mùa Hè): Hà Nội - Bangkok - Pattaya -
                                                                             Đảo San Hô - Khao Chee Chan</span>
                                                                     </div>
                                                                     <div
@@ -20400,15 +20332,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2940">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2940">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">6.690.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">8.990.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">8.990.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -20479,10 +20409,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Bình
-                                                                            Hưng
-                                                                            2N2Đ: Ninh Chữ - Vịnh Vĩnh Hy - Ngắm San
-                                                                            Hô
+                                                                        <span class="cardItemTourName">Tour Bình Hưng
+                                                                            2N2Đ: Ninh Chữ - Vịnh Vĩnh Hy - Ngắm San Hô
                                                                             - BBQ Hải Sản</span>
                                                                     </div>
                                                                     <div
@@ -20496,8 +20424,7 @@
                                                                                         <span
                                                                                             class="score-description">Tuyệt
                                                                                             vời </span>
-                                                                                        <span> | 118 đánh giá
-                                                                                        </span>
+                                                                                        <span> | 118 đánh giá </span>
                                                                                     </span>
                                                                                 </div>
                                                                             </div>
@@ -20514,8 +20441,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="673">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="673">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">1.890.000
@@ -20563,8 +20489,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Cao Bằng
-                                                                            3N2Đ: Hà Nội - Cao Bằng - Bắc Cạn - Thác
-                                                                            Bản
+                                                                            3N2Đ: Hà Nội - Cao Bằng - Bắc Cạn - Thác Bản
                                                                             Giốc</span>
                                                                     </div>
                                                                     <div
@@ -20595,15 +20520,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1267">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1267">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">2.365.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">2.390.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">2.390.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -20645,8 +20568,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Sapa
-                                                                            3N2Đ:
+                                                                        <span class="cardItemTourName">Tour Sapa 3N2Đ:
                                                                             Hà Nội - Sapa - Fansipan - Cát Cát -
                                                                             Moana</span>
                                                                     </div>
@@ -20678,15 +20600,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1323">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1323">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">3.560.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">3.610.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">3.610.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -20729,8 +20649,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Hà Giang
-                                                                            3N2Đ: Cao Nguyên Đá - Sông Nho
-                                                                            Quế</span>
+                                                                            3N2Đ: Cao Nguyên Đá - Sông Nho Quế</span>
                                                                     </div>
                                                                     <div
                                                                         class="col-xs-12 no-padding cardItemTourDetailDiv">
@@ -20752,8 +20671,7 @@
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-5 cardItemDepartDiv">
 
                                                                             <ul class="tourListPros list-inline">
-                                                                                <li>Chiêm Ngưỡng Núi Đôi Cô Tiên
-                                                                                </li>
+                                                                                <li>Chiêm Ngưỡng Núi Đôi Cô Tiên</li>
                                                                                 <li>Cột Cờ Thiêng Liêng Miền Cực Bắc
                                                                                 </li>
                                                                                 <li>Cao Nguyên Đá Đồng Văn</li>
@@ -20764,8 +20682,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1312">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1312">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">2.680.000
@@ -20812,8 +20729,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Liên
-                                                                            Tuyến
+                                                                        <span class="cardItemTourName">Tour Liên Tuyến
                                                                             Miền Trung 4N4Đ: Quy Nhơn - Phú Yên (Xe
                                                                             Giường Nằm)</span>
                                                                     </div>
@@ -20846,15 +20762,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2027">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2027">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">3.275.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">3.290.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">3.290.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -20896,8 +20810,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Nam Du
-                                                                            3N3Đ:
+                                                                        <span class="cardItemTourName">Tour Nam Du 3N3Đ:
                                                                             Quần Đảo Nam Du - Hòn Củ Tron (Xe Giường
                                                                             Nằm)</span>
                                                                     </div>
@@ -20929,15 +20842,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="686">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="686">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">2.338.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">2.450.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">2.450.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -21009,8 +20920,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Nhật Bản
-                                                                            4N4Đ: HCM - Narita - Yamanashi - Tokyo
-                                                                            Mùa
+                                                                            4N4Đ: HCM - Narita - Yamanashi - Tokyo Mùa
                                                                             Thu Lá Đỏ</span>
                                                                     </div>
                                                                     <div
@@ -21048,15 +20958,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="688">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="688">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">24.768.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">24.888.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">24.888.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -21099,10 +21007,8 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Hàn Quốc
-                                                                            4N4Đ: HCM - Đảo Nami - Công Viên
-                                                                            Everland -
-                                                                            Làng bích hoạ Songwol - Tháp
-                                                                            Namsan</span>
+                                                                            4N4Đ: HCM - Đảo Nami - Công Viên Everland -
+                                                                            Làng bích hoạ Songwol - Tháp Namsan</span>
                                                                     </div>
                                                                     <div
                                                                         class="col-xs-12 no-padding cardItemTourDetailDiv">
@@ -21140,15 +21046,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="4504">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="4504">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">12.800.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">13.880.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">13.880.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -21191,8 +21095,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Nhật Bản
-                                                                            5N5Đ: Cung Đường Vàng Osaka - Kyoto -
-                                                                            Tokyo
+                                                                            5N5Đ: Cung Đường Vàng Osaka - Kyoto - Tokyo
                                                                             Mùa Thu (Bay VJ)</span>
                                                                     </div>
                                                                     <div
@@ -21228,23 +21131,20 @@
                                                                                 <li>Rừng Tre Sagano</li>
                                                                                 <li>Chùa Thanh Thủy</li>
                                                                                 <li>Núi Phú Sĩ</li>
-                                                                                <li>Công Viên Hoa Công viên
-                                                                                    Yamanakako
+                                                                                <li>Công Viên Hoa Công viên Yamanakako
                                                                                 </li>
                                                                             </ul>
                                                                         </div>
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2881">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2881">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">20.890.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">21.890.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">21.890.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -21286,10 +21186,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Nga
-                                                                            7N6Đ: Hà
-                                                                            Nội - Moscow - Saint Peterburg - Quần
-                                                                            Thể
+                                                                        <span class="cardItemTourName">Tour Nga 7N6Đ: Hà
+                                                                            Nội - Moscow - Saint Peterburg - Quần Thể
                                                                             Quảng Trường Đỏ</span>
                                                                     </div>
                                                                     <div
@@ -21335,15 +21233,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="4439">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="4439">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">48.500.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">48.800.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">48.800.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -21386,10 +21282,8 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Hàn Quốc
-                                                                            5N4Đ: Hà Nội - Seoul - Nami - Làng
-                                                                            Korean
-                                                                            Folk - Thư Viện Starfield - Busan -
-                                                                            Hanok
+                                                                            5N4Đ: Hà Nội - Seoul - Nami - Làng Korean
+                                                                            Folk - Thư Viện Starfield - Busan - Hanok
                                                                             Bukchon</span>
                                                                     </div>
                                                                     <div
@@ -21429,15 +21323,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2766">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2766">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">17.890.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">17.990.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">17.990.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -21479,10 +21371,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Nhật Bản
-                                                                            Mùa
-                                                                            Thu 6N5Đ: Hà Nội - Tokyo - Phú Sĩ -
-                                                                            Osaka -
+                                                                        <span class="cardItemTourName">Tour Nhật Bản Mùa
+                                                                            Thu 6N5Đ: Hà Nội - Tokyo - Phú Sĩ - Osaka -
                                                                             Kyoto</span>
                                                                     </div>
                                                                     <div
@@ -21516,23 +21406,20 @@
                                                                                 <li>Núi Phú Sĩ</li>
                                                                                 <li>Làng cổ Oshino Hakkai</li>
                                                                                 <li>Công viên Oishi</li>
-                                                                                <li>Đền ngàn cổng Fushimi Inari
-                                                                                    Taisha
+                                                                                <li>Đền ngàn cổng Fushimi Inari Taisha
                                                                                 </li>
                                                                             </ul>
                                                                         </div>
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="4276">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="4276">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">25.650.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">25.900.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">25.900.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -21602,8 +21489,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Bali
-                                                                            4N3Đ:
+                                                                        <span class="cardItemTourName">Tour Bali 4N3Đ:
                                                                             Khám Phá Thiên Đường Biển Đảo</span>
                                                                     </div>
                                                                     <div
@@ -21681,10 +21567,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour
-                                                                            Singapore
-                                                                            3N2Đ: Khám Phá Đảo Quốc Sư Tử - Gardens
-                                                                            By
+                                                                        <span class="cardItemTourName">Tour Singapore
+                                                                            3N2Đ: Khám Phá Đảo Quốc Sư Tử - Gardens By
                                                                             The Bay - Chùa Răng Phật</span>
                                                                     </div>
                                                                     <div
@@ -21715,15 +21599,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2072">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2072">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">9.920.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">9.990.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">9.990.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -21765,8 +21647,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Malaysia
-                                                                            -
+                                                                        <span class="cardItemTourName">Tour Malaysia -
                                                                             Singapore 5N4Đ: Động Batu - Cao Nguyên
                                                                             Genting - Đảo Sentossa</span>
                                                                     </div>
@@ -21799,15 +21680,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1787">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1787">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">11.210.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">11.290.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">11.290.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -21849,8 +21728,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Liên
-                                                                            Tuyến
+                                                                        <span class="cardItemTourName">Tour Liên Tuyến
                                                                             Ba Nước 5N4Đ: Singapore - Malaysia -
                                                                             Indonesia (Ngủ 1 đêm Singapore)</span>
                                                                     </div>
@@ -21884,8 +21762,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="4241">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="4241">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">10.990.000
@@ -21933,10 +21810,8 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Cao Cấp
-                                                                            Dubai 4N4Đ: Tháp Burj - Sa Mạc Safari -
-                                                                            Đảo
-                                                                            Cọ Nhân Tạo - Sky View
-                                                                            Observatory</span>
+                                                                            Dubai 4N4Đ: Tháp Burj - Sa Mạc Safari - Đảo
+                                                                            Cọ Nhân Tạo - Sky View Observatory</span>
                                                                     </div>
                                                                     <div
                                                                         class="col-xs-12 no-padding cardItemTourDetailDiv">
@@ -21967,15 +21842,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2536">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2536">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">29.890.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">29.990.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">29.990.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -22017,8 +21890,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour
-                                                                            Singapore
+                                                                        <span class="cardItemTourName">Tour Singapore
                                                                             4N3Đ: HCM - Singapore - Giếng Trời Fort
                                                                             Canning - Đập Nước Marina</span>
                                                                     </div>
@@ -22051,15 +21923,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="3082">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="3082">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">11.710.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">12.790.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">12.790.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -22130,10 +22000,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Trung
-                                                                            Quốc
-                                                                            5N4Đ: HCM - Trương Gia Giới - Phượng
-                                                                            Hoàng
+                                                                        <span class="cardItemTourName">Tour Trung Quốc
+                                                                            5N4Đ: HCM - Trương Gia Giới - Phượng Hoàng
                                                                             Cổ Trấn</span>
                                                                     </div>
                                                                     <div
@@ -22165,15 +22033,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="984">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="984">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">14.250.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">15.390.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">15.390.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -22215,10 +22081,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Trung
-                                                                            Quốc
-                                                                            5N4Đ: Bắc Kinh - Trùng Khánh - Tử Cấm
-                                                                            Thành
+                                                                        <span class="cardItemTourName">Tour Trung Quốc
+                                                                            5N4Đ: Bắc Kinh - Trùng Khánh - Tử Cấm Thành
                                                                             - Hồng Nhai Động</span>
                                                                     </div>
                                                                     <div
@@ -22249,15 +22113,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2399">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2399">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">18.400.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">18.900.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">18.900.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -22299,10 +22161,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Trung
-                                                                            Quốc
-                                                                            6N5Đ: Thành Đô - Cửu Trại Câu - Gấu Trúc
-                                                                            -
+                                                                        <span class="cardItemTourName">Tour Trung Quốc
+                                                                            6N5Đ: Thành Đô - Cửu Trại Câu - Gấu Trúc -
                                                                             Lạc Sơn</span>
                                                                     </div>
                                                                     <div
@@ -22333,15 +22193,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2330">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2330">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">16.870.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">16.990.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">16.990.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -22383,10 +22241,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Trung
-                                                                            Quốc
-                                                                            6N5Đ: Trương Gia Giới - Phượng Hoàng Cổ
-                                                                            Trấn
+                                                                        <span class="cardItemTourName">Tour Trung Quốc
+                                                                            6N5Đ: Trương Gia Giới - Phượng Hoàng Cổ Trấn
                                                                             - Phù Dung Trấn - Vũ Lăng Nguyên</span>
                                                                     </div>
                                                                     <div
@@ -22418,15 +22274,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2365">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2365">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">13.870.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">16.890.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">16.890.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -22468,10 +22322,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Trung
-                                                                            Quốc
-                                                                            6N5Đ: Hà Nội - Thành Đô - Cửu Trại Câu -
-                                                                            Lạc
+                                                                        <span class="cardItemTourName">Tour Trung Quốc
+                                                                            6N5Đ: Hà Nội - Thành Đô - Cửu Trại Câu - Lạc
                                                                             Sơn Đại Phật - Tùng Phan</span>
                                                                     </div>
                                                                     <div
@@ -22504,15 +22356,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2514">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2514">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">15.410.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">17.590.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">17.590.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -22554,10 +22404,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Trung
-                                                                            Quốc
-                                                                            5N4Đ: HCM - Lệ Giang - Shangrila - Núi
-                                                                            Tuyết
+                                                                        <span class="cardItemTourName">Tour Trung Quốc
+                                                                            5N4Đ: HCM - Lệ Giang - Shangrila - Núi Tuyết
                                                                             Ngọc Long</span>
                                                                     </div>
                                                                     <div
@@ -22595,15 +22443,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="4360">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="4360">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">16.870.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">18.490.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">18.490.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -22674,10 +22520,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Trung
-                                                                            Quốc
-                                                                            Đường Bộ 2N1Đ: Lào Cai - Hà Khẩu - Bình
-                                                                            Biên
+                                                                        <span class="cardItemTourName">Tour Trung Quốc
+                                                                            Đường Bộ 2N1Đ: Lào Cai - Hà Khẩu - Bình Biên
                                                                             - Mông Tự</span>
                                                                     </div>
                                                                     <div
@@ -22714,8 +22558,7 @@
                                                                             <span class="price vcolor-info">1.895.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">2.100.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">2.100.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -22757,8 +22600,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Trung
-                                                                            Quốc
+                                                                        <span class="cardItemTourName">Tour Trung Quốc
                                                                             Trong Ngày: Hà Khẩu - Công Viên Ánh
                                                                             Sáng</span>
                                                                     </div>
@@ -22791,15 +22633,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2991">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2991">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">640.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">650.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">650.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -22841,10 +22681,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Trung
-                                                                            Quốc
-                                                                            Đường Bộ 3N2Đ: Hà Khẩu - Bình Biên -
-                                                                            Mông Tự
+                                                                        <span class="cardItemTourName">Tour Trung Quốc
+                                                                            Đường Bộ 3N2Đ: Hà Khẩu - Bình Biên - Mông Tự
                                                                             - Kiến Thủy</span>
                                                                     </div>
                                                                     <div
@@ -22876,15 +22714,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2618">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2618">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">2.915.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">3.180.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">3.180.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -22903,8 +22739,7 @@
                                                                 <div class="ribbonContainerOuter">
                                                                     <div class="ribbonContainerInner">
                                                                         <span class="v-ribbon">
-                                                                            <h1>Không Cần Hộ Chiếu+Visa |KS 3-4*
-                                                                            </h1>
+                                                                            <h1>Không Cần Hộ Chiếu+Visa |KS 3-4*</h1>
                                                                         </span>
                                                                     </div>
                                                                 </div>
@@ -22927,10 +22762,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Trung
-                                                                            Quốc
-                                                                            Đường Bộ 3N2Đ: Hà Nội - Hà Khẩu - Bình
-                                                                            Biên
+                                                                        <span class="cardItemTourName">Tour Trung Quốc
+                                                                            Đường Bộ 3N2Đ: Hà Nội - Hà Khẩu - Bình Biên
                                                                             - Di Lặc - Kiến Thủy - Mông Tự</span>
                                                                     </div>
                                                                     <div
@@ -22962,15 +22795,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2471">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2471">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">3.750.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">3.790.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">3.790.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -23012,10 +22843,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Trung
-                                                                            Quốc
-                                                                            Đường Bộ 3Đ3N: Hà Nội - Lào Cai - Hà
-                                                                            Khẩu -
+                                                                        <span class="cardItemTourName">Tour Trung Quốc
+                                                                            Đường Bộ 3Đ3N: Hà Nội - Lào Cai - Hà Khẩu -
                                                                             Bình Biên - Kiến Thủy - Mông Tự</span>
                                                                     </div>
                                                                     <div
@@ -23046,15 +22875,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2866">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2866">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">3.550.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">3.890.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">3.890.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -23096,8 +22923,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Trung
-                                                                            Quốc
+                                                                        <span class="cardItemTourName">Tour Trung Quốc
                                                                             Đường Bộ 3N2Đ: Hà Nội - Móng Cái - 2 Đêm
                                                                             Đông Hưng - Biển Vạn Vĩ - Trúc Sơn Cổ
                                                                             Trấn</span>
@@ -23126,8 +22952,7 @@
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-5 cardItemDepartDiv">
 
                                                                             <ul class="tourListPros list-inline">
-                                                                                <li>Mũi Sa Vĩ - Nơi Địa đầu Tổ Quốc
-                                                                                </li>
+                                                                                <li>Mũi Sa Vĩ - Nơi Địa đầu Tổ Quốc</li>
                                                                                 <li>Biển Vạn Vĩ</li>
                                                                                 <li>Trúc Sơn Cổ Trấn</li>
                                                                                 <li>Trượt Thác Kim Sa Thủy</li>
@@ -23136,8 +22961,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="4362">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="4362">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">3.650.000
@@ -23214,8 +23038,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Nhật Bản
-                                                                            4N4Đ: Narita - Hakone - Yamanashi -
-                                                                            Tokyo
+                                                                            4N4Đ: Narita - Hakone - Yamanashi - Tokyo
                                                                             Bay VJ</span>
                                                                     </div>
                                                                     <div
@@ -23247,15 +23070,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2110">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2110">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">23.738.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">25.888.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">25.888.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -23297,8 +23118,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Hàn Quốc
-                                                                            5N5Đ: Busan - Daegu - Seoul (Bay
-                                                                            VJ)</span>
+                                                                            5N5Đ: Busan - Daegu - Seoul (Bay VJ)</span>
                                                                     </div>
                                                                     <div
                                                                         class="col-xs-12 no-padding cardItemTourDetailDiv">
@@ -23334,8 +23154,7 @@
                                                                             <span class="price vcolor-info">16.830.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">18.990.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">18.990.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -23410,15 +23229,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2540">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2540">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">25.768.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">28.888.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">28.888.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -23494,15 +23311,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2533">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2533">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">12.870.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">13.500.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">13.500.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -23576,15 +23391,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2874">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2874">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">43.650.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">43.890.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">43.890.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -23626,10 +23439,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Hokkaido
-                                                                            -
-                                                                            Nhật Bản 5N5Đ: Sài Gòn - Tokkari Okhotsk
-                                                                            -
+                                                                        <span class="cardItemTourName">Tour Hokkaido -
+                                                                            Nhật Bản 5N5Đ: Sài Gòn - Tokkari Okhotsk -
                                                                             Blue Pond - Tokyo - Narita</span>
                                                                     </div>
                                                                     <div
@@ -23668,15 +23479,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="4202">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="4202">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">39.650.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">39.900.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">39.900.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -23778,8 +23587,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2219">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2219">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">28.950.000
@@ -23827,8 +23635,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Bắc Âu
-                                                                            11N10Đ: Thụy Điển - Phần Lan - Na Uy -
-                                                                            Đan
+                                                                            11N10Đ: Thụy Điển - Phần Lan - Na Uy - Đan
                                                                             Mạch</span>
                                                                     </div>
                                                                     <div
@@ -23851,8 +23658,7 @@
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-5 cardItemDepartDiv">
 
                                                                             <ul class="tourListPros list-inline">
-                                                                                <li>Tàu Điện Ngầm Ngắm Cảnh Xuyên
-                                                                                    Núi
+                                                                                <li>Tàu Điện Ngầm Ngắm Cảnh Xuyên Núi
                                                                                 </li>
                                                                                 <li>Du Thuyền 2 Đêm</li>
                                                                                 <li>Lâu đài Akershus</li>
@@ -23862,8 +23668,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1700">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1700">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">101.690.000
@@ -23913,8 +23718,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Châu Âu
-                                                                            9N8Đ: TP.HCM - Đức - Hà Lan - Bỉ - Pháp
-                                                                            -
+                                                                            9N8Đ: TP.HCM - Đức - Hà Lan - Bỉ - Pháp -
                                                                             Thụy Sỹ - Ý (Milan)</span>
                                                                     </div>
                                                                     <div
@@ -23946,15 +23750,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2140">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2140">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">58.690.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">58.990.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">58.990.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -23997,8 +23799,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Châu Âu
-                                                                            11N10Đ: Hành Trình Ba Nước Pháp - Thụy
-                                                                            Sĩ -
+                                                                            11N10Đ: Hành Trình Ba Nước Pháp - Thụy Sĩ -
                                                                             Ý - Vatican</span>
                                                                     </div>
                                                                     <div
@@ -24031,15 +23832,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1934">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1934">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">74.790.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">74.990.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">74.990.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -24081,10 +23880,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Nga -
-                                                                            Trung
-                                                                            Quốc 8N7Đ: Moscow - Saint Petersburg -
-                                                                            Gấu
+                                                                        <span class="cardItemTourName">Tour Nga - Trung
+                                                                            Quốc 8N7Đ: Moscow - Saint Petersburg - Gấu
                                                                             Trúc Thành Đô - Cổ Trấn Hoàng Long
                                                                             Khê</span>
                                                                     </div>
@@ -24117,15 +23914,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="4307">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="4307">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">39.640.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">43.990.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">43.990.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -24167,10 +23962,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Canada
-                                                                            7N6Đ:
-                                                                            Vancouver - Cầu Treo Capilano - Trượt
-                                                                            Tuyết
+                                                                        <span class="cardItemTourName">Tour Canada 7N6Đ:
+                                                                            Vancouver - Cầu Treo Capilano - Trượt Tuyết
                                                                             Whistler Blackcomb</span>
                                                                     </div>
                                                                     <div
@@ -24195,22 +23988,19 @@
                                                                             <ul class="tourListPros list-inline">
                                                                                 <li>Đảo Victoria</li>
                                                                                 <li>Cầu Treo Capilano</li>
-                                                                                <li>Thành Phố Cổ Historic Gastown
-                                                                                </li>
+                                                                                <li>Thành Phố Cổ Historic Gastown</li>
                                                                             </ul>
                                                                         </div>
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2351">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2351">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">72.650.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">72.900.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">72.900.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -24281,11 +24071,9 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Trải Nghiệm
-                                                                            Du
+                                                                        <span class="cardItemTourName">Trải Nghiệm Du
                                                                             Lịch Singapore - Phuket - Singapore 4N3Đ
-                                                                            Cùng Siêu Du Thuyền Genting Dream
-                                                                            5*</span>
+                                                                            Cùng Siêu Du Thuyền Genting Dream 5*</span>
                                                                     </div>
                                                                     <div
                                                                         class="col-xs-12 no-padding cardItemTourDetailDiv">
@@ -24321,15 +24109,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2250">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2250">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">11.290.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">16.200.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">16.200.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -24371,12 +24157,9 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Trải Nghiệm
-                                                                            Du
-                                                                            Lịch Thượng Hải - Nagasaki - Jeju 5N4Đ:
-                                                                            Cùng
-                                                                            Siêu Du Thuyền Spectrum Of The
-                                                                            Seas</span>
+                                                                        <span class="cardItemTourName">Trải Nghiệm Du
+                                                                            Lịch Thượng Hải - Nagasaki - Jeju 5N4Đ: Cùng
+                                                                            Siêu Du Thuyền Spectrum Of The Seas</span>
                                                                     </div>
                                                                     <div
                                                                         class="col-xs-12 no-padding cardItemTourDetailDiv">
@@ -24403,10 +24186,8 @@
 
                                                                             <ul class="tourListPros list-inline">
                                                                                 <li>17 Nhà Hàng</li>
-                                                                                <li>55 Hoạt Động Vui Chơi Giải Trí
-                                                                                </li>
-                                                                                <li>Khám Phá Nagasaki &amp; Jeju
-                                                                                </li>
+                                                                                <li>55 Hoạt Động Vui Chơi Giải Trí</li>
+                                                                                <li>Khám Phá Nagasaki &amp; Jeju</li>
                                                                                 <li>Ẩm Thực Cao Cấp</li>
                                                                                 <li>Show Diễn Kiểu Broadway</li>
                                                                             </ul>
@@ -24414,15 +24195,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="4119">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="4119">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">12.390.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">12.650.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">12.650.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -24464,10 +24243,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Trải Nghiệm
-                                                                            Du
-                                                                            Lịch Thượng Hải - Okinawa 5N4Đ: Cùng
-                                                                            Siêu Du
+                                                                        <span class="cardItemTourName">Trải Nghiệm Du
+                                                                            Lịch Thượng Hải - Okinawa 5N4Đ: Cùng Siêu Du
                                                                             Thuyền Spectrum Of The Seas</span>
                                                                     </div>
                                                                     <div
@@ -24491,8 +24268,7 @@
 
                                                                             <ul class="tourListPros list-inline">
                                                                                 <li>17 Nhà Hàng</li>
-                                                                                <li>55 Hoạt Động Vui Chơi Giải Trí
-                                                                                </li>
+                                                                                <li>55 Hoạt Động Vui Chơi Giải Trí</li>
                                                                                 <li>Okinawa Nhật Bản</li>
                                                                                 <li>Ảm Thực Cao Cấp</li>
                                                                                 <li>Show diễn kiểu Broadway</li>
@@ -24501,15 +24277,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="4116">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="4116">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">10.590.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">12.350.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">12.350.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -24551,10 +24325,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Trải Nghiệm
-                                                                            Du
-                                                                            Lịch Hồng Kông - Naha - Miyakojima Nhật
-                                                                            Bản
+                                                                        <span class="cardItemTourName">Trải Nghiệm Du
+                                                                            Lịch Hồng Kông - Naha - Miyakojima Nhật Bản
                                                                             6N5Đ: Cùng Siêu Du Thuyền Resort World
                                                                             One</span>
                                                                     </div>
@@ -24582,20 +24354,17 @@
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-5 cardItemDepartDiv">
 
                                                                             <ul class="tourListPros list-inline">
-                                                                                <li>Du Thuyền Sang Trọng Resorts
-                                                                                    World
+                                                                                <li>Du Thuyền Sang Trọng Resorts World
                                                                                     One</li>
                                                                                 <li>Ẩm Thực Đặc Sắc</li>
-                                                                                <li>Trải Nghiệm Mua Sắm Miễn Thuế
-                                                                                </li>
+                                                                                <li>Trải Nghiệm Mua Sắm Miễn Thuế</li>
                                                                                 <li>Giải Trí Cao Cấp</li>
                                                                             </ul>
                                                                         </div>
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="4107">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="4107">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">19.690.000
@@ -24642,10 +24411,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Trải Nghiệm
-                                                                            Du
-                                                                            Lịch Singapore - Malaysia - Phuket 5N4Đ
-                                                                            Cùng
+                                                                        <span class="cardItemTourName">Trải Nghiệm Du
+                                                                            Lịch Singapore - Malaysia - Phuket 5N4Đ Cùng
                                                                             Siêu Du Thuyền Anthem Of The Seas</span>
                                                                     </div>
                                                                     <div
@@ -24673,8 +24440,7 @@
 
                                                                             <ul class="tourListPros list-inline">
                                                                                 <li>07 Bars và Lounge</li>
-                                                                                <li>55 Hoạt Động Vui Chơi Giải Trí
-                                                                                </li>
+                                                                                <li>55 Hoạt Động Vui Chơi Giải Trí</li>
                                                                                 <li>20 Nhà Hàng</li>
                                                                                 <li>Ẩm thực đẳng cấp</li>
                                                                                 <li>Show diễn kiểu Broadway</li>
@@ -24683,15 +24449,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2544">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2544">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">14.290.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">17.990.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">17.990.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -24710,8 +24474,7 @@
                                                                 <div class="ribbonContainerOuter">
                                                                     <div class="ribbonContainerInner">
                                                                         <span class="v-ribbon">
-                                                                            <h1>🚢Trọn Gói Phòng+Bữa Ăn+Vui Chơi
-                                                                            </h1>
+                                                                            <h1>🚢Trọn Gói Phòng+Bữa Ăn+Vui Chơi</h1>
                                                                         </span>
                                                                     </div>
                                                                 </div>
@@ -24734,8 +24497,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Trải Nghiệm
-                                                                            Du
+                                                                        <span class="cardItemTourName">Trải Nghiệm Du
                                                                             Lịch Kuala Lumpur - Singapore - Penang -
                                                                             Kuala Lumpur 4N3Đ Cùng Siêu Du Thuyền
                                                                             Genting Dream 5*</span>
@@ -24774,8 +24536,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2268">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2268">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">12.790.000
@@ -24851,10 +24612,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour
-                                                                            Campuchia
-                                                                            Đường Bộ 4N3Đ: Siem Riep - Cố Đô Oudong
-                                                                            -
+                                                                        <span class="cardItemTourName">Tour Campuchia
+                                                                            Đường Bộ 4N3Đ: Siem Riep - Cố Đô Oudong -
                                                                             Phnom Penh</span>
                                                                     </div>
                                                                     <div
@@ -24868,8 +24627,7 @@
                                                                                         <span
                                                                                             class="score-description">Tuyệt
                                                                                             vời </span>
-                                                                                        <span> | 107 đánh giá
-                                                                                        </span>
+                                                                                        <span> | 107 đánh giá </span>
                                                                                     </span>
                                                                                 </div>
                                                                             </div>
@@ -24886,15 +24644,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="662">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="662">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">5.340.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">5.400.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">5.400.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -24968,15 +24724,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="641">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="641">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">7.330.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">7.390.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">7.390.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -25018,10 +24772,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Cao Cấp
-                                                                            Thái
-                                                                            Lan 4N3Đ: Phuket - Đảo Koh Phi Phi -
-                                                                            Tham
+                                                                        <span class="cardItemTourName">Tour Cao Cấp Thái
+                                                                            Lan 4N3Đ: Phuket - Đảo Koh Phi Phi - Tham
                                                                             Quan Phố Cổ</span>
                                                                     </div>
                                                                     <div
@@ -25053,15 +24805,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2191">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2191">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">10.949.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">11.490.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">11.490.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -25104,8 +24854,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Đường Bộ
-                                                                            Liên Tuyến 4N3Đ: Campuchia - Lào - Đông
-                                                                            Bắc
+                                                                            Liên Tuyến 4N3Đ: Campuchia - Lào - Đông Bắc
                                                                             Thái Lan</span>
                                                                     </div>
                                                                     <div
@@ -25137,8 +24886,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1050">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1050">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">7.690.000
@@ -25185,10 +24933,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Lào
-                                                                            5N4Đ:
-                                                                            Sài Gòn - Viêng Chăn - Luang Prabang -
-                                                                            Vang
+                                                                        <span class="cardItemTourName">Tour Lào 5N4Đ:
+                                                                            Sài Gòn - Viêng Chăn - Luang Prabang - Vang
                                                                             Vieng</span>
                                                                     </div>
                                                                     <div
@@ -25227,15 +24973,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="3102">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="3102">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">11.920.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">11.990.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">11.990.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -25310,15 +25054,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1881">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1881">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">6.430.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">7.190.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">7.190.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -25390,8 +25132,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Tây Bắc
-                                                                            3N2Đ: Hà Nội - Khám Phá Mù Cang Chải -
-                                                                            Ngọc
+                                                                            3N2Đ: Hà Nội - Khám Phá Mù Cang Chải - Ngọc
                                                                             Chiến - Tà Xùa Mùa Lúa Chín</span>
                                                                     </div>
                                                                     <div
@@ -25422,8 +25163,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1260">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1260">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">2.490.000
@@ -25471,8 +25211,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Hà Giang
-                                                                            3N2Đ: Hà Nội - Hà Giang - Yên Minh -
-                                                                            Đồng
+                                                                            3N2Đ: Hà Nội - Hà Giang - Yên Minh - Đồng
                                                                             Văn - Nho Quế</span>
                                                                     </div>
                                                                     <div
@@ -25495,10 +25234,8 @@
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-5 cardItemDepartDiv">
 
                                                                             <ul class="tourListPros list-inline">
-                                                                                <li>Chèo thuyền trên sông Nho Quế
-                                                                                </li>
-                                                                                <li>Ngắm nhìn cảnh quan hùng vĩ từ
-                                                                                    đèo
+                                                                                <li>Chèo thuyền trên sông Nho Quế</li>
+                                                                                <li>Ngắm nhìn cảnh quan hùng vĩ từ đèo
                                                                                     Mã Pí Lèng</li>
                                                                                 <li>Thăm chợ phiên Đồng Văn</li>
                                                                             </ul>
@@ -25506,15 +25243,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1369">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1369">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">2.365.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">2.390.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">2.390.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -25556,10 +25291,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Liên
-                                                                            Tuyến
-                                                                            Miền Bắc 5N4Đ: Hà Nội - Nình Bình - Hạ
-                                                                            Long
+                                                                        <span class="cardItemTourName">Tour Liên Tuyến
+                                                                            Miền Bắc 5N4Đ: Hà Nội - Nình Bình - Hạ Long
                                                                             - Sapa - Fansipan</span>
                                                                     </div>
                                                                     <div
@@ -25583,26 +25316,22 @@
 
                                                                             <ul class="tourListPros list-inline">
                                                                                 <li>Hang Múa</li>
-                                                                                <li>Khám Phá Hạ Long Trên Du Thuyền
-                                                                                </li>
+                                                                                <li>Khám Phá Hạ Long Trên Du Thuyền</li>
                                                                                 <li>Đỉnh Núi Fansipan</li>
                                                                                 <li>Bản Cát Cát</li>
-                                                                                <li>Chùa Bái Đính và KDL Tràng An
-                                                                                </li>
+                                                                                <li>Chùa Bái Đính và KDL Tràng An</li>
                                                                             </ul>
                                                                         </div>
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1441">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1441">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">5.570.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">5.620.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">5.620.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -25645,8 +25374,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Đông Bắc
-                                                                            5N4Đ: HCM - Hà Giang - Cao Bằng - Thác
-                                                                            Bản
+                                                                            5N4Đ: HCM - Hà Giang - Cao Bằng - Thác Bản
                                                                             Giốc - Thảo Nguyên Đồng Lâm - Chùa Tam
                                                                             Thanh</span>
                                                                     </div>
@@ -25670,8 +25398,7 @@
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-5 cardItemDepartDiv">
 
                                                                             <ul class="tourListPros list-inline">
-                                                                                <li>Khám Phá Tứ Đại Đỉnh Đèo Đông
-                                                                                    Bắc
+                                                                                <li>Khám Phá Tứ Đại Đỉnh Đèo Đông Bắc
                                                                                 </li>
                                                                                 <li>Văn Hóa Phong Tục Dân Tộc</li>
                                                                                 <li>Động Ngườm Ngao</li>
@@ -25681,15 +25408,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2579">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2579">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">8.640.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">8.690.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">8.690.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -25731,10 +25456,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Sapa
-                                                                            2N3Đ:
-                                                                            Hà Nội - Sapa - Fansipan - Cát Cát
-                                                                            /Moana
+                                                                        <span class="cardItemTourName">Tour Sapa 2N3Đ:
+                                                                            Hà Nội - Sapa - Fansipan - Cát Cát /Moana
                                                                             View</span>
                                                                     </div>
                                                                     <div
@@ -25765,8 +25488,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1296">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1296">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">3.090.000
@@ -25845,15 +25567,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1696">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1696">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">3.300.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">3.340.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">3.340.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -25925,8 +25645,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Phú Quốc
-                                                                            Trong Ngày: Cano Khám Phá Các Đảo - Cáp
-                                                                            Treo
+                                                                            Trong Ngày: Cano Khám Phá Các Đảo - Cáp Treo
                                                                             Hòn Thơm</span>
                                                                     </div>
                                                                     <div
@@ -25949,8 +25668,7 @@
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-5 cardItemDepartDiv">
 
                                                                             <ul class="tourListPros list-inline">
-                                                                                <li>Tặng Free Bộ Ảnh Chụp Tại Đảo
-                                                                                </li>
+                                                                                <li>Tặng Free Bộ Ảnh Chụp Tại Đảo</li>
                                                                                 <li>Hòn Dăm Ngang</li>
                                                                                 <li>Hòn Mây Rút Ngoài và Trong</li>
                                                                                 <li>Hòn Ghầm Ghì</li>
@@ -25960,15 +25678,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1523">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1523">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">1.307.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">1.350.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">1.350.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -26010,10 +25726,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Ninh
-                                                                            Bình
-                                                                            Trong Ngày: Hà Nội - Hoa Lư - Tam Cốc -
-                                                                            Hang
+                                                                        <span class="cardItemTourName">Tour Ninh Bình
+                                                                            Trong Ngày: Hà Nội - Hoa Lư - Tam Cốc - Hang
                                                                             Múa (NB6)</span>
                                                                     </div>
                                                                     <div
@@ -26044,15 +25758,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1313">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1313">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">885.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">905.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">905.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -26095,8 +25807,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Hạ Long
-                                                                            2N1Đ: Hà Nội - Vịnh Hạ Long - Hạ Long
-                                                                            Park -
+                                                                            2N1Đ: Hà Nội - Vịnh Hạ Long - Hạ Long Park -
                                                                             Bãi Cháy</span>
                                                                     </div>
                                                                     <div
@@ -26127,15 +25838,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="440">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="440">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">2.220.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">2.250.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">2.250.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -26177,8 +25886,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Củ Chi
-                                                                            Nửa
+                                                                        <span class="cardItemTourName">Tour Củ Chi Nửa
                                                                             Ngày: TP.HCM - Thăm Quan Địa Đạo</span>
                                                                     </div>
                                                                     <div
@@ -26214,8 +25922,7 @@
                                                                             <span class="price vcolor-info">413.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">419.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">419.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -26295,8 +26002,7 @@
                                                                             <span class="price vcolor-info">640.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">650.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">650.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -26370,8 +26076,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1291">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1291">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">1.300.000
@@ -26447,10 +26152,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Cao Cấp
-                                                                            Tây
-                                                                            Nguyên 3N3Đ: Tà Đùng - Buôn Mê Thuột -
-                                                                            Thác
+                                                                        <span class="cardItemTourName">Tour Cao Cấp Tây
+                                                                            Nguyên 3N3Đ: Tà Đùng - Buôn Mê Thuột - Thác
                                                                             Dray Nu</span>
                                                                     </div>
                                                                     <div
@@ -26481,15 +26184,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="879">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="879">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">2.802.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">2.830.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">2.830.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -26531,10 +26232,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Tây
-                                                                            Nguyên
-                                                                            3N2Đ: Măng Đen - Ngã 3 Đông Dương - Khẩu
-                                                                            Bờ
+                                                                        <span class="cardItemTourName">Tour Tây Nguyên
+                                                                            3N2Đ: Măng Đen - Ngã 3 Đông Dương - Khẩu Bờ
                                                                             Y- Gia Lai</span>
                                                                     </div>
                                                                     <div
@@ -26567,8 +26266,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1855">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1855">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">5.350.000
@@ -26615,10 +26313,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Cao Cấp
-                                                                            Đà
-                                                                            Lạt 2N2Đ: Bảo Lộc - Làng Hàn Quốc The
-                                                                            Eco
+                                                                        <span class="cardItemTourName">Tour Cao Cấp Đà
+                                                                            Lạt 2N2Đ: Bảo Lộc - Làng Hàn Quốc The Eco
                                                                             Tropicana - Samten Hills - Thác
                                                                             Dambri</span>
                                                                     </div>
@@ -26648,15 +26344,13 @@
                                                                             <ul class="tourListPros list-inline">
                                                                                 <li>Ngôi Làng Hàn Quốc</li>
                                                                                 <li>Tu Viện Bát Nhã</li>
-                                                                                <li>Thiên Đường Tâm Linh Bật Nhất
-                                                                                </li>
+                                                                                <li>Thiên Đường Tâm Linh Bật Nhất</li>
                                                                             </ul>
                                                                         </div>
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2200">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2200">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">2.650.000
@@ -26703,10 +26397,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Đà Lạt
-                                                                            3N3Đ:
-                                                                            Mongo Land - Làng Hoa Vạn Thành - Thung
-                                                                            Lũng
+                                                                        <span class="cardItemTourName">Tour Đà Lạt 3N3Đ:
+                                                                            Mongo Land - Làng Hoa Vạn Thành - Thung Lũng
                                                                             Đèn</span>
                                                                     </div>
                                                                     <div
@@ -26738,15 +26430,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="786">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="786">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">2.175.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">3.090.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">3.090.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -26788,10 +26478,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Đà Lạt
-                                                                            3N3Đ:
-                                                                            Săn Mây Cầu Gỗ - Đồi Chè Cầu Đất -
-                                                                            Samtan
+                                                                        <span class="cardItemTourName">Tour Đà Lạt 3N3Đ:
+                                                                            Săn Mây Cầu Gỗ - Đồi Chè Cầu Đất - Samtan
                                                                             Hill - KDL Lá Phong</span>
                                                                     </div>
                                                                     <div
@@ -26814,8 +26502,7 @@
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-5 cardItemDepartDiv">
 
                                                                             <ul class="tourListPros list-inline">
-                                                                                <li>Thiên Đường Tâm Linh Bật Nhất
-                                                                                </li>
+                                                                                <li>Thiên Đường Tâm Linh Bật Nhất</li>
                                                                                 <li>Kokoro Cafe</li>
                                                                                 <li>Cung Nam Phương Hoàng Hậu</li>
                                                                                 <li>Hầm Vang Châu Âu Đà Lạt</li>
@@ -26824,15 +26511,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2249">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2249">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">2.178.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">2.200.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">2.200.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -26873,8 +26558,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Đà Lạt
-                                                                            2N2Đ:
+                                                                        <span class="cardItemTourName">Tour Đà Lạt 2N2Đ:
                                                                             Khám Phá Đà Lạt Ngàn Hoa</span>
                                                                     </div>
                                                                     <div
@@ -26911,8 +26595,7 @@
                                                                             <span class="price vcolor-info">1.575.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">1.790.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">1.790.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -26983,10 +26666,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour
-                                                                            Limousine
-                                                                            Miền Tây 3N3Đ: Du Thuyền Cần Thơ - Cực
-                                                                            Nam -
+                                                                        <span class="cardItemTourName">Tour Limousine
+                                                                            Miền Tây 3N3Đ: Du Thuyền Cần Thơ - Cực Nam -
                                                                             Mũi Cà Mau - Ăn Cua Biển</span>
                                                                     </div>
                                                                     <div
@@ -27019,15 +26700,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="971">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="971">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">3.219.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">3.250.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">3.250.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -27061,8 +26740,7 @@
                                                                     <div class="cardItemPriceDivInner">
                                                                         <span class="cardItemPriceAfterDiscount"><i
                                                                                 class="glyphicon glyphicon-map-marker"></i>
-                                                                            Bạc Liêu, Cà Mau, Cần Thơ, Sóc
-                                                                            Trăng</span>
+                                                                            Bạc Liêu, Cà Mau, Cần Thơ, Sóc Trăng</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -27071,8 +26749,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Miền Tây
-                                                                            4N3Đ: Cần Thơ - Sóc Trăng - Bạc Liêu -
-                                                                            Cà
+                                                                            4N3Đ: Cần Thơ - Sóc Trăng - Bạc Liêu - Cà
                                                                             Mau</span>
                                                                     </div>
                                                                     <div
@@ -27105,15 +26782,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1552">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1552">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">4.243.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">4.286.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">4.286.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -27192,8 +26867,7 @@
                                                                             <span class="price vcolor-info">2.065.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">2.086.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">2.086.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -27227,8 +26901,7 @@
                                                                     <div class="cardItemPriceDivInner">
                                                                         <span class="cardItemPriceAfterDiscount"><i
                                                                                 class="glyphicon glyphicon-map-marker"></i>
-                                                                            Bến Tre, Cần Thơ, Miền Tây, Mỹ
-                                                                            Tho</span>
+                                                                            Bến Tre, Cần Thơ, Miền Tây, Mỹ Tho</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -27261,23 +26934,20 @@
 
                                                                             <ul class="tourListPros list-inline">
                                                                                 <li>Nghe Đờn Ca Tài Tử</li>
-                                                                                <li>Trải Nghiệm Xe Ngựa Đường Quê
-                                                                                </li>
+                                                                                <li>Trải Nghiệm Xe Ngựa Đường Quê</li>
                                                                                 <li>Chợ Nổi Cái Răng</li>
                                                                             </ul>
                                                                         </div>
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1644">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1644">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">1.485.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">1.500.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">1.500.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -27320,8 +26990,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Miền Tây
-                                                                            3N2Đ: HCM - Bến Tre - Cần Thơ - Cà Mau -
-                                                                            Bạc
+                                                                            3N2Đ: HCM - Bến Tre - Cần Thơ - Cà Mau - Bạc
                                                                             Liêu</span>
                                                                     </div>
                                                                     <div
@@ -27344,8 +27013,7 @@
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-5 cardItemDepartDiv">
 
                                                                             <ul class="tourListPros list-inline">
-                                                                                <li>Mũi Cà Mau Mảnh Đất Cuối Cùng
-                                                                                    Việt
+                                                                                <li>Mũi Cà Mau Mảnh Đất Cuối Cùng Việt
                                                                                     Nam</li>
                                                                                 <li>Tham Quan Chợ Nổi Cái Răng</li>
                                                                                 <li>Văn Hóa Chùa Khơ Me</li>
@@ -27359,8 +27027,7 @@
                                                                             <span class="price vcolor-info">2.820.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">2.850.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">2.850.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -27402,8 +27069,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Miền Tây
-                                                                            Trong Ngày: HCM - Mỹ Tho - Bến
-                                                                            Tre</span>
+                                                                            Trong Ngày: HCM - Mỹ Tho - Bến Tre</span>
                                                                     </div>
                                                                     <div
                                                                         class="col-xs-12 no-padding cardItemTourDetailDiv">
@@ -27416,8 +27082,7 @@
                                                                                         <span
                                                                                             class="score-description">Tuyệt
                                                                                             vời </span>
-                                                                                        <span> | 103 đánh giá
-                                                                                        </span>
+                                                                                        <span> | 103 đánh giá </span>
                                                                                     </span>
                                                                                 </div>
                                                                             </div>
@@ -27439,8 +27104,7 @@
                                                                             <span class="price vcolor-info">440.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">450.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">450.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -27513,8 +27177,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Miền Bắc
-                                                                            5N4Đ: HCM - Hà Nội - Sapa - Lào Cai -
-                                                                            Ninh
+                                                                            5N4Đ: HCM - Hà Nội - Sapa - Lào Cai - Ninh
                                                                             Bình - Hạ Long</span>
                                                                     </div>
                                                                     <div
@@ -27547,15 +27210,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1519">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1519">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">8.450.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">8.490.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">8.490.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -27597,8 +27258,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Hạ Long
-                                                                            -
+                                                                        <span class="cardItemTourName">Tour Hạ Long -
                                                                             Lan Hạ 2N1Đ: Du Thuyền 5 Sao Dora
                                                                             Cruise</span>
                                                                     </div>
@@ -27622,8 +27282,7 @@
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-5 cardItemDepartDiv">
 
                                                                             <ul class="tourListPros list-inline">
-                                                                                <li>Du Ngoạn Vịnh Hạ Long Lan Hạ
-                                                                                </li>
+                                                                                <li>Du Ngoạn Vịnh Hạ Long Lan Hạ</li>
                                                                                 <li>Du thuyền Dora 5 Sao</li>
                                                                                 <li>Trải Nghiệm Chèo Kayak</li>
                                                                             </ul>
@@ -27631,8 +27290,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1695">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1695">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">4.150.000
@@ -27680,8 +27338,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Vũng Tàu
-                                                                            2N1Đ: Hồ Tràm - Nghỉ Dưỡng Cao
-                                                                            Cấp</span>
+                                                                            2N1Đ: Hồ Tràm - Nghỉ Dưỡng Cao Cấp</span>
                                                                     </div>
                                                                     <div
                                                                         class="col-xs-12 no-padding cardItemTourDetailDiv">
@@ -27712,15 +27369,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1745">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1745">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">2.560.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">4.286.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">4.286.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -27763,8 +27418,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Phú Quốc
-                                                                            3N2Đ: HCM - Grand World - Câu Cá - Lặn
-                                                                            Ngắm
+                                                                            3N2Đ: HCM - Grand World - Câu Cá - Lặn Ngắm
                                                                             San Hô</span>
                                                                     </div>
                                                                     <div
@@ -27796,15 +27450,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1413">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1413">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">4.550.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">4.590.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">4.590.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -27879,15 +27531,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2139">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2139">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">8.940.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">8.990.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">8.990.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -27929,10 +27579,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Liên
-                                                                            Tuyến
-                                                                            Miền Bắc 4N3Đ: Hà Nội - Ninh Bình - Sapa
-                                                                            -
+                                                                        <span class="cardItemTourName">Tour Liên Tuyến
+                                                                            Miền Bắc 4N3Đ: Hà Nội - Ninh Bình - Sapa -
                                                                             Fansipan</span>
                                                                     </div>
                                                                     <div
@@ -27955,8 +27603,7 @@
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-5 cardItemDepartDiv">
 
                                                                             <ul class="tourListPros list-inline">
-                                                                                <li>Khám Phá 36 Phố Phường Hà Nội
-                                                                                </li>
+                                                                                <li>Khám Phá 36 Phố Phường Hà Nội</li>
                                                                                 <li>Cố Đô Hoa Lư</li>
                                                                                 <li>Sapa Nơi Gặp Gỡ Đất Trời</li>
                                                                             </ul>
@@ -27964,15 +27611,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1403">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1403">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">4.545.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">4.590.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">4.590.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -28043,10 +27688,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Miền
-                                                                            Trung
-                                                                            5N4Đ (Đón từ Đà Nẵng): Khám Phá Bán Đảo
-                                                                            Sơn
+                                                                        <span class="cardItemTourName">Tour Miền Trung
+                                                                            5N4Đ (Đón từ Đà Nẵng): Khám Phá Bán Đảo Sơn
                                                                             Trà - Hội An - Bà Nà - Huế - Phong
                                                                             Nha</span>
                                                                     </div>
@@ -28079,8 +27722,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1651">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1651">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">3.850.000
@@ -28127,10 +27769,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Miền
-                                                                            Trung
-                                                                            4N3Đ (Đón từ Đà Nẵng): Khám Phá Sơn Trà
-                                                                            -
+                                                                        <span class="cardItemTourName">Tour Miền Trung
+                                                                            4N3Đ (Đón từ Đà Nẵng): Khám Phá Sơn Trà -
                                                                             Hội An - Bà Nà - Huế</span>
                                                                     </div>
                                                                     <div
@@ -28162,8 +27802,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2975">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2975">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">3.050.000
@@ -28210,12 +27849,9 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Miền
-                                                                            Trung
-                                                                            3N2Đ (Đón từ Đà Nẵng): Trải Nghiệm Bà Nà
-                                                                            -
-                                                                            Cố Đô Huế - Thánh Địa La Vang - Động
-                                                                            Phong
+                                                                        <span class="cardItemTourName">Tour Miền Trung
+                                                                            3N2Đ (Đón từ Đà Nẵng): Trải Nghiệm Bà Nà -
+                                                                            Cố Đô Huế - Thánh Địa La Vang - Động Phong
                                                                             Nha</span>
                                                                     </div>
                                                                     <div
@@ -28247,15 +27883,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1649">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1649">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">3.000.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">3.050.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">3.050.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -28297,10 +27931,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Đà Nẵng
-                                                                            3N2Đ
-                                                                            (Đón Từ Đà Nẵng): Khám Phá Bán Đảo Sơn
-                                                                            Trà -
+                                                                        <span class="cardItemTourName">Tour Đà Nẵng 3N2Đ
+                                                                            (Đón Từ Đà Nẵng): Khám Phá Bán Đảo Sơn Trà -
                                                                             Cù Lao Chàm - Hội An - Bà Nà</span>
                                                                     </div>
                                                                     <div
@@ -28333,8 +27965,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2974">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2974">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">2.550.000
@@ -28381,8 +28012,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Đà Nẵng
-                                                                            4N3Đ: HCM - Hội An - Quảng Bình -
-                                                                            Huế</span>
+                                                                            4N3Đ: HCM - Hội An - Quảng Bình - Huế</span>
                                                                     </div>
                                                                     <div
                                                                         class="col-xs-12 no-padding cardItemTourDetailDiv">
@@ -28413,15 +28043,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2087">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2087">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">6.540.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">6.590.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">6.590.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -28464,8 +28092,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Đà Nẵng
-                                                                            4N3Đ: Hà Nội - Đà Nẵng - Bà Nà Hills -
-                                                                            Hội
+                                                                            4N3Đ: Hà Nội - Đà Nẵng - Bà Nà Hills - Hội
                                                                             An - Huế</span>
                                                                     </div>
                                                                     <div
@@ -28497,15 +28124,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2085">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2085">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">6.750.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">6.990.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">6.990.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -28608,15 +28233,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="290">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="290">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">1.582.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">1.590.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">1.590.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -28658,10 +28281,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Cao Cấp
-                                                                            Nam
-                                                                            Cát Tiên 2N1Đ: Thiên Nhiên Hoang Sơ Rừng
-                                                                            Nam
+                                                                        <span class="cardItemTourName">Tour Cao Cấp Nam
+                                                                            Cát Tiên 2N1Đ: Thiên Nhiên Hoang Sơ Rừng Nam
                                                                             Cát Tiên</span>
                                                                     </div>
                                                                     <div
@@ -28684,11 +28305,9 @@
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-5 cardItemDepartDiv">
 
                                                                             <ul class="tourListPros list-inline">
-                                                                                <li>Nghỉ Dưỡng Resort View Thiên
-                                                                                    Nhiên
+                                                                                <li>Nghỉ Dưỡng Resort View Thiên Nhiên
                                                                                 </li>
-                                                                                <li>Xem Hoạt Động Ban Đêm Động Vật
-                                                                                    Hoang
+                                                                                <li>Xem Hoạt Động Ban Đêm Động Vật Hoang
                                                                                     Dã</li>
                                                                                 <li>Trải Nghiệm Xe Đặc Chủng</li>
                                                                             </ul>
@@ -28696,15 +28315,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1500">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1500">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">2.560.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">2.586.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">2.586.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -28746,10 +28363,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Nha
-                                                                            Trang
-                                                                            3N3Đ: Nhũ Tiên - Du Thuyền Emperor
-                                                                            Cruises -
+                                                                        <span class="cardItemTourName">Tour Nha Trang
+                                                                            3N3Đ: Nhũ Tiên - Du Thuyền Emperor Cruises -
                                                                             Buffet Hải Sản</span>
                                                                     </div>
                                                                     <div
@@ -28781,15 +28396,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2115">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2115">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">2.901.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">2.930.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">2.930.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -28831,10 +28444,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Nam Du -
-                                                                            Hòn
-                                                                            Sơn 3N3Đ: Biển Đảo Trong Xanh - Thiên
-                                                                            Nhiên
+                                                                        <span class="cardItemTourName">Tour Nam Du - Hòn
+                                                                            Sơn 3N3Đ: Biển Đảo Trong Xanh - Thiên Nhiên
                                                                             Hoang Sơ</span>
                                                                     </div>
                                                                     <div
@@ -28866,15 +28477,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1146">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1146">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">2.240.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">2.350.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">2.350.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -28916,8 +28525,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Phan
-                                                                            Thiết
+                                                                        <span class="cardItemTourName">Tour Phan Thiết
                                                                             3N2Đ: KDL Núi Tà Kú - Bàu Sen - Jeep
                                                                             Tour</span>
                                                                     </div>
@@ -28950,15 +28558,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1778">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1778">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">2.956.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">2.986.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">2.986.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -29001,8 +28607,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Phú Quý
-                                                                            2N2Đ: Gành Hang - Phong Điện - Núi Cao
-                                                                            Cát -
+                                                                            2N2Đ: Gành Hang - Phong Điện - Núi Cao Cát -
                                                                             Vịnh Triều Dương</span>
                                                                     </div>
                                                                     <div
@@ -29038,8 +28643,7 @@
                                                                             <span class="price vcolor-info">2.380.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">2.490.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">2.490.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -29111,8 +28715,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Nam Phi
-                                                                            8N7Đ: Johannesburg - Pretoria - Sun City
-                                                                            -
+                                                                            8N7Đ: Johannesburg - Pretoria - Sun City -
                                                                             Cape Town</span>
                                                                     </div>
                                                                     <div
@@ -29144,15 +28747,13 @@
                                                                             <ul class="tourListPros list-inline">
                                                                                 <li>Thành Phố Biển Cape Town</li>
                                                                                 <li>Núi Bàn Kỳ Quan Thiên Nhiên</li>
-                                                                                <li>Công Viên Quốc Gia Pilanesberg
-                                                                                </li>
+                                                                                <li>Công Viên Quốc Gia Pilanesberg</li>
                                                                             </ul>
                                                                         </div>
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1800">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1800">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">79.990.000
@@ -29224,8 +28825,7 @@
 
                                                                             <ul class="tourListPros list-inline">
                                                                                 <li>Bảo Tàng Sarnath</li>
-                                                                                <li>Ngắm Bình Minh Trên Sông Hằng
-                                                                                </li>
+                                                                                <li>Ngắm Bình Minh Trên Sông Hằng</li>
                                                                                 <li>Đỉnh Núi Linh Thứu</li>
                                                                                 <li>Viện Đại Học Nalanda</li>
                                                                             </ul>
@@ -29233,15 +28833,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2548">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2548">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">28.890.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">30.990.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">30.990.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -29283,10 +28881,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Cao Cấp
-                                                                            Ai
-                                                                            Cập 13N12Đ: Hà Nội/ TP.HCM - Khám Phá Ai
-                                                                            Cập
+                                                                        <span class="cardItemTourName">Tour Cao Cấp Ai
+                                                                            Cập 13N12Đ: Hà Nội/ TP.HCM - Khám Phá Ai Cập
                                                                             Huyền Bí</span>
                                                                     </div>
                                                                     <div
@@ -29312,23 +28908,20 @@
                                                                                 <li>Tượng Nhân Sư</li>
                                                                                 <li>Quần Thể Kim Tự Tháp</li>
                                                                                 <li>Thung Lũng Các Vị Vua</li>
-                                                                                <li>Du Thuyền Trên Sông Nile Huyền
-                                                                                    Bí
+                                                                                <li>Du Thuyền Trên Sông Nile Huyền Bí
                                                                                 </li>
                                                                             </ul>
                                                                         </div>
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="4130">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="4130">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">84.400.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">84.900.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">84.900.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -29371,8 +28964,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Mông Cổ
-                                                                            8N7Đ: Bản Tình Ca Trên Thảo
-                                                                            Nguyên</span>
+                                                                            8N7Đ: Bản Tình Ca Trên Thảo Nguyên</span>
                                                                     </div>
                                                                     <div
                                                                         class="col-xs-12 no-padding cardItemTourDetailDiv">
@@ -29410,8 +29002,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="4214">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="4214">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">69.990.000
@@ -29458,10 +29049,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Qatar
-                                                                            6N5Đ:
-                                                                            Thủ Đô Doha - Sa mạc Safari - Thiên
-                                                                            Đường
+                                                                        <span class="cardItemTourName">Tour Qatar 6N5Đ:
+                                                                            Thủ Đô Doha - Sa mạc Safari - Thiên Đường
                                                                             Đảo Ngọc The Pearl</span>
                                                                     </div>
                                                                     <div
@@ -29500,8 +29089,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2962">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2962">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">36.990.000
@@ -29548,8 +29136,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Sri
-                                                                            Lanka
+                                                                        <span class="cardItemTourName">Tour Sri Lanka
                                                                             8N7Đ: HCM - Colombo - Hòn Ngọc Ấn Độ
                                                                             Dương</span>
                                                                     </div>
@@ -29592,15 +29179,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="4448">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="4448">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">37.400.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">37.800.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">37.800.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -29671,8 +29256,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Xe Lửa
-                                                                            Miền
+                                                                        <span class="cardItemTourName">Tour Xe Lửa Miền
                                                                             Trung 3N4Đ: Khám Phá Quy Nhơn - Phú
                                                                             Yên</span>
                                                                     </div>
@@ -29709,8 +29293,7 @@
                                                                             <span class="price vcolor-info">4.150.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">4.190.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">4.190.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -29752,10 +29335,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Xe Lửa
-                                                                            Miền
-                                                                            Trung 3N4Đ: Kỳ Co - Eo Gió - Gành Đá Đĩa
-                                                                            -
+                                                                        <span class="cardItemTourName">Tour Xe Lửa Miền
+                                                                            Trung 3N4Đ: Kỳ Co - Eo Gió - Gành Đá Đĩa -
                                                                             Mũi Điện - Tháp Nhạn</span>
                                                                     </div>
                                                                     <div
@@ -29787,8 +29368,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1188">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1188">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">3.980.000
@@ -29835,8 +29415,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Xe Lửa
-                                                                            Quy
+                                                                        <span class="cardItemTourName">Tour Xe Lửa Quy
                                                                             Nhơn 3N4Đ: KDL Hầm Hô - Kỳ Co - Eo Gió -
                                                                             Chùa Ông Núi</span>
                                                                     </div>
@@ -29868,15 +29447,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="833">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="833">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">3.812.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">3.850.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">3.850.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -29918,8 +29495,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Xe Lửa
-                                                                            Lý
+                                                                        <span class="cardItemTourName">Tour Xe Lửa Lý
                                                                             Sơn 3N4Đ: Vương Quốc Tỏi - Biển Đảo Lý
                                                                             Sơn</span>
                                                                     </div>
@@ -29952,8 +29528,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="794">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="794">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">4.490.000
@@ -30000,10 +29575,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Xe Lửa
-                                                                            Cao
-                                                                            Cấp Nha Trang 3N4Đ: Du Thuyền Đế Vương
-                                                                            Trên
+                                                                        <span class="cardItemTourName">Tour Xe Lửa Cao
+                                                                            Cấp Nha Trang 3N4Đ: Du Thuyền Đế Vương Trên
                                                                             Vịnh - City Tour</span>
                                                                     </div>
                                                                     <div
@@ -30035,15 +29608,13 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1131">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1131">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">4.050.000
                                                                                 <small
                                                                                     class="textCurrency">VND</small></span>
-                                                                            <div class="price-line">4.090.000 VND
-                                                                            </div>
+                                                                            <div class="price-line">4.090.000 VND</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -30085,10 +29656,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Xe Lửa
-                                                                            Đà
-                                                                            Nẵng 4N5Đ: Sài Gòn - Đà Nẵng - Hội An -
-                                                                            Kinh
+                                                                        <span class="cardItemTourName">Tour Xe Lửa Đà
+                                                                            Nẵng 4N5Đ: Sài Gòn - Đà Nẵng - Hội An - Kinh
                                                                             Thành Huế - Lăng Khải Định</span>
                                                                     </div>
                                                                     <div
@@ -30128,8 +29697,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1151">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1151">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">5.750.000
@@ -30205,10 +29773,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Đà Lạt
-                                                                            Nửa
-                                                                            Ngày: Chèo Kayak Trên Hồ Tuyền
-                                                                            Lâm</span>
+                                                                        <span class="cardItemTourName">Tour Đà Lạt Nửa
+                                                                            Ngày: Chèo Kayak Trên Hồ Tuyền Lâm</span>
                                                                     </div>
                                                                     <div
                                                                         class="col-xs-12 no-padding cardItemTourDetailDiv">
@@ -30237,8 +29803,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1358">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1358">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">400.000
@@ -30285,8 +29850,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Đà Lạt
-                                                                            Nửa
+                                                                        <span class="cardItemTourName">Tour Đà Lạt Nửa
                                                                             Ngày: Chèo SUP Ngắm Hoàng Hôn Hồ Tuyền
                                                                             Lâm</span>
                                                                     </div>
@@ -30317,8 +29881,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1479">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1479">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">440.000
@@ -30365,8 +29928,7 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Đà Lạt
-                                                                            Trong
+                                                                        <span class="cardItemTourName">Tour Đà Lạt Trong
                                                                             Ngày: Chèo SUP Hồ Tuyền Lâm Cùng Con
                                                                             Yêu</span>
                                                                     </div>
@@ -30398,8 +29960,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1478">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1478">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">750.000
@@ -30447,8 +30008,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Camping
-                                                                            2N1Đ: Trải Nghiệm Cắm Trại Và Chèo
-                                                                            Thuyền
+                                                                            2N1Đ: Trải Nghiệm Cắm Trại Và Chèo Thuyền
                                                                             Sup</span>
                                                                     </div>
                                                                     <div
@@ -30471,16 +30031,14 @@
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-5 cardItemDepartDiv">
 
                                                                             <ul class="tourListPros list-inline">
-                                                                                <li>Ngắm bình minh tại Hồ Tuyền Lâm
-                                                                                </li>
+                                                                                <li>Ngắm bình minh tại Hồ Tuyền Lâm</li>
                                                                                 <li>Trải nghiệm cắm trại</li>
                                                                             </ul>
                                                                         </div>
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1538">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1538">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">1.260.000
@@ -30528,8 +30086,7 @@
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
                                                                         <span class="cardItemTourName">Tour Trekking
-                                                                            2N2Đ: Chinh Phục Hang Động Núi Lửa
-                                                                            Krongno -
+                                                                            2N2Đ: Chinh Phục Hang Động Núi Lửa Krongno -
                                                                             Tà Đùng</span>
                                                                     </div>
                                                                     <div
@@ -30562,12 +30119,10 @@
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 v-margin-bottom-5 cardItemDepartDiv">
 
                                                                             <ul class="tourListPros list-inline">
-                                                                                <li>Công Viên Địa Chất Toàn Cầu Đak
-                                                                                    Nông
+                                                                                <li>Công Viên Địa Chất Toàn Cầu Đak Nông
                                                                                 </li>
                                                                                 <li>Check In Hang Núi Lửa</li>
-                                                                                <li>Thưởng Thức Đêm Nhạc Acoustic
-                                                                                </li>
+                                                                                <li>Thưởng Thức Đêm Nhạc Acoustic</li>
                                                                                 <li>BBQ KDL Tà Đùng</li>
                                                                                 <li>Đi Bộ Trong Rừng</li>
                                                                             </ul>
@@ -30575,8 +30130,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="2613">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="2613">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">2.990.000
@@ -30623,10 +30177,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Đà Lạt
-                                                                            Trong
-                                                                            Ngày: Khám Phá Langbiang - Thác Datanla
-                                                                            -
+                                                                        <span class="cardItemTourName">Tour Đà Lạt Trong
+                                                                            Ngày: Khám Phá Langbiang - Thác Datanla -
                                                                             Crazy House - Farm</span>
                                                                     </div>
                                                                     <div
@@ -30657,8 +30209,7 @@
                                                                         <div
                                                                             class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cardItemPrice">
                                                                             <div class="tourBooking24H hidden"
-                                                                                data-id="1293">0 khách đặt trong 24h
-                                                                                qua
+                                                                                data-id="1293">0 khách đặt trong 24h qua
                                                                             </div>
                                                                             <div class="clearfix visible-xs"></div>
                                                                             <span class="price vcolor-info">744.000
@@ -30717,8 +30268,7 @@
                                                             <div class="cardItemPriceDivInner">
                                                                 <span class="cardItemPriceAfterDiscount">
                                                                     <span>Trung Quốc</span>
-                                                                    <span class="tourCount hidden-xs">191
-                                                                        Tours</span>
+                                                                    <span class="tourCount hidden-xs">191 Tours</span>
                                                                 </span>
                                                             </div>
                                                         </div>
@@ -30743,8 +30293,7 @@
                                                             <div class="cardItemPriceDivInner">
                                                                 <span class="cardItemPriceAfterDiscount">
                                                                     <span>Singapore</span>
-                                                                    <span class="tourCount hidden-xs">40
-                                                                        Tours</span>
+                                                                    <span class="tourCount hidden-xs">40 Tours</span>
                                                                 </span>
                                                             </div>
                                                         </div>
@@ -30769,8 +30318,7 @@
                                                             <div class="cardItemPriceDivInner">
                                                                 <span class="cardItemPriceAfterDiscount">
                                                                     <span>Thái Lan</span>
-                                                                    <span class="tourCount hidden-xs">57
-                                                                        Tours</span>
+                                                                    <span class="tourCount hidden-xs">57 Tours</span>
                                                                 </span>
                                                             </div>
                                                         </div>
@@ -30795,8 +30343,7 @@
                                                             <div class="cardItemPriceDivInner">
                                                                 <span class="cardItemPriceAfterDiscount">
                                                                     <span>Châu Âu</span>
-                                                                    <span class="tourCount hidden-xs">29
-                                                                        Tours</span>
+                                                                    <span class="tourCount hidden-xs">29 Tours</span>
                                                                 </span>
                                                             </div>
                                                         </div>
@@ -30821,8 +30368,7 @@
                                                             <div class="cardItemPriceDivInner">
                                                                 <span class="cardItemPriceAfterDiscount">
                                                                     <span>Nhật Bản</span>
-                                                                    <span class="tourCount hidden-xs">65
-                                                                        Tours</span>
+                                                                    <span class="tourCount hidden-xs">65 Tours</span>
                                                                 </span>
                                                             </div>
                                                         </div>
@@ -30838,7 +30384,6 @@
                 </div>
             </div>
         </div>
-</main>
 
-<?php include 'inc/js.php'; ?>
-<?php include 'inc/footer.php'; ?>
+        <?php include 'inc/js.php'; ?>
+        <?php include 'inc/footer.php'; ?>
