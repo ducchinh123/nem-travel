@@ -8,10 +8,9 @@
     <div class="container">
       <div class="navbar-header">
         <a href="<?= site_url() ?>" class="navbar-brand" style="justify-content: end;display: flex;">
-          <img src="https://nemtravel.vn/wp-content/uploads/2024/08/1-removebg-preview-123.png?time=<?= time() ?>" alt="ivivu" class="loading"
-            data-was-processed="true">
+          <img src="https://nemtravel.vn/wp-content/uploads/2024/08/1-removebg-preview-123.png?time=<?= time() ?>"
+            alt="ivivu" class="loading" data-was-processed="true">
         </a>
-
         <button type="button" class="navbar-toggle collapsed hidden" data-toggle="collapse"
           data-target="#navbar-collapse">
           <i class="fa fa-bars"></i>
@@ -26,7 +25,7 @@
           <li><a href="<?= site_url() . "/blog" ?>">Tin Tức</a></li>
           <li><a href="">Liên hệ</a></li>
           <li><a href="">Vế Nếm Travel</a></li>
-          
+
         </ul>
       </div>
 

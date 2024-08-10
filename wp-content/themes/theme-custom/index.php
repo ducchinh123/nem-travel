@@ -98,9 +98,6 @@
                     <a href="https://www.ivivu.com/khach-san-quy-nhon/khach-san-flc-luxury-quy-nhon" target="_blank">
                       <figure>
                         <picture>
-
-
-
                           <img src="https://cdn1.ivivu.com/images/2024/07/12/11/FLC-QN_sd_3swl7c_.webp" class="loading"
                             data-was-processed="true">
                         </picture>
@@ -113,9 +110,6 @@
                     <a href="https://www.ivivu.com/khach-san-can-tho/azerai-can-tho" target="_blank">
                       <figure>
                         <picture>
-
-
-
                           <img src="https://cdn1.ivivu.com/images/2024/08/07/15/Azerai_CT-sd_g1uh94_.webp">
                         </picture>
                       </figure>
@@ -128,9 +122,6 @@
                       target="_blank">
                       <figure>
                         <picture>
-
-
-
                           <img src="https://cdn1.ivivu.com/images/2024/04/22/19/intercon_pq-sd_xxdxtd_.webp">
                         </picture>
                       </figure>
@@ -143,9 +134,6 @@
                       target="_blank">
                       <figure>
                         <picture>
-
-
-
                           <img src="https://cdn1.ivivu.com/images/2024/07/12/11/HOLIDAYINN_HT-sd_3i1zpz_.webp">
                         </picture>
                       </figure>
@@ -157,9 +145,6 @@
                     <a href="https://www.ivivu.com/khach-san-hoi-an/khu-nghi-duong-the-nam-hai-hoi-an" target="_blank">
                       <figure>
                         <picture>
-
-
-
                           <img src="https://cdn1.ivivu.com/images/2024/07/12/11/FourSeasons-sd_3bseb7_.webp">
                         </picture>
                       </figure>
@@ -195,14 +180,6 @@
           </div>
           <div
             class="grid__container grid__container--topics super-cards topics owl-carousel  owl-carousel-mood owl-theme owl-loaded owl-drag">
-
-
-
-
-
-
-
-
             <div class="owl-stage-outer">
               <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all; width: 1155px;">
                 <div class="owl-item active" style="width: 273.75px; margin-right: 15px;">

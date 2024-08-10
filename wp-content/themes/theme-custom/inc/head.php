@@ -8,7 +8,6 @@ $main_site = trim($url);
 ?>
 <!DOCTYPE html>
 <html class="no-js" lang="vi" style="--vh: 4px;"><!--<![endif]-->
-
 <head>
   <meta charset="UTF-8">
   <meta name="robots" content="index, follow">

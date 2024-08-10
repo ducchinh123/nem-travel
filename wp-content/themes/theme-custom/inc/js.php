@@ -13,28 +13,7 @@
       document.body.innerHTML = '';
       document.body.appendChild(ie);
     }
-    //document.addEventListener('DOMContentLoaded', (event) => {
-    //	var ua = navigator.userAgent.toLowerCase();
-    //	var isSafari = false;
-    //	try {
-    //		isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
-    //	}
-    //	catch (err) { }
-    //	isSafari = (isSafari || ((ua.indexOf('safari') != -1) && (!(ua.indexOf('chrome') != -1) && (ua.indexOf('version/') != -1))));
-
-    //	if (isSafari && document.documentElement.clientWidth > 768) {
-    //		var fb_pop = document.getElementsByClassName('fb_customer_chat_bubble_pop_in');
-    //		var fb_pop_chat = document.getElementsByClassName('fb-customerchat');
-    //		if (fb_pop_chat.length > 0) {
-    //			fb_pop_chat[0].parentNode.removeChild(fb_pop_chat[0])
-    //		}
-    //		if (fb_pop.length > 0) {
-    //			fb_pop[0].parentNode.removeChild(fb_pop[0])
-    //		}
-    //	}
-    //})
-
-
+   
 
   </script>
   <script src="https://res.ivivu.com/hotel/vendor/jquery-1.11.2.min.js"></script>
@@ -121,17 +100,7 @@
   <script>
     var blockScrollUpDown = false;
     var classname = document.getElementsByClassName("owl-carousel");
-    //var mc = new Hammer(document);
-    //// Handle sự kiện scroll trái phải
-    //mc.on("swipeleft swiperight panleft panright", function (ev) {
-    //	blockScrollUpDown = true;
-    //});
-
-    //// Handle sự kiện scroll lên xuống
-    //mc.on("swipeup swipedown panup pandown", function (ev) {
-    //	blockScrollUpDown = false;
-    //});
-
+ 
     // Thêm sự kiện khi touch cho tất cả các Owl Slider
     for (var i = 0; i < classname.length; i++) {
       classname[i].addEventListener('touchmove', function (evt) {
@@ -321,10 +290,6 @@
           //setTimeout(function () {
           owl.parent().find('.item-placeholder-loading').hide();
           owl.find('.item').show();
-
-          //owl.trigger('next.owl.carousel');
-          //owl.trigger('prev.owl.carousel');
-          //}, 100);
         }).owlCarousel({
           margin: 15,
           stagePadding: 0,
@@ -586,14 +551,7 @@
       js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.9&appId=338156189903178";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-  <!--End Facebook SDK-->
-  <!-- End Facebook Tracking Event Section -->
-  <!-- Start of LiveChat (www.livechatinc.com) code -->
-
-  <!-- End of LiveChat code -->
-  <!--Start of Zopim Live Chat Script-->
-
-  <!--End of Zopim Live Chat Script-->
+  
   <script>
     function CloseAppBanner() {
       //Static.createCookie('ivivu.openbanner', 'hidden', 365);
