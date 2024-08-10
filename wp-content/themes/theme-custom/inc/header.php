@@ -8,7 +8,7 @@
     <div class="container">
       <div class="navbar-header">
         <a href="<?= site_url() ?>" class="navbar-brand">
-          <img src="https://nemtravel.vn/wp-content/uploads/2024/08/Nem_Travel__2.png?time=<?= time() ?>" alt="ivivu" class="loading"
+          <img src="https://nemtravel.vn/wp-content/uploads/2024/08/nemtrv.png?time=<?= time() ?>" alt="ivivu" class="loading"
             data-was-processed="true">
 
 
