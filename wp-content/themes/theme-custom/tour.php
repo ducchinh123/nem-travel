@@ -18218,6 +18218,9 @@
 </style>
 
 
+
+<body class="skin-blue layout-top-nav">
+
     <div class="wrapper">
 
 
@@ -30381,7 +30384,6 @@
                 </div>
             </div>
         </div>
-    
-
-        <?php include 'inc/js.php'; ?>
-        <?php include 'inc/footer.php'; ?>
+</body>
+<?php include 'inc/js.php'; ?>
+<?php include 'inc/footer.php'; ?>
