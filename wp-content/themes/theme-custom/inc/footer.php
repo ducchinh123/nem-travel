@@ -1,5 +1,5 @@
 <!-- BEGIN FOOTER  -->
-<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 homePageFooterDiv" style="margin-top: 40px">
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 homePageFooterDiv" style="margin-top: 40px" id="homePageFooterDiv">
   <div class="container">
     <div id="fb-root"></div>
     <script async="" defer="" crossorigin="anonymous"
@@ -7,57 +7,69 @@
     <!-- if this is homepage, remove div container  -->
     <div class="homePageFooter">
       <div class="footerContainer">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 vremoveSpacing hidden-xs">
-          <div class="foot-col-1 col-xs-12 col-sm-6 col-md-3 col-lg-2 footerPanel">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 vremoveSpacing">
+          <div class="foot-col-1 col-xs-6 col-sm-4 col-md-4 col-lg-2 footerPanel">
             <ul>
               <li>
                 <h3>Về Nếm Travel</h3>
               </li>
               <!--<li><a href="//www.ivivu.com/gioi-thieu">Giới thiệu</a></li>-->
-              <li><a href="//www.ivivu.com/blog/category/chung-toi" target="_blank">Chúng tôi</a></li>
-              <li><a href="//www.ivivu.com/blog/" target="_blank">Nếm Travel Blog</a></li>
+              <li><a href="/ve-chung-toi-nem-travel" target="_blank">Chúng tôi</a></li>
+              <li><a href="/blog" target="_blank">Nếm Travel Blog</a></li>
             </ul>
           </div>
-          <div class="foot-col-2 col-xs-12 col-sm-6 col-md-3 col-lg-2 footerPanel">
+          <div class="foot-col-2 col-xs-6 col-sm-4 col-md-4 col-lg-2 footerPanel">
             <ul>
               <li>
                 <h3>Thông Tin Cần Biết</h3>
               </li>
-              <li><a href="//www.ivivu.com/dieu-kien-dieu-khoan" target="_blank">Điều kiện &amp; Điều khoản</a></li>
-              <li><a href="//www.ivivu.com/quy-che-hoat-dong" target="_blank">Quy chế hoạt động</a></li>
+              <li><a href="/dieu-kien-dieu-khoan-nem-travel" target="_blank">Điều kiện &amp; Điều khoản</a></li>
+              <li><a href="/quy-che-hoat-dong-nem-travel" target="_blank">Quy chế hoạt động</a></li>
 
 
-              <li><a href="//www.ivivu.com/hoi-dap" target="_blank">Câu hỏi thường gặp</a></li>
+              <li><a href="/cau-hoi-thuong-gap" target="_blank">Câu hỏi thường gặp</a></li>
             </ul>
           </div>
-          <div class="foot-col-3 col-xs-12 col-sm-6 col-md-3 col-lg-2 footerPanel">
+          <div class="foot-col-3 col-xs-6 col-sm-4 col-md-4 col-lg-2 footerPanel">
 
             <ul>
               <li>
                 <h3>Doanh nghiệp chúng tôi</h3>
               </li>
               <li>
-                <a href="/cathay-landing-page" target="_blank">Mã số: 0202245429</a>
+                <a href="#" target="_blank">Mã số: 0202245429</a>
               </li>
-              <li><a href="https://member.ivivu.com/claim-cathay-insurance" target="_blank">Hoạt động: 11/06/2024</a>
+              <li><a href="#" target="_blank">Hoạt động: 11/06/2024</a>
               </li>
-              <li><a href="https://member.ivivu.com/claim-cathay-insurance" target="_blank">Đại diện: Đặng Thanh
+              <li><a href="#" target="_blank">Đại diện: Đặng Thanh
                   Tùng</a></li>
 
             </ul>
           </div>
-          <div class="foot-col-4 col-xs-12 col-sm-6 col-md-3 col-lg-3 footerPanel">
+          <div class="foot-col-4 col-xs-6 col-sm-4 col-md-4 col-lg-3 footerPanel">
             <div style="padding: 4px 0;">
               <p>Thành viên của </p>
               <p><b>Nếm TV.VN</b></p>
             </div>
             <div>
-              <a href="https://nemtv.vn/" target="_blank" class="vspacing-x15">
+              <a href="https://nemtv.vn/" target="_blank" class="vspacing-x15 member-channel">
                 <img style="max-width: 112px;" src="<?= site_url() ?>/public/images/nemtv-logo.png?v=<?= time() ?>">
               </a>
+              <ul class="dcn-mobile">
+              <li>
+                <h3>Được chứng nhận</h3>
+              </li>
+              <li>
+                <div>
+                  <a href="http://online.gov.vn/HomePage/WebsiteDisplay.aspx?DocId=21871">
+                    <img alt="" title="" src="//cdn1.ivivu.com/bocongthuong.png">
+                  </a>
+                </div>
+              </li>
+            </ul>
             </div>
           </div>
-          <div class="foot-col-5 col-xs-12 col-sm-12 col-md-12 col-lg-4 footerPanel">
+          <div class="foot-col-4 col-xs-6 col-sm-4 col-md-4 col-lg-4 footerPanel dcn-tablet-pc">
             <ul>
               <li>
                 <h3>Được chứng nhận</h3>
@@ -71,29 +83,8 @@
               </li>
             </ul>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 vremoveSpacing ">
-          <div class="footer2">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 footerPanel visible-xs" style="margin-bottom: 0;">
-              <ul>
-                <li>
-                  <h3>Được chứng nhận</h3>
-                </li>
-                <li>
-                  <div>
-                    <a href="http://online.gov.vn/HomePage/WebsiteDisplay.aspx?DocId=21871">
-                      <img alt="" title="" src="//cdn1.ivivu.com/bocongthuong.png">
 
-                    </a>
-                    <a href="javascript:void(0)" rel="nofollow" style="padding-left:15px;">
-                      <img src="https://res.ivivu.com/img/iata_logo.webp" style="max-width:68px" alt="">
-                    </a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div
-              class="foot-col-6 col-xs-12 col-sm-12 col-md-3 col-lg-4 col-md-push-9 col-lg-push-8 footerContact footerPanel ">
+          <div class="foot-col-6 col-xs-6 col-sm-4 col-md-4 col-lg-4  footerContact footerContact-tablet  footerPanel ">
               <div>
                 <span class="bestBookingSystemSpan"><b>Bạn cần trợ giúp? Hãy gọi ngay!</b></span>
                 <!--<div class="horizontalLine"></div>-->
@@ -105,40 +96,83 @@
                   </p>
                   <div class="dropdown hotline-dropdown hotline-m">
                     <p class="hotline-location pull-right dropdown-toggle" data-toggle="dropdown">
-                      <span class="v-margin-right-5" id="MobileTimeFooter"><i class="fa fa-clock-o"></i> 7h30 →
-                        21h</span>
-                      <i class="fa fa-map-marker"></i> <span id="mobileDisplayNameFooter">Nếm Travel</span> <i
-                        class="fa fa-angle-down"></i>
+                      <i class="fa fa-map-marker"></i> <span id="mobileDisplayNameFooterNem">Nếm Travel</span>
                     </p>
-                    <ul class="dropdown-menu" role="menu">
-                      <li onclick="HeaderHotline('SG')">
-                        <div class="hotline-dd-item">
-                          <span class="pull-left v-padding-right-5"> Hồ Chí Minh </span>
-                          <span class="pull-right vcolor-warning">0348806947</span>
-                          <div class="clearfix"></div>
-                        </div>
-                      </li>
-                      <li onclick="HeaderHotline('HN')">
-                        <div class="hotline-dd-item">
-                          <span class="pull-left v-padding-right-5"> Hà Nội </span>
-                          <span class="pull-right vcolor-warning">0348806947</span>
-                          <div class="clearfix"></div>
-                        </div>
-                      </li>
-                      <li onclick="HeaderHotline('CT')">
-                        <div class="hotline-dd-item">
-                          <span class="pull-left v-padding-right-5"> Cần Thơ </span>
-                          <span class="pull-right vcolor-warning">0348806947</span>
-                          <div class="clearfix"></div>
-                        </div>
-                      </li>
-                    </ul>
                   </div>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 vremoveSpacing chat-footer">
                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 vremoveSpacing" style="padding-bottom: 15px;">
                     <i class="glyphicon glyphicon-envelope vcolor-gray fixGlyphicon" style="margin-top: 2px;"></i>
-                    <a href="mailto:tc@ivivu.com">nemtravel@gmail.com</a>
+                    <a href="mailto:tc@ivivu.com">nemtv.vn@gmail.com</a>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 vremoveSpacing">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 vremoveSpacing">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 vremoveSpacing"
+                        style="position: relative; top: 4px; overflow:hidden">
+                        <a href="https://facebook.com/iVIVU" target="_blank" class="vspacingright5">
+                          <img class="socialIcon" src="https://res.ivivu.com/hotel/img/home/icon/facebook.svg"
+                            alt="Facebook">
+                        </a>
+                        <a href="https://zalo.me/3554656071967537484" target="_blank" class="vspacing-x5">
+                          <img class="socialIcon" src="https://res.ivivu.com/hotel/img/home/icon/ic_zalo.svg"
+                            alt="Zalo">
+                        </a>
+                        <a href="https://www.instagram.com/ivivu/?hl=en" target="_blank" class="vspacing-x5">
+                          <img class="socialIcon" src="https://res.ivivu.com/hotel/img/home/icon/ic_insta.svg"
+                            alt="Instagram">
+                        </a>
+                        <a href="https://www.tiktok.com/@ivivu.com" target="_blank" class="vspacing-x5">
+                          <img class="socialIcon" src="https://res.ivivu.com/hotel/img/home/icon/tiktok.svg"
+                            alt="Tiktok">
+                        </a>
+                        <a href="https://www.youtube.com/user/ivivuvietnam" target="_blank" class="vspacing-x5">
+                          <img class="socialIcon" src="https://res.ivivu.com/hotel/img/home/icon/youtube.svg"
+                            alt="Youtube">
+                        </a>
+
+                      </div>
+                    </div>
+
+
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 vremoveSpacing socialIcons"
+                    style="margin-top:20px;">
+
+                  </div>
+
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 vremoveSpacing app-footer">
+
+
+                </div>
+
+              </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 vremoveSpacing ">
+          <div class="footer2">
+            <div class="foot-col-6 col-xs-12 col-sm-4 col-md-3 col-lg-4 col-md-push-9 col-lg-push-8 footerContact footerContact-pc footerPanel ">
+              <div>
+                <span class="bestBookingSystemSpan"><b>Bạn cần trợ giúp? Hãy gọi ngay!</b></span>
+                <!--<div class="horizontalLine"></div>-->
+                <div class="vspacingtop15">
+                  <p class="hotline-footer">
+
+                    <a class=" mobi-hotline-link" href="tel:0348806947"><i class="fa fa-phone"></i> 0348806947</a>
+
+                  </p>
+                  <div class="dropdown hotline-dropdown hotline-m">
+                    <p class="hotline-location pull-right dropdown-toggle" data-toggle="dropdown">
+                      
+                      <i class="fa fa-map-marker"></i> <span id="mobileDisplayNameFooterNem">Nếm Travel</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 vremoveSpacing chat-footer">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 vremoveSpacing" style="padding-bottom: 15px;">
+                    <i class="glyphicon glyphicon-envelope vcolor-gray fixGlyphicon" style="margin-top: 2px;"></i>
+                    <a href="mailto:tc@ivivu.com">nemtv.vn@gmail.com</a>
                   </div>
 
                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 vremoveSpacing">
@@ -186,7 +220,7 @@
             </div>
 
             <div
-              class="foot-col-7 col-xs-12 col-sm-12 col-md-9 col-lg-8 col-md-pull-3 col-lg-pull-4 footerContact footerPanel hidden-xs"
+              class="foot-col-7 col-xs-12 col-sm-12 col-md-9 col-lg-8  col-lg-pull-4 footerContact footerPanel"
               style="margin-top: 25px">
               <div>
 
@@ -201,7 +235,7 @@
                     </p>
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3729.9842424705685!2d106.64531067507411!3d20.791925380798787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a70df44a46569%3A0x32d5f1834f923965!2zOTM1IE5ndXnhu4VuIEzGsMahbmcgQuG6sW5nLCBWxINuIMSQ4bqpdSwgS2nhur9uIEFuLCBI4bqjaSBQaMOybmcsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1723175247276!5m2!1svi!2s"
-                      width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                     width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy"
                       referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                 </div>
@@ -267,7 +301,6 @@
   </div>
   <!-- END FOOTER -->
   <!-- BEGIN MODAL -->
-
   <!-- Login Modal -->
   <div id="LoginModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
@@ -280,15 +313,10 @@
       <div class="modal-content row">
         <p class="first-text">Đăng nhập bằng:</p>
         <div class="col-xs-12 no-padding login-social">
-          <div class="col-xs-6 btn-left-div">
-            <button class="btn btn-block btn-social btn-facebook" onclick="loginByFacebook()">
-              <i class="fa fa-facebook"></i> Facebook
-            </button>
-          </div>
-
-          <div class="col-xs-6 btn-right-div">
+        
+          <div class="col-xs-12 btn-right-div">
             <button class="btn btn-block btn-social btn-google" id="loginGoogleButton">
-              <i class="fa fa-google"></i> Google
+            <i class="fa-brands fa-google"></i> Google
             </button>
           </div>
         </div>
@@ -826,11 +854,11 @@
           <hr class="navbar-hr">
           <div>
             <div class="navbar-nav-mobi">
-              <div class="nav-item"><a href="" class="nav-link-mobi">KHÁCH SẠN</a></div>
-              <div class="nav-item"><a href="" class="nav-link-mobi">TOUR DU DỊCH</a></div>
-              <div class="nav-item"><a href="" class="nav-link-mobi">TIN TỨC</a></div>
-              <div class="nav-item"><a href="" class="nav-link-mobi">LIÊN HỆ</a></div>
-              <div class="nav-item"><a href="" class="nav-link-mobi">VỀ NẾM TRAVEL</a></div>
+              <div class="nav-item"><a href="/" class="nav-link-mobi">KHÁCH SẠN</a></div>
+              <div class="nav-item"><a href="/tour" class="nav-link-mobi">TOUR DU DỊCH</a></div>
+              <div class="nav-item"><a href="/blog" class="nav-link-mobi">TIN TỨC</a></div>
+              <div class="nav-item"><a href="/lien-he" class="nav-link-mobi">LIÊN HỆ</a></div>
+              <div class="nav-item"><a href="/ve-chung-toi-nem-travel/" class="nav-link-mobi">VỀ NẾM TRAVEL</a></div>
             </div>
           </div>
         </div>

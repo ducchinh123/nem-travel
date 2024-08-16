@@ -6,6 +6,10 @@
 <?php include 'inc/head.php'; ?>
 <?php include 'inc/header.php'; ?>
 <style>
+
+    .modal-dialog {
+        width: 100% !important;
+    }
     .tour-modal-request {
         padding-top: 20px
     }
@@ -5118,7 +5122,7 @@
     }
 
     .layout-boxed {
-        background: url(/du-lich/content/img/boxed-bg.jpg) repeat fixed
+        background: url() repeat fixed
     }
 
     .content-wrapper,
@@ -8819,8 +8823,8 @@
 
     @font-face {
         font-family: 'FontAwesome';
-        src: url(/du-lich/content/fonts/fontawesome-webfont.eot?v=4.7.0);
-        src: url(/du-lich/content/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format('embedded-opentype'), url(/du-lich/content/fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'), url(/du-lich/content/fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'), url(/du-lich/content/fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'), url(/du-lich/content/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg');
+        src: url();
+        src: url() format('embedded-opentype'), url() format('woff2'), url() format('woff'), url() format('truetype'), url() format('svg');
         font-weight: normal;
         font-style: normal
     }
@@ -11861,8 +11865,8 @@
 
     @font-face {
         font-family: icomoon;
-        src: url(/du-lich/content/fonts/icomoon.eot?fz97ry);
-        src: url(/du-lich/content/fonts/icomoon.eot?fz97ry#iefix) format('embedded-opentype'), url(/du-lich/content/fonts/icomoon.ttf?fz97ry) format('truetype'), url(/du-lich/content/fonts/icomoon.woff?fz97ry) format('woff'), url(/du-lich/content/fonts/icomoon.svg?fz97ry#icomoon) format('svg');
+        src: url();
+        src: url() format('embedded-opentype'), url() format('truetype'), url() format('woff'), url() format('svg');
         font-weight: 400;
         font-style: normal
     }
@@ -11931,8 +11935,8 @@
 
     @font-face {
         font-family: "userdashboard";
-        src: url(/du-lich/content/fonts/userdashboard/userdashboard.eot?cq16l7);
-        src: url(/du-lich/content/fonts/userdashboard/userdashboard.eot?cq16l7#iefix) format("embedded-opentype"), url(/du-lich/content/fonts/userdashboard/userdashboard.ttf?cq16l7) format("truetype"), url(/du-lich/content/fonts/userdashboard/userdashboard.woff?cq16l7) format("woff"), url(/du-lich/content/fonts/userdashboard/userdashboard.svg?cq16l7#userdashboard) format("svg");
+        src: url();
+        src: url() format("embedded-opentype"), url() format("truetype"), url() format("woff"), url() format("svg");
         font-weight: normal;
         font-style: normal
     }
@@ -12391,8 +12395,8 @@
 
     @font-face {
         font-family: "vvcon";
-        src: url(/du-lich/content/fonts/new-vivu-font/vvcon.eot?9eqgt0);
-        src: url(/du-lich/content/fonts/new-vivu-font/vvcon.eot?9eqgt0#iefix) format("embedded-opentype"), url(/du-lich/content/fonts/new-vivu-font/vvcon.ttf?9eqgt0) format("truetype"), url(/du-lich/content/fonts/new-vivu-font/vvcon.woff?9eqgt0) format("woff"), url(/du-lich/content/fonts/new-vivu-font/vvcon.svg?9eqgt0#vvcon) format("svg");
+        src: url();
+        src: url() format("embedded-opentype"), url() format("truetype"), url() format("woff"), url() format("svg");
         font-weight: normal;
         font-style: normal;
         font-display: block
@@ -17112,7 +17116,7 @@
         display: inline-block;
         width: 26px;
         height: 26px;
-        background: url(/du-lich/content/img/close.png) no-repeat;
+        background: url() no-repeat;
         z-index: 100;
         display: none;
         top: -38px;
@@ -17160,7 +17164,7 @@
 
     .ivivu-slider .ivivu-slider_in .next {
         right: 12%;
-        background: url(/du-lich/content/img/arrow-right.png) no-repeat;
+        background: url() no-repeat;
         background-size: 100%
     }
 
@@ -17172,7 +17176,7 @@
 
     .ivivu-slider .ivivu-slider_in .prev {
         left: 12%;
-        background: url(/du-lich/content/img/arrow-left.png) no-repeat;
+        background: url() no-repeat;
         background-size: 100%
     }
 
@@ -18197,9 +18201,6 @@
 <body class="skin-blue layout-top-nav">
 
     <div class="wrapper">
-
-
-
         <!-- Full Width Column -->
         <div class="content-wrapper" style="min-height: 267px;">
 
@@ -18277,16 +18278,16 @@
                                             Tour Ưu Đãi Tốt Nhất Hôm Nay
                                             <span>Nhanh Tay Đặt Ngay. Để Mai Sẽ Lỡ</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/tour-uu-dai-tot-nhat-hom-nay/c45"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-thai-lan-5n4d-bangkok-pattaya-vuon-nong-nooch-lau-dai-ty-phu-1-dem-resort-ven-song/2479">
+                                                        href="<?php site_url()?>/tour-detail">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -18315,7 +18316,8 @@
                                                                 <div class="col-xs-12 no-padding">
                                                                     <div
                                                                         class="col-xs-12 v-margin-bottom-10 cardItemTourNameDiv">
-                                                                        <span class="cardItemTourName">Tour Thái Lan
+                                                                        <span class="cardItemTourName">
+                                                                            Tour Thái Lan
                                                                             5N4Đ: Bangkok - Pattaya - Vườn Nong Nooch -
                                                                             Lâu Đài Tỷ Phú - 1 Đêm Resort Ven
                                                                             Sông</span>
@@ -18367,7 +18369,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-trung-quoc-4n3d-giang-nam-hanh-thuong-hai-to-chau-o-tran-hang-chau/2895">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -18446,7 +18448,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-thai-lan-5n4d-hcm-xu-so-chua-vang-bangkok-pattaya-cong-vien-khung-long/4235">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -18527,7 +18529,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-trung-quoc-6n5d-le-giang-dai-ly-shangrila-no-shopping/4394">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -18607,7 +18609,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-chau-au-9n8d-phap-bi-ha-lan-luxembourg-duc-vuon-hoa-keukenhof/2976">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -18620,8 +18622,7 @@
                                                                 <figure>
                                                                     <picture>
 
-                                                                        <img class="img-responsive lazy"
-                                                                            data-src="//cdn2.ivivu.com/2022/03/08/15/ivivu-du-lich-phap-eiffel-360x225.gif">
+                                                                        <img class="img-responsive lazy">
                                                                     </picture>
                                                                 </figure>
                                                                 <div class="cardItemPriceDivOuter hidden">
@@ -18695,7 +18696,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-trung-quoc-6n5d-nghi-xuong-truong-gia-gioi-thien-mon-son-phuong-hoang-co-tran/4546">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -18782,7 +18783,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/tour-uu-dai-tot-nhat-hom-nay/c45"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -18802,16 +18803,16 @@
                                             Tour Du Lịch Hành Hương
                                             <span>Tìm Về Chốn Thiêng, Lòng Người An Bình</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/tour-du-lich-hanh-huong/c65"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-limousine-cao-cap-mien-tay-2n2d-ca-mau-cha-diep-soc-trang-canh-dong-quat-gio/818">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -18893,7 +18894,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-chau-doc-1n1d-vieng-ba-mieu-ba-chua-xu-nui-sam/637">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -18971,7 +18972,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-ninh-binh-trong-ngay-ha-noi-bai-dinh-trang-an/436">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -19052,7 +19053,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-an-do-7n7d-hanh-huong-dat-phat-tu-dieu-ky/2052">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -19132,7 +19133,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-con-dao-2n2d-con-dao-huyen-thoai-tau-cao-toc/1365">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -19212,7 +19213,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-trong-ngay-tay-ninh-nui-ba-dinh-van-son-buffet-nam-chau/4208">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -19293,7 +19294,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/tour-du-lich-hanh-huong/c65"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -19313,16 +19314,16 @@
                                             Tour Du Lịch Lễ 2/9
                                             <span>Chơi Lễ Thả Ga, Không Lo Về Giá</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/ivivu-tour-du-lich-le-2-9/c57"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-malaysia-5n4d-hanh-trinh-lien-tuyen-singapore-malaysia/1691">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -19403,7 +19404,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-tay-bac-2n1d-ha-noi-mai-chau-pu-luong-suoi-ca-than/1186">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -19483,7 +19484,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-thai-lan-5n4d-nong-nooch-dao-coral-baiyoke-sky-bao-tang-nghe-thuat-anh-sang/632">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -19563,7 +19564,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-le-quoc-khanh-da-lat-3n3d-da-lat-thac-datanla-hoang-long-ohayo-puppy-farm/4528">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -19647,7 +19648,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-ta-xua-mua-le-2n1d-ha-noi-bac-yen-trai-nghiem-san-may-ta-xua/4433">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -19734,7 +19735,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-dong-bac-2n1d-ha-noi-cao-bang-pac-po-thac-ban-gioc-dong-nguom-ngoa-ho-ba-be/2993">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -19815,7 +19816,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/ivivu-tour-du-lich-le-2-9/c57"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -19835,16 +19836,16 @@
                                             Tour Du Lịch Hè Nước Ngoài Dưới 10 Triệu
                                             <span>Chơi Hè Thả Ga, Không Lo Về Giá</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/ivivu-tour-du-lich-he-nuoc-ngoai-duoi-10-trieu/c1067"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/trai-nghiem-du-lich-singapore-malaysia-3n2d-cung-sieu-du-thuyen-genting-dream-5/2231">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -19925,7 +19926,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-thai-lan-5n4d-bangkok-pattaya-nongnooch-graden/2022">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -20004,7 +20005,7 @@
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
-                                                    <a href="/du-lich/tour-lao-4n3d-lao-cao-nguyen-bolaven/2384">
+                                                    <a href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -20084,7 +20085,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-singapore-malaysia-4n3d-hcm-sentosa-cao-nguyen-genting-thap-doi-petronas-kuala-lumpur/2497">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -20165,7 +20166,7 @@
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
-                                                    <a href="/du-lich/tour-trung-quoc-3n2d-dao-hai-nam-tam-a/3059">
+                                                    <a href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -20244,7 +20245,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-thai-lan-5n4d-mua-he-ha-noi-bangkok-pattaya-dao-cora-khao-chee-chan/2940">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -20326,7 +20327,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/ivivu-tour-du-lich-he-nuoc-ngoai-duoi-10-trieu/c1067"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -20346,16 +20347,16 @@
                                             Tour Du Lịch Hè Trong Nước Dưới 5 Triệu
                                             <span>Thỏa Sức Khám Phá, Giá Siêu Ưu Đãi</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/ivivu-tour-du-lich-he-trong-nuoc-duoi-5-trieu/c1068"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-binh-hung-2n2d-ninh-chu-vinh-vinh-hy-ngam-san-ho-bbq-hai-san/673">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -20434,7 +20435,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-cao-bang-3n2d-ha-noi-cao-bang-bac-can-thac-ban-gioc/1267">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -20514,7 +20515,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-sapa-3n2d-ha-noi-sapa-fansipan-cat-cat-moana-gat5/1323">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -20594,7 +20595,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-ha-giang-3n2d-cao-nguyen-da-song-nho-que/1312">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -20675,7 +20676,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-lien-tuyen-mien-trung-4n4d-quy-nhon-phu-yen-xe-giuong-nam/2027">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -20756,7 +20757,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-nam-du-3n3d-quan-dao-nam-du-hon-cu-tron-xe-giuong-nam/686">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -20836,7 +20837,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/ivivu-tour-du-lich-he-trong-nuoc-duoi-5-trieu/c1068"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -20856,16 +20857,16 @@
                                             Chùm Tour Du Lịch Mùa Thu
                                             <span>Khám Phá Sắc Thu, Tận Hưởng Thiên Nhiên</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/chum-tour-du-lich-mua-thu/c61"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-nhat-ban-4n4d-hcm-narita-yamanashi-tokyo-mua-thu-la-do/688">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -20952,7 +20953,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-han-quoc-4n4d-hcm-dao-nami-cong-vien-everland-lang-bich-hoa-songwol-thap-namsan/4504">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -21040,7 +21041,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-nhat-ban-5n5d-cung-duong-vang-osaka-kyoto-tokyo-bay-vj/2881">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -21132,7 +21133,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-nga-7n6d-ha-noi-moscow-saint-peterburg-quan-the-quang-truong-do/4439">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -21227,7 +21228,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-han-quoc-5n4d-ha-noi-seoul-nami-lang-korean-folk-thu-vien-starfield-busan-hanok-bukchon/2766">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -21317,7 +21318,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-nhat-ban-mua-thu-6n5d-ha-noi-tokyo-phu-si-osaka-kyoto/4276">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -21407,7 +21408,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/chum-tour-du-lich-mua-thu/c61"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -21427,15 +21428,15 @@
                                             Tour Du Lịch Nước Ngoài Cao Cấp
                                             <span>Trải Nghiệm Thế Giới, Khám Phá Bản Thân</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/tour-du-lich-nuoc-ngoai-cao-cap/c11"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
-                                                    <a href="/du-lich/kham-pha-bali-4n3d-thien-duong-bien-dao/1699">
+                                                    <a href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -21513,7 +21514,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-singapore-3n2d-kham-pha-dao-quoc-su-tu-gardens-by-the-bay-chua-rang-phat/2072">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -21593,7 +21594,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-malaysia-singapore-5n4d-dong-batu-cao-nguyen-genting-dao-sentossa/1787">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -21674,7 +21675,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-lien-tuyen-ba-nuoc-5n4d-singapore-malaysia-indonesia-ngu-singapore/4241">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -21755,7 +21756,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-cao-cap-dubai-4n4d-thap-burj-sa-mac-safari-dao-co-nhan-tao-sky-view-observatory/2536">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -21836,7 +21837,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-singapore-4n3d-hcm-singapore-gieng-troi-fort-canning-dap-nuoc-marina/3082">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -21917,7 +21918,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/tour-du-lich-nuoc-ngoai-cao-cap/c11"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -21937,16 +21938,16 @@
                                             Tour Du Lịch Trung Quốc - Hồng Kông - Đài Loan
                                             <span>Thiên Nhiên Cẩm Tú, Lịch Sử Ngàn Năm</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/ivivu-tour-du-lich-trung-quoc-hong-kong-dai-loan/c58"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-trung-quoc-5n4d-truong-gia-gioi-phuong-hoang-co-tran/984">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -22027,7 +22028,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-trung-quoc-5n4d-bac-kinh-trung-khanh-tu-cam-thanh-hong-nhai-dong/2399">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -22107,7 +22108,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-trung-quoc-6n5d-thanh-do-cuu-trai-cau-gau-truc-lac-son/2330">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -22187,7 +22188,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-trung-quoc-6n5d-truong-gia-gioi-phuong-hoang-co-tran-phu-dung-tran-vu-lang-nguyen/2365">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -22268,7 +22269,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-trung-quoc-6n5d-ha-noi-thanh-do-cuu-trai-cau-lac-son-dai-phat-tung-phan/2514">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -22350,7 +22351,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-trung-quoc-5n4d-hcm-le-giang-shangrila-nui-tuyet-ngoc-long/4360">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -22437,7 +22438,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/ivivu-tour-du-lich-trung-quoc-hong-kong-dai-loan/c58"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -22457,16 +22458,16 @@
                                             Tour Du Lịch Trung Quốc Đường Bộ
                                             <span>Không Cần Hộ Chiếu, Không Cần Visa</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/tour-du-lich-trung-quoc-duong-bo/c1069"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-trung-quoc-2n1d-ha-khau-binh-bien-mong-tu/2691">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -22546,7 +22547,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-trung-quoc-trong-ngay-ha-khau-cong-vien-anh-sang/2991">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -22627,7 +22628,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-trung-quoc-3n2d-ha-khau-binh-bien-mong-tu-kien-thuy/2618">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -22708,7 +22709,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-trung-quoc-duong-bo-3n2d-mua-le-ha-noi-lao-cai-ha-khau-binh-bien-di-lac-kien-thuy-mong-tu/2471">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -22789,7 +22790,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-trung-quoc-3d3n-ha-noi-lao-cai-ha-khau-binh-bien-kien-thuy-mong-tu/2866">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -22869,7 +22870,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-trung-quoc-duong-bo-3n2d-ha-noi-mong-cai-dong-hung-bien-van-vi-truc-son-co-tran/4362">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -22954,7 +22955,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/tour-du-lich-trung-quoc-duong-bo/c1069"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -22974,16 +22975,16 @@
                                             Tour Du Lịch Nhật Bản - Hàn Quốc
                                             <span>Văn Hóa Độc Đáo, Cảnh Sắc Tuyệt Vời</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/ivivu-tour-du-lich-nhat-ban-han-quoc/c54"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-nhat-ban-4n4d-narita-hakone-yamanashi-tokyo-bay-vj/2110">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -23063,7 +23064,7 @@
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
-                                                    <a href="/du-lich/tour-han-quoc-5n5d-busan-daegu-seoul/2014">
+                                                    <a href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -23142,7 +23143,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-nhat-ban-5n4d-hcm-narita-yamanashi-tokyo-disneyland/2540">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -23223,7 +23224,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-han-quoc-5n4d-mua-thu-ha-noi-seoul-nami-everland-painter-show/2533">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -23305,7 +23306,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-nhat-ban-5n5d-hokkaido-noboribetsu-sapporo-otaru-tokyo-cung-duong-bach-kim/2874">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -23385,7 +23386,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-hokkaido-nhat-ban-5n5d-sai-gon-tokkari-okhotsk-blue-pond-tokyo-narita/4202">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -23473,7 +23474,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/ivivu-tour-du-lich-nhat-ban-han-quoc/c54"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -23493,15 +23494,15 @@
                                             Tour Du Lịch Châu Âu - Úc - Mỹ
                                             <span>Trải Nghiệm Đẳng Cấp, Nâng Tầm Cuộc Sống</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/ivivu-tour-du-lich-chau-au-uc-my/c56"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
-                                                    <a href="/du-lich/tour-uc-5n4d-kham-pha-sydney-tham-than/2219">
+                                                    <a href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -23580,7 +23581,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-bac-au-11n10d-thuy-dien-phan-lan-na-uy-dan-mach/1700">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -23663,7 +23664,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-chau-au-9n8d-tp-hcm-duc-ha-lan-bi-phap-thuy-sy-y-milan/2140">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -23677,7 +23678,7 @@
                                                                     <picture>
 
                                                                         <img class="img-responsive lazy"
-                                                                            data-src="//cdn2.ivivu.com/2022/03/08/15/ivivu-du-lich-phap-eiffel-360x225.gif">
+                                                                            >
                                                                     </picture>
                                                                 </figure>
                                                                 <div class="cardItemPriceDivOuter hidden">
@@ -23744,7 +23745,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-chau-au-11n10d-hanh-trinh-ba-nuoc-phap-thuy-si-y/1934">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -23826,7 +23827,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-nga-trung-quoc-8n7d-moscow-saint-petersburg-thanh-do/4307">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -23908,7 +23909,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-canada-7n6d-vancouver-cau-treo-capilano-truot-tuyet-whistler-blackcomb/2351">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -23988,7 +23989,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/ivivu-tour-du-lich-chau-au-uc-my/c56"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -24008,16 +24009,16 @@
                                             Tour Du Lịch Siêu Du Thuyền 5 Sao
                                             <span>Trải Nghiệm Thời Thượng, Dẫn Đầu Xu Hướng</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/tour-du-lich-sieu-du-thuyen-5-sao/c50"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/trai-nghiem-du-lich-singapore-phuket-4n3d-cung-sieu-du-thuyen-genting-dream-5/2250">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -24103,7 +24104,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/trai-nghiem-du-lich-thuong-hai-nagasaki-jeju-5n4d-cung-sieu-du-thuyen-spectrum-of-the-seas/4119">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -24189,7 +24190,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/trai-nghiem-du-lich-thuong-hai-okinawa-5n4d-cung-sieu-du-thuyen-spectrum-of-the-seas/4116">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -24271,7 +24272,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/trai-nghiem-du-lich-hong-kong-nhat-ban-6n5d-cung-sieu-du-thuyen-resort-world-one/4107">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -24357,7 +24358,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/trai-nghiem-du-lich-singapore-malaysia-phuket-5n4d-cung-sieu-du-thuyen-anthem-of-the-seas/2544">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -24443,7 +24444,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/trai-nghiem-du-lich-malaysia-singapore-4n3d-cung-sieu-du-thuyen-genting-dream-5/2268">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -24529,7 +24530,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/tour-du-lich-sieu-du-thuyen-5-sao/c50"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -24549,16 +24550,16 @@
                                             Tour Du Lịch Thái Lan - Lào - Campuchia
                                             <span>Văn Hóa Đặc Sắc, Ẩm Thực Phong Phú</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/tour-du-lich-thai-lan-lao-campuchia/c1065"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-campuchia-4n3d-siem-riep-oudong-phnom-penh/662">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -24638,7 +24639,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-thai-lan-5n4d-bangkok-pattaya-dao-koh-larn-safari-world/641">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -24718,7 +24719,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-cao-cap-thai-lan-4n3d-phuket-koh-phi-phi-city-tour/2191">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -24799,7 +24800,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-lien-tuyen-4n3d-campuchia-lao-dong-bac-thai-lan/1050">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -24879,7 +24880,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-lao-5n4d-sai-gon-vieng-chan-luang-prabang-vang-vieng/3102">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -24967,7 +24968,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-thai-lan-5n4d-bangkok-pattaya-dao-koh-larn-vuon-nong-nooch/1881">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -25048,7 +25049,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/tour-du-lich-thai-lan-lao-campuchia/c1065"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -25068,16 +25069,16 @@
                                             Tour Du Lịch Đông Tây Bắc
                                             <span>Thiên Nhiên Hùng Vĩ, Văn Hóa Đặc Sắc</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/tour-du-lich-dong-tay-bac/c29"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-mu-cang-chai-3n2d-ban-luot-ngoc-chien-sapa-mua-lua-chin/1260">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -25156,7 +25157,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-ha-giang-3n2d-ha-noi-ha-giang-yen-minh-dong-van-nho-que/1369">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -25237,7 +25238,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-lien-tuyen-mien-bac-5n4d-ha-noi-ninh-binh-ha-long-sapa-fansipan-lt1/1441">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -25319,7 +25320,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-dong-bac-5n4d-hcm-ha-giang-cao-bang-thac-ban-gioc-thao-nguyen-dong-lam-chua-tam-thanh/2579">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -25402,7 +25403,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-sapa-2n3d-ha-noi-sapa-fansipan-cat-cat-moana-view/1296">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -25481,7 +25482,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-dong-bac-3d2n-ha-noi-ha-giang-dong-van-xe-cabin-vip/1696">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -25561,7 +25562,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/tour-du-lich-dong-tay-bac/c29"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -25581,16 +25582,16 @@
                                             Tour Du Lịch Trải Nghiệm Địa Phương
                                             <span>Check-in Ngay, Trải Nghiệm Đỉnh!</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/tour-du-lich-trai-nghiem-dia-phuong/c33"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-phu-quoc-1n-cano-hon-may-rut-hon-dam-ngang-hon-mong-tay-cap-treo-hon-thom/1523">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -25672,7 +25673,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-ninh-binh-1n-ha-noi-hoa-lu-tam-coc-hang-mua/1313">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -25752,7 +25753,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-ha-long-2n1d-ha-noi-vinh-ha-long-ha-long-park-bai-chay/440">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -25832,7 +25833,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-cu-chi-nua-ngay-tp-hcm-tham-quan-dia-dao/1761">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -25910,7 +25911,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-can-gio-trong-ngay-tp-hcm-hanh-trinh-kham-pha-rung-sac-va-dao-khi/1730">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -25990,7 +25991,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-ha-long-trong-ngay-du-thuyen-5-sao-sonata-ha-long/1291">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -26069,7 +26070,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/tour-du-lich-trai-nghiem-dia-phuong/c33"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -26089,16 +26090,16 @@
                                             Tour Du Lịch Tây Nguyên
                                             <span>Về Với Đại Ngàn, Ngập Tràn Niềm Vui</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/ivivu-tour-du-lich-tay-nguyen/c55"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-cao-cap-tay-nguyen-3n3d-ta-dung-buon-me-thuot-thac-dray-nu/879">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -26178,7 +26179,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-tay-nguyen-3n2d-mang-den-nga-3-dong-duong-khau-bo-y-gia-lai/1855">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -26259,7 +26260,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-cao-cap-da-lat-2n2d-bao-loc-lang-han-quoc-the-eco-tropicana-samten-hills-thac-dambri/2200">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -26343,7 +26344,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-da-lat-3n3d-mongo-land-lang-hoa-van-thanh-thung-lung-den/786">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -26424,7 +26425,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-da-lat-3n3d-san-may-cau-go-doi-che-cau-dat-samtan-hill-kdl-la-phong/2249">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -26504,7 +26505,7 @@
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
-                                                    <a href="/du-lich/tour-da-lat-2n2d-kham-pha-da-lat-ngan-hoa/1086">
+                                                    <a href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -26583,7 +26584,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/ivivu-tour-du-lich-tay-nguyen/c55"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -26603,16 +26604,16 @@
                                             Tour Du Lịch Miền Tây
                                             <span>Khám Phá Bí Ẩn Sông Nước Nam Bộ</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/tour-du-lich-mien-tay/c64"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-limousine-mien-tay-3n3d-du-thuyen-can-tho-cuc-nam-mui-ca-mau-an-cua-bien/971">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -26694,7 +26695,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-mien-tay-4n3d-can-tho-soc-trang-bac-lieu-ca-mau/1552">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -26776,7 +26777,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-mien-tay-2n2d-chau-doc-rung-tram-tra-su-my-tho-can-tho/1750">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -26855,7 +26856,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-mien-tay-2n1d-hcm-my-tho-ben-tre-can-tho/1644">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -26935,7 +26936,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-mien-tay-3n2d-hcm-ben-tre-can-tho-ca-mau-bac-lieu/1514">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -27014,7 +27015,7 @@
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
-                                                    <a href="/du-lich/tour-mien-tay-1n-hcm-my-tho-ben-tre/1643">
+                                                    <a href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -27092,7 +27093,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/tour-du-lich-mien-tay/c64"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -27112,16 +27113,16 @@
                                             Tour Du Lịch Nội Địa Cao Cấp
                                             <span>Khám Phá Việt Nam - Vẻ Đẹp Bất Tận</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/ivivu-tour-du-lich-noi-dia-cao-cap/c25"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-mien-bac-5n4d-hcm-ha-noi-sapa-lao-cai-ninh-binh-ha-long/1519">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -27204,7 +27205,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-ha-long-lan-ha-2n1d-du-thuyen-5-sao-dora-cruise/1695">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -27283,7 +27284,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-vung-tau-2n1d-ho-tram-nghi-duong-cao-cap/1745">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -27363,7 +27364,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-phu-quoc-3n2d-hcm-grand-world-cau-ca-lan-ngam-san-ho/1413">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -27444,7 +27445,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-mien-bac-5n4d-hcm-ha-giang-sapa-fansipan/2139">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -27525,7 +27526,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-lien-tuyen-mien-bac-4n3d-ha-noi-ninh-binh-sapa-fansipan/1403">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -27605,7 +27606,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/ivivu-tour-du-lich-noi-dia-cao-cap/c25"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -27625,16 +27626,16 @@
                                             Tour Du Lịch Miền Trung
                                             <span>Trải Nghiệm Hành Trình Di Sản</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/tour-du-lich-mien-trung/c47"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-mien-trung-5n4d-don-tu-da-nang-kham-pha-ban-dao-son-tra-hoi-an-ba-na-hue-phong-nha/1651">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -27715,7 +27716,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-mien-trung-4n3d-don-tu-da-nang-kham-pha-son-tra-hoi-an-ba-na-hue/2975">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -27795,7 +27796,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-mien-trung-3n2d-don-tu-da-nang-trai-nghiem-ba-na-co-do-hue-thanh-dia-la-vang-dong-phong-nha/1649">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -27877,7 +27878,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-da-nang-3n2d-don-tu-da-nang-kham-pha-ban-dao-son-tra-cu-lao-cham-hoi-an-ba-na/2974">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -27957,7 +27958,7 @@
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
-                                                    <a href="/du-lich/tour-da-nang-4n3d-hoi-an-quang-binh-hue/2087">
+                                                    <a href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -28037,7 +28038,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-da-nang-4n3d-ha-noi-da-nang-ba-na-hills-hoi-an-hue/2085">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -28118,7 +28119,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/tour-du-lich-mien-trung/c47"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -28138,16 +28139,16 @@
                                             Tour Du Lịch Vi Vu Cuối Tuần
                                             <span>Tận Hưởng Cuộc Sống, Kết Nối Tình Thân</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/ivivu-tour-du-lich-vi-vu-cuoi-tuan/c52"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-binh-ba-2n2d-kham-pha-vuong-quoc-tom-hum/290">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -28227,7 +28228,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-cao-cap-nam-cat-tien-2n1d-thien-nhien-hoang-so-rung-nam-cat-tien/1500">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -28309,7 +28310,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-nha-trang-3n3d-nhu-tien-du-thuyen-emperor-cruises/2115">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -28390,7 +28391,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-nam-du-hon-son-3n3d-bien-dao-trong-xanh-thien-nhien-hoang-so/1146">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -28471,7 +28472,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-phan-thiet-3n2d-kdl-nui-ta-cu-bau-sen-lau-dai-ruou-vang/1778">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -28552,7 +28553,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-phu-quy-2n2d-ganh-hang-phong-dien-nui-cao-cat-vinh-trieu-duong/1355">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -28631,7 +28632,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/ivivu-tour-du-lich-vi-vu-cuoi-tuan/c52"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -28651,16 +28652,16 @@
                                             Tour Du Lịch Độc Đáo
                                             <span>Trải Nghiệm Mới Lạ, Nâng Tầm Cuộc Sống</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/tour-du-lich-doc-dao/c46"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-nam-phi-8n7d-johannesburg-pretoria-sun-city-cape-town/1800">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -28746,7 +28747,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-an-do-nepal-7n7d-hanh-huong-ve-vung-dat-phat/2548">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -28827,7 +28828,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-cao-cap-ai-cap-13n12d-ha-noi-tp-hcm-kham-pha-ai-cap-huyen-bi/4130">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -28909,7 +28910,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-mong-co-8n7d-ban-tinh-ca-tren-thao-nguyen/4214">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -28995,7 +28996,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-qatar-6n5d-thu-do-doha-sa-mac-safari-thien-duong-dao-ngoc-the-pearl/2962">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -29082,7 +29083,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-sri-lanka-8n7d-hcm-colombo-hon-ngoc-an-do-duong/4448">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -29173,7 +29174,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/tour-du-lich-doc-dao/c46"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -29193,16 +29194,16 @@
                                             Tour Du Lịch Bằng Xe Lửa
                                             <span>Hành Trình Của Những Ký Ức</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/ivivu-tour-du-lich-bang-xe-lua/c51"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-xe-lua-mien-trung-3n4d-kham-pha-quy-nhon-phu-yen/746">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -29281,7 +29282,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-xe-lua-mien-trung-3n4d-ky-co-eo-gio-ganh-da-dia-mui-dien-thap-nhan/1188">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -29361,7 +29362,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-xe-lua-quy-nhon-3n4d-kdl-ham-ho-ky-co-eo-gio-chua-ong-nui/833">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -29441,7 +29442,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-xe-lua-ly-son-3n4d-vuong-quoc-toi-bien-dao-ly-son/794">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -29521,7 +29522,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-xe-lua-cao-cap-nha-trang-3n4d-du-thuyen-de-vuong-tren-vinh-city-tour/1131">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -29602,7 +29603,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-xe-lua-da-nang-4n5d-sai-gon-da-nang-hoi-an-kinh-thanh-hue-lang-khai-dinh/1151">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -29690,7 +29691,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/ivivu-tour-du-lich-bang-xe-lua/c51"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -29710,16 +29711,16 @@
                                             Tour Du Lịch Khám Phá
                                             <span>Thử Thách Bản Thân, Vượt Lên Chính Mình</span>
                                         </h3>
-                                        <a href="https://www.ivivu.com/du-lich/tour-du-lich-kham-pha/c30"
+                                        <a href=""
                                             class="ico-readmore visible-xs"><img class="lazy"
-                                                data-src="/du-lich/content/img/icon_image_navigate_next.svg"
+                                                data-src=""
                                                 alt="navigate next"></a>
                                         <div class="row item-m">
                                             <div class="col-xs-12 col-sm-6 col-md-4">
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-da-lat-nua-ngay-cheo-kayak-tren-ho-tuyen-lam/1358">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -29796,7 +29797,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-da-lat-nua-ngay-cheo-sup-ngam-hoang-hon-ho-tuyen-lam/1479">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -29874,7 +29875,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-da-lat-trong-ngay-cheo-sup-ho-tuyen-lam-cung-con-yeu/1478">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -29953,7 +29954,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-camping-2n1d-trai-nghiem-cam-trai-va-cheo-thuyen-sup/1538">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -30031,7 +30032,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-trekking-2n2d-chinh-phuc-hang-dong-nui-lua-krongno-ta-dung/2613">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -30123,7 +30124,7 @@
                                                 <div class="col-xs-12 cardItem">
 
                                                     <a
-                                                        href="/du-lich/tour-da-lat-trong-ngay-kham-pha-langbiang-thac-datanla-crazy-house-farm/1293">
+                                                        href="">
                                                         <div class="col-xs-12 no-padding cardItemContainer">
                                                             <div class="col-xs-12 no-padding cardItemImage">
                                                                 <div class="ribbonContainerOuter">
@@ -30202,7 +30203,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-xs-12 text-center">
-                                                <a href="https://www.ivivu.com/du-lich/tour-du-lich-kham-pha/c30"
+                                                <a href=""
                                                     class="hidden-xs btn-readmore">Xem thêm tours</a>
                                             </div>
                                         </div>
@@ -30229,7 +30230,7 @@
                                 <div class="row">
                                     <div class="item-m col-xs-4 col-sm-6 col-md-4">
                                         <div class="col-xs-12 cardItem">
-                                            <a href="/du-lich/tour-trung-quoc">
+                                            <a href="">
                                                 <div class="col-xs-12 no-padding cardItemContainer">
                                                     <div class="col-xs-12 no-padding cardItemImage">
                                                         <figure>
@@ -30254,7 +30255,7 @@
                                     </div>
                                     <div class="item-m col-xs-4 col-sm-6 col-md-4">
                                         <div class="col-xs-12 cardItem">
-                                            <a href="/du-lich/tour-singapore">
+                                            <a href="">
                                                 <div class="col-xs-12 no-padding cardItemContainer">
                                                     <div class="col-xs-12 no-padding cardItemImage">
                                                         <figure>
@@ -30279,7 +30280,7 @@
                                     </div>
                                     <div class="item-m col-xs-4 col-sm-6 col-md-4">
                                         <div class="col-xs-12 cardItem">
-                                            <a href="/du-lich/tour-thai-lan">
+                                            <a href="">
                                                 <div class="col-xs-12 no-padding cardItemContainer">
                                                     <div class="col-xs-12 no-padding cardItemImage">
                                                         <figure>
@@ -30304,7 +30305,7 @@
                                     </div>
                                     <div class="item-m col-xs-4 col-sm-6 col-md-4">
                                         <div class="col-xs-12 cardItem">
-                                            <a href="/du-lich/tour-chau-au">
+                                            <a href="">
                                                 <div class="col-xs-12 no-padding cardItemContainer">
                                                     <div class="col-xs-12 no-padding cardItemImage">
                                                         <figure>
@@ -30329,7 +30330,7 @@
                                     </div>
                                     <div class="item-m col-xs-4 col-sm-6 col-md-4">
                                         <div class="col-xs-12 cardItem">
-                                            <a href="/du-lich/tour-nhat-ban">
+                                            <a href="">
                                                 <div class="col-xs-12 no-padding cardItemContainer">
                                                     <div class="col-xs-12 no-padding cardItemImage">
                                                         <figure>

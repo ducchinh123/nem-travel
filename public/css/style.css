@@ -2585,10 +2585,12 @@ pre code {
     .col-md-11,
     .col-md-12 {
         float: left
+
     }
 
     .col-md-12 {
         width: 100%
+
     }
 
     .col-md-11 {
@@ -2604,7 +2606,7 @@ pre code {
     }
 
     .col-md-8 {
-        width: 66.66666667%
+        width: 65.66666667%
     }
 
     .col-md-7 {
@@ -3312,7 +3314,7 @@ label {
     display: inline-block;
     max-width: 100%;
     margin-bottom: 5px;
-    font-weight: bold
+    font-weight: normal
 }
 
 input[type="search"] {
@@ -5380,6 +5382,60 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
     .navbar-nav>li>a {
         padding-top: 15px;
         padding-bottom: 15px
+    }
+
+
+  
+}
+.footerContact-tablet {
+    display: none;
+}
+@media (min-width: 768px) and (max-width: 1025px) {
+    .homePageFooterDiv .homePageFooter .foot-col-5 {
+        text-align: initial !important;
+    }
+
+    .footerContact-tablet {
+        display: block;
+    }
+
+    .foot-col-4  a {
+        margin: unset !important;
+    }
+
+    .no-border iframe {
+        width: 100%;
+    }
+}
+
+.dcn-mobile {
+    display: none;
+}
+@media screen and (max-width: 767px) {
+    .no-border iframe {
+        width: 100%;
+    }
+
+    .dcn-mobile {
+        display: block;
+    }
+
+    .dcn-mobile img {
+        height: 43px;
+    }
+    .dcn-tablet-pc {
+        display: none;
+    }
+
+    .member-channel {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1025px) {
+    .footerContact-pc {
+        display: none;
     }
 }
 
@@ -14112,7 +14168,7 @@ body {
     display: block
 }
 
-.main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .hotline-link {
+.main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .my-my-hotline-link {
     color: #F79321;
     text-decoration: none;
     letter-spacing: -1px;
@@ -14120,12 +14176,12 @@ body {
     transition: all .2s ease-in-out
 }
 
-.main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .hotline-link .fa {
+.main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .my-hotline-link .fa {
     position: relative;
     top: 1px
 }
 
-.main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .hotline-link:hover {
+.main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .my-hotline-link:hover {
     color: #FDBF65
 }
 
@@ -14185,7 +14241,7 @@ body {
         padding-right: 5px
     }
 
-    .main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .hotline-link {
+    .main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .my-hotline-link {
         font-size: 20px;
         font-weight: 500;
         letter-spacing: -1.5px
@@ -14205,7 +14261,7 @@ body {
         height: 51px
     }
 
-    .main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .hotline-link {
+    .main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .my-hotline-link {
         letter-spacing: -1px
     }
 }
@@ -14216,14 +14272,14 @@ body {
         padding-left: 30px
     }
 
-    .main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .hotline-link {
+    .main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .my-hotline-link {
         font-size: 26px;
         font-weight: bold;
         letter-spacing: -1px;
         text-decoration: none
     }
 
-    .main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .hotline-link:hover {
+    .main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .my-hotline-link:hover {
         color: #FDBF65
     }
 }
@@ -19319,9 +19375,9 @@ th {
     display: block
 }
 
-.hotline-footer .hotline-link,
-.hotline-header .hotline-link,
-.main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .hotline-link {
+.hotline-footer .my-hotline-link,
+.hotline-header .my-hotline-link,
+.main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .my-hotline-link {
     color: #f79321;
     text-decoration: none;
     letter-spacing: -1px;
@@ -19329,16 +19385,16 @@ th {
     transition: .3s ease-in-out
 }
 
-.hotline-footer .hotline-link .fa,
-.hotline-header .hotline-link .fa,
-.main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .hotline-link .fa {
+.hotline-footer .my-hotline-link .fa,
+.hotline-header .my-hotline-link .fa,
+.main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .my-hotline-link .fa {
     position: relative;
     top: 1px
 }
 
-.hotline-footer .hotline-link:hover,
-.hotline-header .hotline-link:hover,
-.main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .hotline-link:hover {
+.hotline-footer .my-hotline-link:hover,
+.hotline-header .my-hotline-link:hover,
+.main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .my-hotline-link:hover {
     color: #fdbf65
 }
 
@@ -19409,9 +19465,9 @@ th {
         padding-right: 5px
     }
 
-    .hotline-footer .hotline-link,
-    .hotline-header .hotline-link,
-    .main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .hotline-link {
+    .hotline-footer .my-hotline-link,
+    .hotline-header .my-hotline-link,
+    .main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .my-hotline-link {
         font-size: 20px;
         font-weight: 500;
         letter-spacing: -1.5px
@@ -19430,13 +19486,13 @@ th {
         height: 20px
     }
 
-    .hotline-footer .hotline-link .fa,
-    .hotline-header .hotline-link .fa,
-    .main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .hotline-link .fa {
+    .hotline-footer .my-hotline-link .fa,
+    .hotline-header .my-hotline-link .fa,
+    .main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .my-hotline-link .fa {
         display: none
     }
 
-    .main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .hotline-link {
+    .main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .my-hotline-link {
         font-size: 18px !important;
         font-weight: 700 !important;
         letter-spacing: inherit !important
@@ -19464,7 +19520,7 @@ th {
         height: 51px
     }
 
-    .main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .hotline-link {
+    .main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .my-hotline-link {
         letter-spacing: -1px
     }
 }
@@ -19477,8 +19533,8 @@ th {
         display: contents
     }
 
-    .hotline-footer .hotline-link,
-    .hotline-header .hotline-link {
+    .hotline-footer .my-hotline-link,
+    .hotline-header .my-hotline-link {
         font-size: 18px !important;
         font-weight: 700 !important;
         letter-spacing: inherit !important
@@ -19492,8 +19548,8 @@ th {
         height: 51px
     }
 
-    .hotline-footer .hotline-link,
-    .hotline-header .hotline-link {
+    .hotline-footer .my-hotline-link,
+    .hotline-header .my-hotline-link {
         letter-spacing: -1px
     }
 
@@ -19529,18 +19585,18 @@ th {
         padding-left: 30px
     }
 
-    .hotline-footer .hotline-link,
-    .hotline-header .hotline-link,
-    .main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .hotline-link {
+    .hotline-footer .my-hotline-link,
+    .hotline-header .my-hotline-link,
+    .main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .my-hotline-link {
         font-size: 26px;
         font-weight: 700;
         letter-spacing: -1px;
         text-decoration: none
     }
 
-    .hotline-footer .hotline-link:hover,
-    .hotline-header .hotline-link:hover,
-    .main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .hotline-link:hover {
+    .hotline-footer .my-hotline-link:hover,
+    .hotline-header .my-hotline-link:hover,
+    .main-header.ivivu-main-header .navbar .navbar-custom-menu ul.nav>li .hotline .my-hotline-link:hover {
         color: #fdbf65
     }
 }
@@ -19577,7 +19633,8 @@ only screen and (-ms-high-contrast:active) and (min-width:992px) {
 .hotline-footer {
     padding-left: 0;
     height: inherit;
-    float: left
+    float: left;
+    padding-top: 5px;
 }
 
 .hotline-m {

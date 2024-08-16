@@ -1,5 +1,100 @@
 <?php include 'inc/head.php'; ?>
 <!-- header inc -->
+<style>
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* custom swiper  */
+
+  .swiper-pagination-bullet-active {
+    background-color: white !important;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 50px !important;
+    height: 50px !important;
+    padding: 22px;
+    border-radius: 30px;
+    color: white !important;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: #003c71;
+  }
+
+  .swiper-tablet-pc {
+    display: none;
+  }
+
+  .swiper-mobile {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    .swiper-tablet-pc {
+      display: block;
+    }
+
+ 
+
+
+  }
+
+  @media screen and (max-width: 767px) {
+    .swiper-mobile {
+      display: block;
+    }
+
+    .owl-carousel .haft-right {
+      padding-left: unset !important;
+    }
+  }
+
+  .mySwiperKsMobile.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .mySwiperKsMobile.swiper-slide img {
+    display: block;
+    width: 100%;
+    border-radius: 6px !important;
+  }
+
+  .mySwiperKsMobile {
+    overflow: initial !important;
+  }
+</style>
 
 <body data-page="homepage" class="homePage">
   <noscript id="deferred-styles">
@@ -71,207 +166,98 @@
   <div class="container mainContainer">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mainContent">
 
-      <!-- BEGIN MOST INTERESTING HOTELS -->
-      <!-- ngIf: topSaleCount>0 -->
-      <p class="top-sale visible-xs row ng-scope" ng-if="topSaleCount>0"><img width="20"
-          style="vertical-align: text-bottom;" src="https://res.ivivu.com/hotel/img/fire-sale.svg"><span
-          class="ng-binding">1.098 khách đã đặt phòng trong 24h qua</span></p><!-- end ngIf: topSaleCount>0 -->
-   
-
-      <div class="col-xs-12 no-padding v-margin-top-30 hidden-xs">
+      <div class="col-xs-12 no-padding v-margin-top-30">
         <div class="col-xs-12 no-padding heading">
-          <h2 class="heading__title">Combo tốt nhất hôm nay <!-- ngIf: topSaleCount>0 --><span
-              class="top-sale ng-binding ng-scope" ng-if="topSaleCount>0"><img width="20"
-                style="vertical-align: text-bottom;" src="https://res.ivivu.com/hotel/img/fire-sale.svg">1.098 khách
-              đã đặt phòng trong 24h qua</span><!-- end ngIf: topSaleCount>0 --></h2>
+          <h2 class="heading__title">Ưu đãi đặc biệt dành cho bạn</h2>
           <p class="heading__description">Nhanh tay đặt ngay. Để mai sẽ lỡ</p>
         </div>
-        <div class="col-xs-12 no-padding promotion-cards">
+        <div class="col-xs-12 no-padding promotion-cards swiper-tablet-pc">
+          <div class=" item-placeholder-loading item-placeholder-loading__flash"
+            style="border-radius: 6px; height: 0px; display: none;">
+          </div>
+          <div class="col-xs-12 no-padding ">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="">
+                    <img src="https://cdn1.ivivu.com/images/2024/07/12/11/HOLIDAYINN_HT-sd_3i1zpz_.webp" alt="">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="">
+                    <img src="https://cdn1.ivivu.com/images/2024/08/01/13/TheOceanResortbyFusion_QN-sd_i1plnj_.webp"
+                      alt="">
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="">
+                    <img src="https://cdn1.ivivu.com/images/2024/08/01/13/Zannier-sd_8neutr_.webp" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 no-padding promotion-cards swiper-mobile">
           <div class=" item-placeholder-loading item-placeholder-loading__flash"
             style="border-radius: 6px; height: 0px; display: none;">
           </div>
           <div class="col-xs-12 no-padding owl-carousel owl-carousel-promotion owl-theme owl-loaded owl-drag">
-            <div class="owl-stage-outer">
-              <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all; width: 5775px;">
-                <div class="owl-item active" style="width: 1140px; margin-right: 15px;">
-                  <div class="col-xs-12 promotion-card item" style="display: block;">
-                    <a href="https://www.ivivu.com/khach-san-quy-nhon/khach-san-flc-luxury-quy-nhon" target="_blank">
-                      <figure>
-                        <picture>
-                          <img src="https://cdn1.ivivu.com/images/2024/07/12/11/FLC-QN_sd_3swl7c_.webp" class="loading"
-                            data-was-processed="true">
-                        </picture>
-                      </figure>
-                    </a>
-                  </div>
+            <div class="swiper mySwiperKsMobile">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="">
+                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                  </a>
                 </div>
-                <div class="owl-item" style="width: 1140px; margin-right: 15px;">
-                  <div class="col-xs-12 promotion-card item" style="display: block;">
-                    <a href="https://www.ivivu.com/khach-san-can-tho/azerai-can-tho" target="_blank">
-                      <figure>
-                        <picture>
-                          <img src="https://cdn1.ivivu.com/images/2024/08/07/15/Azerai_CT-sd_g1uh94_.webp">
-                        </picture>
-                      </figure>
-                    </a>
-                  </div>
+                <div class="swiper-slide">
+                  <a href="">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                  </a>
                 </div>
-                <div class="owl-item" style="width: 1140px; margin-right: 15px;">
-                  <div class="col-xs-12 promotion-card item" style="display: block;">
-                    <a href="https://www.ivivu.com/khach-san-phu-quoc/khu-nghi-duong-intercontinental-phu-quoc-long-beach"
-                      target="_blank">
-                      <figure>
-                        <picture>
-                          <img src="https://cdn1.ivivu.com/images/2024/04/22/19/intercon_pq-sd_xxdxtd_.webp">
-                        </picture>
-                      </figure>
-                    </a>
-                  </div>
+                <div class="swiper-slide">
+                  <a href="">
+                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                  </a>
                 </div>
-                <div class="owl-item" style="width: 1140px; margin-right: 15px;">
-                  <div class="col-xs-12 promotion-card item" style="display: block;">
-                    <a href="https://www.ivivu.com/khach-san-vung-tau/khu-nghi-duong-holiday-inn-ho-tram"
-                      target="_blank">
-                      <figure>
-                        <picture>
-                          <img src="https://cdn1.ivivu.com/images/2024/07/12/11/HOLIDAYINN_HT-sd_3i1zpz_.webp">
-                        </picture>
-                      </figure>
-                    </a>
-                  </div>
+                <div class="swiper-slide">
+                  <a href="">
+                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                  </a>
                 </div>
-                <div class="owl-item" style="width: 1140px; margin-right: 15px;">
-                  <div class="col-xs-12 promotion-card item" style="display: block;">
-                    <a href="https://www.ivivu.com/khach-san-hoi-an/khu-nghi-duong-the-nam-hai-hoi-an" target="_blank">
-                      <figure>
-                        <picture>
-                          <img src="https://cdn1.ivivu.com/images/2024/07/12/11/FourSeasons-sd_3bseb7_.webp">
-                        </picture>
-                      </figure>
-                    </a>
-                  </div>
+                <div class="swiper-slide">
+                  <a href="">
+                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                  </a>
                 </div>
+                <div class="swiper-slide">
+                  <a href="">
+                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="">
+                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="">
+                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                  </a>
+                </div>
+
               </div>
-            </div>
-            <div class="owl-nav disabled">
-              <div class="owl-prev">prev</div>
-              <div class="owl-next">next</div>
-            </div>
-            <div class="owl-dots">
-              <div class="owl-dot active"><span></span></div>
-              <div class="owl-dot"><span></span></div>
-              <div class="owl-dot"><span></span></div>
-              <div class="owl-dot"><span></span></div>
-              <div class="owl-dot"><span></span></div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
+
+
       </div>
-
-      <div class="col-xs-12 no-padding v-margin-top-30 v-margin-bottom-30">
-        <div class="col-xs-12 no-padding heading">
-
-          <h2 class="heading__title">Hè đến rồi, đi chơi thôi!</h2>
-          <p class="heading__description">Thư giãn - Nạp năng lượng - Khám phá mới</p>
-
-        </div>
-        <div class="col-xs-12 no-padding v-margin-bottom-15">
-          <div class="item-placeholder-loading item-placeholder-loading__flash" style="display: none; height: 0px;">
-          </div>
-          <div
-            class="grid__container grid__container--topics super-cards topics owl-carousel  owl-carousel-mood owl-theme owl-loaded owl-drag">
-            <div class="owl-stage-outer">
-              <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all; width: 1155px;">
-                <div class="owl-item active" style="width: 273.75px; margin-right: 15px;">
-                  <div class="grid__item grid__item--1 item" style="display: block;">
-                    <div class="col-xs-12 super-card" data-src="//cdn1.ivivu.com/iVivu/2024/04/28/21/untitled-cr.png"
-                      data-was-processed="true"
-                      style="background-image: url('//cdn1.ivivu.com/iVivu/2024/04/28/21/untitled-cr.png');">
-                      <!--style="background-image: url('img');"-->
-                      <a href="/chu-de/khach-san-vui-he " target="_blank">
-                        <div class="col-xs-12 card-bg">
-                          <div class="info">
-                            <p class="title">Vui hè</p>
-                            <p class="description">Chạm vào mùa hè kỳ diệu – Khám phá cùng iVIVU! - <span
-                                style="text-decoration:underline;">45 khách sạn</span></p>
-
-
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="owl-item active" style="width: 273.75px; margin-right: 15px;">
-                  <div class="grid__item grid__item--2 item" style="display: block;">
-                    <div class="col-xs-12 super-card" data-src="//cdn1.ivivu.com/iVivu/2022/01/14/16/chon-4.jpg"
-                      data-was-processed="true"
-                      style="background-image: url('//cdn1.ivivu.com/iVivu/2022/01/14/16/chon-4.jpg');">
-                      <!--style="background-image: url('img');"-->
-                      <a href="/chu-de/khach-san-villa " target="_blank">
-                        <div class="col-xs-12 card-bg">
-                          <div class="info">
-                            <p class="title">Villa</p>
-                            <p class="description">Chill tại Villa, vui hè thả ga - <span
-                                style="text-decoration:underline;">30 khách sạn</span></p>
-
-
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="owl-item active" style="width: 273.75px; margin-right: 15px;">
-                  <div class="grid__item grid__item--3 item" style="display: block;">
-                    <div class="col-xs-12 super-card" data-src="//cdn1.ivivu.com/iVivu/2023/06/01/18/tb1.png"
-                      data-was-processed="true"
-                      style="background-image: url('//cdn1.ivivu.com/iVivu/2023/06/01/18/tb1.png');">
-                      <!--style="background-image: url('img');"-->
-                      <a href="/teamx " target="_blank">
-                        <div class="col-xs-12 card-bg">
-                          <div class="info">
-                            <p class="title">Team X</p>
-                            <p class="description">Nâng tầm chuyến du lịch của công ty và đội nhóm của bạn!</p>
-
-
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="owl-item active" style="width: 273.75px; margin-right: 15px;">
-                  <div class="grid__item grid__item--99 item" style="display: block;">
-                    <div class="col-xs-12 super-card" data-src="https://cdn1.ivivu.com/images/general/dangcap1.webp"
-                      data-was-processed="true"
-                      style="background-image: url('https://cdn1.ivivu.com/images/general/dangcap1.webp');">
-                      <!--style="background-image: url('img');"-->
-                      <a href="/voucher-du-lich" target="_blank">
-                        <div class="col-xs-12 card-bg">
-                          <div class="info">
-                            <p class="title">Gift Voucher</p>
-
-
-                            <p class="description">Lưu giữ khoảnh khắc, trải nghiệm hành trình</p>
-                          </div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="owl-nav disabled">
-              <div class="owl-prev"><i class="fa fa-chevron-left"></i></div>
-              <div class="owl-next"><i class="fa fa-chevron-right"></i></div>
-            </div>
-            <div class="owl-dots disabled"></div>
-          </div>
-        </div>
-      </div>
-
-
 
       <div class="col-xs-12 no-padding v-margin-top-30 v-margin-bottom-30">
         <div class="col-xs-12 no-padding heading">
@@ -407,93 +393,7 @@
         </div>
       </div>
 
-      <div class="col-xs-12 no-padding v-margin-top-30 v-margin-bottom-30">
-        <div class="col-xs-12 no-padding heading">
-          <h2 class="heading__title"> Điểm đến yêu thích nước ngoài</h2>
-          <p class="heading__description">Bao la thế giới. Bốn bể là nhà</p>
-        </div>
-        <!--<div class="headLineDivider"></div>-->
-        <div class="col-xs-12 no-padding">
-          <div class="grid__container grid__container--popular-2 super-cards">
-
-            <div class="grid__item grid__item--1">
-              <div class="col-xs-12 super-card "
-                style="background-image: url('//cdn1.ivivu.com/iVivu/2023/04/17/11/kl-cr.webp');">
-                <!--style="background-image: url('img');"-->
-                <a href="/khach-san-kuala-lumpur" target="_blank">
-                  <div class="col-xs-12 card-bg">
-                    <div class="info">
-                      <p class="title">Kuala Lumpur</p>
-
-                      <p class="description hidden-xs">1034 khách sạn</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="grid__item grid__item--2">
-              <div class="col-xs-12 super-card "
-                style="background-image: url('//cdn1.ivivu.com/iVivu/2023/07/11/18/cruise-terminal-banner-cr.webp');">
-                <!--style="background-image: url('img');"-->
-                <a href="/khach-san-singapore-singapore" target="_blank">
-                  <div class="col-xs-12 card-bg">
-                    <div class="info">
-                      <p class="title">Singapore</p>
-
-                      <p class="description hidden-xs">690 khách sạn</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="grid__item grid__item--3">
-              <div class="col-xs-12 super-card "
-                style="background-image: url('//cdn1.ivivu.com/iVivu/2023/11/03/18/us-bangkok-th-header-cr.jpg');">
-                <!--style="background-image: url('img');"-->
-                <a href="/khach-san-bangkok" target="_blank">
-                  <div class="col-xs-12 card-bg">
-                    <div class="info">
-                      <p class="title">Bangkok</p>
-
-                      <p class="description hidden-xs">3294 khách sạn</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="grid__item grid__item--4">
-              <div class="col-xs-12 super-card "
-                style="background-image: url('//cdn1.ivivu.com/iVivu/2023/07/11/18/photo-1624138784614-87fd1b6528f8-cr.webp');">
-                <!--style="background-image: url('img');"-->
-                <a href="/khach-san-sydney-australia" target="_blank">
-                  <div class="col-xs-12 card-bg">
-                    <div class="info">
-                      <p class="title">Sydney</p>
-
-                      <p class="description hidden-xs">540 khách sạn</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="grid__item grid__item--5">
-              <div class="col-xs-12 super-card "
-                style="background-image: url('//cdn1.ivivu.com/iVivu/2023/02/13/17/maldives-cr.webp');">
-                <!--style="background-image: url('img');"-->
-                <a href="/khach-san-maldives-maldives" target="_blank">
-                  <div class="col-xs-12 card-bg">
-                    <div class="info">
-                      <p class="title">Maldives</p>
-
-                      <p class="description hidden-xs">384 khách sạn</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+   
 
       <!-- END MOST INTERESTING HOTELS -->
       <!-- BEGIN PLACE POPULAR -->
@@ -644,9 +544,40 @@
 
     </div>
   </div>
-
-
   </div>
   <!-- END BODY -->
   <?php include 'inc/js.php'; ?>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+    var swiper_ks_mobile = new Swiper(".mySwiperKsMobile", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
   <?php include 'inc/footer.php'; ?>

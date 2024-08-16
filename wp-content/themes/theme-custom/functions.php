@@ -1,5 +1,57 @@
 <?php
 
+
+// ============================================KHU VỰC NÀY SẼ CHỨA CODE XỬ LÝ TRONG DỰ ÁN NẾM TRAVEL 🏝️ 🏝️🏝️====================
+
+
+// ========================================================= KHU VUC CUA CHINH===================================================
+//) 1 viết lại quy tắc url trang danh sách khách sạn
+function rewrite_the_hotel_path() {
+    add_rewrite_rule(
+        '^khach-san-([^/]+)/?$',
+        'index.php?pagename=khach-san-dia-phuong&param_name_hotel=$matches[1]',
+        'top'
+    );
+}
+
+add_action('init', 'rewrite_the_hotel_path');
+
+function custom_query_vars_hotel($vars) {
+    $vars[] = 'param_name_hotel';
+    return $vars;
+}
+
+add_filter('query_vars', 'custom_query_vars_hotel');
+
+// kết thúc viết lại quy tắc url trang danh sách khách sạn
+
+//) 2 viết lại quy tắc url trang danh sách chi tiết khách sạn
+
+function rewrite_the_detail_hotel_path() {
+        
+    add_rewrite_rule(
+        '^khach-san-([^/]+)/([^/]+)/?$',
+        'index.php?pagename=chi-tiet-khach-san&param_name_hotel_detail=$matches[1]&param_detail_hotel=$matches[2]',
+        'top'
+    );
+}
+
+add_action('init', 'rewrite_the_detail_hotel_path');
+
+function custom_query_vars_hotel_detail($vars) {
+    $vars [] = 'param_name_hotel_detail';
+    $vars [] = 'param_detail_hotel';
+    return $vars;
+}
+
+add_filter('query_vars', 'custom_query_vars_hotel_detail');
+// Kết thúc viết lại quy tắc url trang danh sách chi tiết khách sạn
+
+// ========================================================= KHU VUC CUA DAO===================================================
+
+
+
+//===============================================================================================================================
 function my_theme_setup()
 {
     register_nav_menus(
@@ -189,8 +241,6 @@ function my_general_settings_register_fields()
 
     // Đăng ký trường Meta Description
     register_setting('general', 'contact_phone', 'esc_attr');
-
-
 }
 add_action('admin_init', 'my_general_settings_register_fields');
 
@@ -256,12 +306,9 @@ function get_meta_kws($meta_kset)
                 return;
             }
         }
-
-
     } else {
         echo $meta_kset;
     }
-
 }
 
 
@@ -335,9 +382,7 @@ function my_theme_register_custom_block_patterns()
             )
 
         );
-
     }
-
 }
 
 
@@ -372,7 +417,6 @@ function load_more_posts()
     if (!empty($cate)) {
 
         $args['cat'] = (int) $cate;
-
     }
 
     // wp_send_json($args);
@@ -394,7 +438,7 @@ function load_more_posts()
             // Tính toán số ngày đã trôi qua
             $days_diff = floor(($current_timestamp - $post_timestamp) / (60 * 60 * 24));
 
-            ?>
+?>
 
             <li>
 
@@ -440,7 +484,7 @@ function load_more_posts()
 
             </li>
 
-            <?php
+        <?php
 
         endwhile;
 
@@ -457,21 +501,17 @@ function load_more_posts()
             $response['status'] = 'success';
 
             $response['message'] = 'Posts loaded';
-
         } else {
 
             $response['status'] = 'no_more_posts';
 
             $response['message'] = 'No more posts to load';
-
         }
-
     } else {
 
         $response['status'] = 'no_more_posts';
 
         $response['message'] = 'No more posts to load';
-
     }
 
 
@@ -479,7 +519,6 @@ function load_more_posts()
     wp_send_json($response);
 
     wp_die();
-
 }
 
 add_action('wp_ajax_load_more_posts', 'load_more_posts');
@@ -543,11 +582,9 @@ function fix_category_pagination_redirect($redirect_url, $requested_url)
     if (strpos($requested_url, '/category/') !== false) {
 
         $redirect_url = str_replace('/category/', '/', $requested_url);
-
     }
 
     return $redirect_url;
-
 }
 
 
@@ -560,7 +597,6 @@ function remove_category_base($link)
 {
 
     return str_replace('/category/', '/', $link);
-
 }
 
 
@@ -577,7 +613,6 @@ function remove_category_base_refresh_rules()
     global $wp_rewrite;
 
     $wp_rewrite->flush_rules();
-
 }
 
 
@@ -598,7 +633,6 @@ function remove_unnecessary_image_sizes()
     remove_image_size('custom-size-1');
 
     remove_image_size('custom-size-2');
-
 }
 
 add_action('init', 'remove_unnecessary_image_sizes');
@@ -628,7 +662,6 @@ function retain_only_custom_image_size($sizes)
         'custom-size' => __('Custom Size')
 
     );
-
 }
 
 add_filter('intermediate_image_sizes_advanced', 'retain_only_custom_image_size');
@@ -1010,7 +1043,6 @@ function my_theme_display_contact_entries()
        
     });
     </script>';
-
 }
 
 
@@ -1122,7 +1154,7 @@ function load_more_posts_search()
     if (!empty($posts)) {
         ob_start();
         foreach ($posts as $post) {
-            ?>
+        ?>
             <li>
                 <div class="post-home">
                     <div class="post-home-thumb">
@@ -1148,7 +1180,7 @@ function load_more_posts_search()
                     </div>
                 </div>
             </li>
-            <?php
+<?php
         }
         $response['html'] = ob_get_clean();
     }
