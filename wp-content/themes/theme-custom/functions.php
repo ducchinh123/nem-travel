@@ -27,24 +27,24 @@ add_filter('query_vars', 'custom_query_vars_hotel');
 
 //) 2 viết lại quy tắc url trang danh sách chi tiết khách sạn
 
-function rewrite_the_detail_hotel_path() {
+// function rewrite_the_detail_hotel_path() {
         
-    add_rewrite_rule(
-        '^khach-san-([^/]+)/([^/]+)/?$',
-        'index.php?pagename=chi-tiet-khach-san&param_name_hotel_detail=$matches[1]&param_detail_hotel=$matches[2]',
-        'top'
-    );
-}
+//     add_rewrite_rule(
+//         '^khach-san-([^/]+)/([^/]+)/?$',
+//         'index.php?pagename=chi-tiet-khach-san&param_name_hotel_detail=$matches[1]&param_detail_hotel=$matches[2]',
+//         'top'
+//     );
+// }
 
-add_action('init', 'rewrite_the_detail_hotel_path');
+// add_action('init', 'rewrite_the_detail_hotel_path');
 
-function custom_query_vars_hotel_detail($vars) {
-    $vars [] = 'param_name_hotel_detail';
-    $vars [] = 'param_detail_hotel';
-    return $vars;
-}
+// function custom_query_vars_hotel_detail($vars) {
+//     $vars [] = 'param_name_hotel_detail';
+//     $vars [] = 'param_detail_hotel';
+//     return $vars;
+// }
 
-add_filter('query_vars', 'custom_query_vars_hotel_detail');
+// add_filter('query_vars', 'custom_query_vars_hotel_detail');
 // Kết thúc viết lại quy tắc url trang danh sách chi tiết khách sạn
 
 // ========================================================= KHU VUC CUA DAO===================================================
